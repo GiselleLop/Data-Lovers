@@ -369,7 +369,7 @@ npm run test:oas // Esto es para correr todos los tests de OAs
 
 * **Uso de selectores de CSS**
 
-  - [ ] Uso de selector class para los items <li> (que se llama `card`)
+  - [ ] Uso de selector class para los items `<li>`
   - [ ] Uso de flexbox en sentido `row` y `column`
   - [ ] Uso de flexbox para el elemento que contiene los items
   - [ ] Uso de flexbox para el elemento que contiene los UI inputs
@@ -844,12 +844,12 @@ Antes de agendar tu Project Feedback con un coach, asegúrate que tu proyecto:
 * [ ] Esta libre de _errores_ de `eslint` al ejecutar `npm run pretest`
 * [ ] Está subido a GitHub y desplegado en GitHub Pages
 * Tiene un `README.md` con la siguente:
-      - [ ] _Definición del producto_ clara e informativa
-      - [ ] Historias de usuario
-      - [ ] Un _sketch_ de la solución (prototipo de baja fidelidad) y
-        _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-      - [ ] El listado de problemas que detectaste a través de tests
-        de usabilidad en el `README.md`
+  - [ ] _Definición del producto_ clara e informativa
+  - [ ] Historias de usuario
+  - [ ] Un _sketch_ de la solución (prototipo de baja fidelidad) y
+  _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+  - [ ] El listado de problemas que detectaste a través de tests
+  de usabilidad en el `README.md`
 * Tiene un UI que cumple las funcionalidades:
   - [ ] Muestra lista con datos y/o indicadores
   - [ ] Permite ordenar data por uno o más campos (asc y desc)
