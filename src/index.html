@@ -8,19 +8,64 @@
 
   <body>
     <header>
-      <h1 id="logo">
-        <img src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="40%">
-      </h1>
-      <h2 id="subtitulo">
-        Data Lovers
-      </h2>
-      <div class="container">
-       
+      <div class = "container">
+        <div class = "logo">
+          <img src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="30%"/>
+          <p class="subtitulo">
+            Data Lovers
+          </p>
+        </div>
+      </div>
+      <div class="menu">
+        <div class = "container">
+          <div class="filtro">
+            <label>Filber by</label>
+            <select name = "type" data-testid="select-filter">
+              <option>Type</option>
+              <option>Data 1</option>
+              <option>Data 1</option>
+              <option>Data 1</option>
+            </select>
+          </div>
+          <div class="filtro">
+            <label>Filter by name</label>
+            <select name = "type" data-testid="select-filter">
+              <option>A-Z</option>
+              <option>Data 1</option>
+              <option>Data 1</option>
+              <option>Data 1</option>
+            </select>
+          </div>
+          <div class="filtro">
+            <button data-testid="button-clear">Clear</button>
+          </div>
+        </div>
       </div>
     </header>
-    
-    <script src="main.js" type="module"></script>
 
+    <div class="container" id="root">
+     <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+     </ul>
+    </div>
+
+    <footer class="menu">
+     
+    <label>
+        Creado por:
+        <p class="filtro">
+          Leslie Pacheco     &     Giselle Lopez 
+         </p>
+    </label>
+     
+    </footer>
+    <script src="main.js" type="module"></script>
   </body>
 
 </html>
