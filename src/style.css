@@ -10,16 +10,23 @@ body{
    font-size: 20px;
    margin-top: -5%;
 }
-.container{
+.logo {
     width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.container{
+    padding-top: 25px;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
 .menu{
     width: 100%;
-    height: auto;
+    height: 100px;
     background: #00000075;
-    padding: 1em;
+    
+    
 }
 
 label{
@@ -98,10 +105,12 @@ margin-bottom: 0%;
 
 }
  .nameCharacter {
+    padding-top: 20px;
     font-family: rickymorty2;
     color: #B6E529;
-    font-size: 70px;
+    font-size: 40px;
     text-align: center;
+
 }
 .imagen1{
 width:650px;
@@ -143,15 +152,16 @@ padding-bottom: 2%;
   /* Estilos para pantallas grandes (escritorios) */
 @media only screen and (min-width: 1000px) {
     /* Agrega tus estilos para pantallas grandes aquí */
+   
+    
     .detail{
- 
         line-height:55px;
         text-align: left;
         display:inline-flex;
         width: 80%;
         padding-left: 3%;
         margin-left:9%;
-
+        
     }
     .imagen1{
         width:500px;
