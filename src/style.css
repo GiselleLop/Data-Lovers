@@ -1,13 +1,163 @@
-body {
+body{
+    background: #2A1486;
+    margin: 0;
+    place-items: center;
+ 
+}
+.subtitulo{
+   font-family: rickymorty2;
+   color: white;
+   font-size: 20px;
+   margin-top: -5%;
+}
+.logo {
+    width: 90%;
+    margin: auto;
     text-align: center;
+}
+.container{
+    padding-top: 25px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+// feature-maquetacionIndex
     background-color: #2A1486;
     margin: 0;
     font-family: 'Jolly Lodger', cursive;
   }
   .logo {
     width: 30%;
-  
+//
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    background: #00000075;
+    
+    
+}
+
+label{
+    padding: 11px;
+    color: #B6E529;
+    font-size: 25px;
+}
+select[name="type"]{
+    color: #fff;
+    background: #00000045;
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 8px;
+    font-size:17px;
+    box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
+    border: 2px solid #B6E529;
+}
+.filtro{
+    width: 33%;
+    display: inline-block;
+    color:white;
+
+}
+button[data-testid="button-clear"]{
+    width: 35%;
+    height: 50px;
+    background: #00B5CC;
+    border: 3px solid rgb(7, 225, 10);
+    box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
+    margin: auto;
+    border-radius: 10px;
+}
+option{
+    background: #0A0559;
+}
+section {
+    display: inline-flex;
+    width: 100%;
+    padding: 2px;
   }
+ footer {
+margin-bottom: 0%;
+ font-family: rickymorty2;
+ text-align: center;
+}
+
+@font-face {
+    font-family: rickymorty2;
+    src: url(../src/fonts/get_schwifty.ttf);
+  }
+@font-face {
+    font-family: rickymorty;
+    src: url(../src/fonts/shlop\ rg.otf);
+  }
+.detail{
+
+ font-family: rickymorty;
+ line-height:55px;
+ align-items: center;
+ align-content: center;
+ text-align: left;
+ display:grid;
+ width: 75%;
+ margin-left:10%;
+ border: #B6E529 solid 4px;
+ border-radius: 15px;
+ color: white;
+ margin-top: 1cm;
+ font-size: 35px;
+ background-color: #0A0559;
+ padding-left: 8%;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ letter-spacing: 8px;
+
+}
+ .nameCharacter {
+    padding-top: 20px;
+    font-family: rickymorty2;
+    color: #B6E529;
+    font-size: 40px;
+    text-align: center;
+
+}
+.imagen1{
+width:650px;
+height:500px;
+padding-top: 8%;
+padding-bottom: 2%;
+}
+
+.episodio {
+    font-family: rickymorty;
+    line-height:55px;
+    
+    text-align: center;
+    display:grid;
+    width: 83%;
+    margin-left:10%;
+    margin-bottom: 10%;
+    border: #B6E529 solid 4px;
+    border-radius: 15px;
+    color: white;
+    margin-top: 1cm;
+    font-size: 35px;
+    background-color: #0A0559;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 8px;  
+}
+
+/* Estilos para pantallas pequeñas (teléfonos) */
+@media only screen and (max-width: 767px) {
+    /* Agrega tus estilos para pantallas pequeñas aquí */
+  }
+// main
+  
+  /* Estilos para pantallas medianas (tabletas) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Agrega tus estilos para pantallas medianas aquí */
+  }
+// feature-maquetacionIndex
   h1{
     margin-top: -30px;
     margin-bottom: 0;
@@ -271,4 +421,36 @@ section{
 
 
   /* Estilos para pantallas con un ancho entre 768px y 1024px */
+//
+  
+  /* Estilos para pantallas grandes (escritorios) */
+@media only screen and (min-width: 1000px) {
+    /* Agrega tus estilos para pantallas grandes aquí */
+   
+    
+    .detail{
+        line-height:55px;
+        text-align: left;
+        display:inline-flex;
+        width: 80%;
+        padding-left: 3%;
+        margin-left:9%;
+        
+    }
+    .imagen1{
+        width:500px;
+        height:500px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .episodio {
+        text-align: center;
+        display:grid;
+        width: 83%;
+        margin-left:9%; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+        
+// main
 }
