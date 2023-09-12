@@ -4,21 +4,172 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Jolly+Lodger&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <h1 id="logo">
-        <img src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="40%">
+      <h1>
+        <img class = "logo" src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="100%">
+          <h2 id="subtitulo">Data Lovers</h2>
       </h1>
-      <h2 id="subtitulo">
-        Data Lovers
-      </h2>
-      <div class="container">
-       
+     <div class="menu">
+        <div class = "container">
+          <div class="filtro">
+            <label for = "select-filter">Filber by</label>
+            <select  name = "type" data-testid="select-filter">
+              <option value = "">Type</option>
+              <option value = "1">Data 1</option>
+              <option value = "1">Data 1</option>
+              <option value = "1">Data 1</option>
+            </select>
+          </div>
+          <div class="filtro">
+            <label for = "select-sort">Filter by name</label>
+            <select name = "type" data-testid="select-sort">
+              <option>A-Z</option>
+              <option value = "ASC">ASC</option>
+              <option value = "DESC">DESC</option>
+            </select>
+          </div>
+          <div class="filtro">
+            <button data-testid="button-clear">Clear</button>
+          </div>
+        </div>
       </div>
     </header>
-    
+    <section class="container" id="root">
+      <ul >
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
+          <div class="data-card">
+            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
+          </div>
+          <dl>
+            <dt>Nombre</dt>
+            <dd>Morthi Smith</dd>
+          </dl>
+          <a href=""><p >More info</p></a>
+        </li>
+      </ul>
+
+    </section>
+
+    <footer class="menu">
+      <label>Creado por:</label>
+      <b class="developers">Leslie Pacheco y Giselle Lopez </b>
+    </footer>
     <script src="main.js" type="module"></script>
 
   </body>
