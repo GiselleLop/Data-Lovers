@@ -5,7 +5,7 @@ body {
     font-family: 'Jolly Lodger', cursive;
   }
   .logo {
-    width: 30%;
+    width: 23%;
   
   }
   h1{
@@ -27,7 +27,7 @@ body {
 }
 
 section{
-  padding-top: 20em ;
+  padding-top: 17em ;
 }
 
 header{
@@ -37,6 +37,9 @@ header{
   background: #2a1486;
 }
 
+.data-card img{
+  width: 100%;
+}
 .menu{
     background: #00000075;
     padding: 1em;
@@ -53,7 +56,7 @@ label{
   font-size: 25px;
 }
 
-select[name="type"]{
+select{
   color: #fff;
   background: #00000045;
   width: 50%;
@@ -67,6 +70,10 @@ select[name="type"]{
 
 option{
   background: #0a0559;
+}
+option:hover{
+
+  background: #b6e529;
 }
 
 button[data-testid="button-clear"]{
@@ -113,6 +120,11 @@ ul{
   font-size: 22px;
 }
 
+.data_id {
+  position: absolute;
+  display: block;
+  background: #170b49;
+}
 .card:hover {
   transform: scale(1.); 
   -webkit-transform:scale(1.1);
@@ -140,16 +152,17 @@ dd {
   font-size: 25px;
 }
 
-p{
-  padding: 10px;
+.info{
+  padding: 3px;
   text-decoration: none;
   border-radius: 10px;
   color: #2a1486;
   background: #52e529;
   margin: 8px 0 8px;
-}
-a{
-  text-decoration: none;
+  width: 70%;
+  border: 2px solid #15994a;
+  font-family: 'Jolly Lodger', cursive;
+  font-size: 20px;
 }
 
 
@@ -191,7 +204,7 @@ button[data-testid="button-clear"]{
       width: 60%;
   }
   section{
-    padding-top: 30em;
+    padding-top: 33em;
   }
 
   
