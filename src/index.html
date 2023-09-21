@@ -11,160 +11,54 @@
 
   <body>
     <header>
-// feature-maquetacionIndex
       <h1>
         <img class = "logo" src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="100%">
           <h2 id="subtitulo">Data Lovers</h2>
       </h1>
+
      <div class="menu">
         <div class = "container">
-          <div class="filtro">
-            <label for = "select-filter">Filber by</label>
-            <select  name = "type" data-testid="select-filter">
-              <option value = "">Type</option>
-              <option value = "1">Data 1</option>
-              <option value = "1">Data 1</option>
-              <option value = "1">Data 1</option>
+
+          <div class = "filtro">
+            <label for = "select-filter">Filter by status:</label>
+            <select  name = "type" data-testid="select-filter" id="status">
+              <option value = "All" id="all">All</option>
             </select>
           </div>
+
           <div class="filtro">
-            <label for = "select-sort">Filter by name</label>
+            <label for = "select-filter">Filter by species:</label>
+            <select  name = "type" data-testid="select-filter" id="species">
+              <option value = "All" id="all" selected>All</option>
+            </select>
+            
+          </div>
+
+          <div class="filtro">
+            <label for = "select-filter">Filter by gender:</label>
+            <select  name = "type" data-testid="select-filter" id="gender">
+              <option value = "All" id="all" selected>All</option>
+            </select>
+          </div>
+
+          <div class="filtro">
+            <label for = "select-sort">Filter by order</label>
             <select name = "type" data-testid="select-sort">
-              <option>A-Z</option>
               <option value = "ASC">ASC</option>
               <option value = "DESC">DESC</option>
             </select>
           </div>
-          <div class="filtro">
+          
+          <div>
             <button data-testid="button-clear">Clear</button>
           </div>
         </div>
+        
       </div>
-    </header>
-    <section class="container" id="root">
-      <ul >
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-        <li class = "card" itemscope itemtype="https://rickandmortyapi.com/api/location/1">
-          <div class="data-card">
-            <img  src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/2.jpeg" width="100%"/>
-          </div>
-          <dl>
-            <dt>Nombre</dt>
-            <dd>Morthi Smith</dd>
-          </dl>
-          <a href=""><p >More info</p></a>
-        </li>
-      </ul>
+  </header>
 
+    <section class="container" id="root">
+      
     </section>
 
     <footer class="menu">
@@ -172,68 +66,6 @@
       <b class="developers">Leslie Pacheco y Giselle Lopez </b>
     </footer>
     <script src="main.js" type="module"></script>
-      <div class = "container">
-        <div class = "logo">
-          <img src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="30%"/>
-          <p class="subtitulo">
-            Data Lovers
-          </p>
-        </div>
-
-      </div>
-      <div class="menu">
-        <div class = "container">
-          <div class="filtro">
-            <label>Filber by</label>
-            <select name = "type" data-testid="select-filter">
-              <option>Type</option>
-              <option>Data 1</option>
-              <option>Data 1</option>
-              <option>Data 1</option>
-            </select>
-          </div>
-          <div class="filtro">
-            <label>Filter by name</label>
-            <select name = "type" data-testid="select-filter">
-              <option>A-Z</option>
-              <option>Data 1</option>
-              <option>Data 1</option>
-              <option>Data 1</option>
-            </select>
-          </div>
-
-          <div class="filtro">
-            <button data-testid="button-clear">Clear</button>
-          </div>
-          
-        </div>
-      </div>
-    </header>
-    // main
-
-    <div class="container" id="root">
-     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-     </ul>
-    </div>
-
-    <footer class="menu">
-     
-    <label>
-        Creado por:
-        <p class="filtro">
-          Leslie Pacheco     &     Giselle Lopez 
-         </p>
-    </label>
-     
-    </footer>
-    <script src="main.js" type="module"></script>
   </body>
-
 </html>
+      
