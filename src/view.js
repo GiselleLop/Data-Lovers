@@ -36,7 +36,6 @@ export const renderItems = (ArrayData) => {
     buttonInfo.classList.add('info');
     buttonInfo.textContent = "More info";
   
-  
     infoItem.appendChild(nameItem);
     infoItem.appendChild(itemName);
     contendItemImg.appendChild(data_img);

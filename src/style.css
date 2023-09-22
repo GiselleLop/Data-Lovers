@@ -42,7 +42,7 @@ header{
 }
 .menu{
     background: #00000075;
-    padding: 1em;
+    padding-bottom: 1.3em;
 }
 
 .filtro{
@@ -59,13 +59,16 @@ label{
 select{
   color: #fff;
   background: #00000045;
-  width: 50%;
+  width: 33%;
   height: 40px;
   border-radius: 10px;
   padding: 8px;
   font-size:17px;
   box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
   border: 2px solid #b6e529;
+}
+.infoFilter{
+  display: block;
 }
 
 option{

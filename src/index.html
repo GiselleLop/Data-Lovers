@@ -16,6 +16,7 @@
           <h2 id="subtitulo">Data Lovers</h2>
       </h1>
      <div class="menu">
+
         <div class = "container">
           <div class="filtro">
             <label for = "select-filter">Filber by</label>
@@ -24,8 +25,14 @@
             </select>
           </div>
           <div class="filtro">
-            <label for = "select-sort">Filter by name</label>
+            <label class = "infoFilter" for = "select-sort">Filter order by</label>
+            <select name = "By" data-testid="select-sort">
+              <option value = "name">Name</option>
+              <option value = "id">Id</option>
+              
+            </select>
             <select name = "type" data-testid="select-sort">
+              <option>Select Option</option>
               <option value = "ASC">A-Z</option>
               <option value = "DESC">Z-A</option>
             </select>
