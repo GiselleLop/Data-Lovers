@@ -1,8 +1,8 @@
-//import { example, anotherExample } from '../src/dataFunctions.js';
-//import { data as fakeData } from './data.js';
+import { example, anotherExample } from '../src/dataFunctions.js';
+import { data as fakeData } from './data.js';
 
-//console.log(fakeData);
-/*
+console.log(fakeData);
+
 describe('example', () => {
 
   it('returns `example`', () => {
@@ -16,4 +16,3 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
-/*
