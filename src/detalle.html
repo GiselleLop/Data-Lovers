@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="detalle.css" />
   </head>
 
   <body>
     <header>
-        <div class = "logo">
-          <img src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="30%"/>
-          <p class="subtitulo">
-            Data Lovers
-          </p>
+      <h1>
+        <img class = "logo" src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="100%">
+          <h2 id="subtitulo">Data Lovers</h2>
+      </h1>
+     <div class="menu">
+        <div class = "container">
+          <h1 class="nameCharacter"> Rick Sanchez </h1>
         </div>
-
-      <div class="menu">
-       <h1 class="nameCharacter"> Rick Sanchez </h1>
       </div>
     </header>
-  
+
+  <div class="bodyDetail">
     <div class="detail">
-      <img class="imagen1" src="https://images7.alphacoders.com/633/633262.png" width="60%">
+      <img class="imagen1" itemprop="image" src="https://images7.alphacoders.com/633/633262.png" >
       
-      <ul style="list-style: none;">
+      <ul class="ulDetail" style="list-style: none;">
+       <li>Id:<span itemprop="id"></span></li>
        <li>Episodios:</li>
        <li>Estado de vida:</li>
        <li>Especie:</li>
@@ -32,7 +33,7 @@
        <li>Lugar en donde vive:</li>
       </ul>
   
-    </div>
+    </div> 
     <div class="episodio">
       Episodios en los que aparece
       <ul>
@@ -40,17 +41,18 @@
       </ul>
     </div>
 
-    <footer class="menu">
-     
-    <label>
-        Creado por:
-        <p class="filtro">
-          Leslie Pacheco     &     Giselle Lopez 
-         </p>
-    </label>
-     
-    </footer>
-    <script src="main.js" type="module"></script>
+   
+</div>
+<button onclick="window.location.href='index.html'"> Volver a la página principal
+   </button>
+
+<footer class="menu">
+  <label>Creado por:</label>
+  <b class="developers">Leslie Pacheco y Giselle Lopez </b>
+</footer>
+
+
+    <script src="detalle.js" type="module"></script>
   </body>
 
 </html>
