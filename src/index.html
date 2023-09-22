@@ -17,6 +17,7 @@
       </h1>
 
      <div class="menu">
+
         <div class = "container">
 
           <div class = "filtro">
@@ -35,6 +36,7 @@
           </div>
 
           <div class="filtro">
+
             <label for = "select-filter">Filter by gender:</label>
             <select  name = "type" data-testid="select-filter" id="gender">
               <option value = "All" id="all" selected>All</option>
@@ -42,23 +44,33 @@
           </div>
 
           <div class="filtro">
-            <label for = "select-sort">Filter by order</label>
+
+            <label class = "infoFilter" for = "select-sort">Filter order by</label>
+            <select name = "By" data-testid="select-sort">
+              <option value = "name">Name</option>
+              <option value = "id">Id</option>
+              
+            </select>
             <select name = "type" data-testid="select-sort">
-              <option value = "ASC">ASC</option>
-              <option value = "DESC">DESC</option>
+              <option>Select Option</option>
+              <option value = "ASC">A-Z</option>
+              <option value = "DESC">Z-A</option>
             </select>
           </div>
           
           <div>
             <button data-testid="button-clear">Clear</button>
+            <!--<img class = "logo" src="https://media.tenor.com/BgR83Df82t0AAAAi/portal-rick-and-morty.gif" width="100%">-->
           </div>
         </div>
         
       </div>
+
   </header>
 
     <section class="container" id="root">
       
+
     </section>
 
     <footer class="menu">

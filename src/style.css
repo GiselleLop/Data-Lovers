@@ -6,6 +6,7 @@ body {
   }
   .logo {
     width: 23%;
+
   }
   h1{
     margin-top: -30px;
@@ -23,7 +24,8 @@ body {
     display: inline-flex;
 }
 section{
-  padding-top: 22em ;
+  padding-top: 17em ;
+
 }
 header{
   width: auto;
@@ -34,10 +36,15 @@ header{
  img{
   width: 100%;
 }
+
+
+.data-card img{
+  width: 100%;
+}
 .menu{
     background: #00000075;
-    padding: 1em;
-   
+    padding-bottom: 1.3em;
+
 }
 .filtro{
   width: auto;
@@ -50,10 +57,13 @@ label{
   color: #B6E529;
   font-size: 25px;
 }
-select[name="type"]{
+
+
+select{
   color: #fff;
   background: #00000045;
-  width: 45%;
+  width: 33%;
+
   height: 40px;
   border-radius: 10px;
   font-size:17px;
@@ -61,9 +71,21 @@ select[name="type"]{
   box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
   border: 2px solid #B6E529;
 }
+
+.infoFilter{
+  display: block;
+}
+
 option{
   background: #0A0559;
 }
+
+option:hover{
+
+  background: #b6e529;
+}
+
+
 button[data-testid="button-clear"]{
   width: 60%;
   height: 50px;
@@ -104,10 +126,12 @@ ul{
   color: #fff;
   font-size: 22px;
 }
+
 .data_id {
   position: absolute;
   display: block;
-  background: #170B49;
+  background: #170b49;
+
 }
 .card:hover {
   transform: scale(1.);
@@ -137,10 +161,14 @@ dd {
   background: #52E529;
   margin: 8px 0 8px;
   width: 70%;
-  border: 2px solid #15994A;
+
+  border: 2px solid #15994a;
   font-family: 'Jolly Lodger', cursive;
   font-size: 20px;
 }
+
+
+
  /* @media query para modo responsivo */
 @media (max-width: 768px) {
   .container{

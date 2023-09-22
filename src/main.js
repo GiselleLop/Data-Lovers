@@ -1,14 +1,41 @@
+
+import {sortData} from './dataFunctions.js';
+
 import { filter } from './view.js';
+
 import { renderItems } from './view.js';
 import data from './data/rickandmorty/rickandmorty.js';
 import { filterData } from './dataFunctions.js';
 
-const arrPersonajes = data.results
-filter.filterInfo(arrPersonajes)
+const arrayData = data.results;
 
 window.onload = ()=> {
-  renderItems(arrPersonajes)
+  renderItems(arrayData);
 };
+
+const orderType = document.querySelector("select[name='type']"); //tipo - asc o desc
+const ordenby = document.querySelector("select[name='By']"); // por nombre o por id
+const ResetBotton = document.querySelector("button[data-testid='button-clear']");
+const rootData = document.querySelector("#root");
+
+orderType.addEventListener("change", function () {
+  rootData.innerHTML = '';
+  renderItems(sortData(arrayData,ordenby.value ,orderType.value));
+
+});
+
+ordenby.addEventListener("change", function () {
+  
+  rootData.innerHTML = '';
+  renderItems(sortData(arrayData,ordenby.value ,orderType.value));
+
+});
+
+ResetBotton.addEventListener('click',() =>{window.location.reload()});
+
+
+
+
 
 //filtro
 const filterstatus = document.querySelector('#status');
@@ -16,16 +43,16 @@ const filterspecies = document.querySelector('#species');
 const filtergender = document.querySelector('#gender');
 
 filterstatus.addEventListener("change", ()=> {
-  filterData(arrPersonajes, filterstatus.id, filterstatus.value)
+  filterData(arrayData, filterstatus.id, filterstatus.value)
 });
 
 filterspecies.addEventListener("change", ()=> {  
-  filterData(arrPersonajes, filterspecies.id, filterspecies.value)
+  filterData(arrayData, filterspecies.id, filterspecies.value)
 })
 
 filtergender.addEventListener("change" , ()=> {
 
-  filterData(arrPersonajes, filtergender.id, filtergender.value)
+  filterData(arrayData, filtergender.id, filtergender.value)
 })
 
 /*
@@ -58,3 +85,4 @@ const locationCharacter = document.querySelector('[itemprop="location"]')
 */
 
 //console.log(example, renderItems, data);
+
