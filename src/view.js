@@ -2,7 +2,7 @@
 export const renderItems = (ArrayData) => {
   
   const Datalist = document.getElementById('root');
-  ArrayData.forEach(function(item) {
+  ArrayData.forEach((item) => {
 
     //li de la carta
     const li = document.createElement('li');
@@ -34,7 +34,12 @@ export const renderItems = (ArrayData) => {
     const buttonInfo = document.createElement('button');
     buttonInfo.classList.add('info');
     buttonInfo.textContent = "More info";
-  
+    buttonInfo.addEventListener("click", function() {
+      //  console.log(item.id)
+        localStorage.setItem("item", JSON.stringify(item))
+        //JSON.parse
+        window.location.href= "detalle.html"})
+
     infoItem.appendChild(nameItem);
     infoItem.appendChild(itemName);
     contendItemImg.appendChild(data_img);

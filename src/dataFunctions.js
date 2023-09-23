@@ -1,11 +1,7 @@
-
-
 export const sortData = (data,ordenbyValue ,orderTypeValue) => {
  
   if(ordenbyValue === 'id'){
-
     data.sort((a, b) => {
-
       const valorA = parseInt(a.id);
       const valorB = parseInt(b.id);
 
@@ -15,12 +11,10 @@ export const sortData = (data,ordenbyValue ,orderTypeValue) => {
         return valorB - valorA;
       }
       
-     
     });
-    
    
   }else if (ordenbyValue === 'name'){
-
+    
     data.sort((a, b) => {
 
       const valorA = a.name.toLowerCase();
@@ -28,15 +22,13 @@ export const sortData = (data,ordenbyValue ,orderTypeValue) => {
 
       const compare = valorA.localeCompare(valorB); 
       return orderTypeValue === "ASC" ? compare : -compare;
-
     });
-
   }
-
-  return data;
+  return data ;
 };
 
 import { renderItems } from './view.js';
+
 export const filterData = (data, filterBy, value) => {
   const tarjetasContainer = document.getElementById("root");
   tarjetasContainer.innerHTML=""
