@@ -8,18 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Jolly+Lodger&display=swap" rel="stylesheet">
   </head>
-
   <body>
     <header>
       <h1>
         <img class = "logo" src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="100%">
           <h2 id="subtitulo">Data Lovers</h2>
       </h1>
-
      <div class="menu">
-
         <div class = "container">
-
           <div class = "filtro">
             <label for = "select-filter">Filter by status:</label>
             <select  name = "type" data-testid="select-filter" id="status">
@@ -32,11 +28,8 @@
             <select  name = "type" data-testid="select-filter" id="species">
               <option value = "All" id="all" selected>All</option>
             </select>
-            
           </div>
-
           <div class="filtro">
-
             <label for = "select-filter">Filter by gender:</label>
             <select  name = "type" data-testid="select-filter" id="gender">
               <option value = "All" id="all" selected>All</option>
@@ -44,40 +37,33 @@
           </div>
 
           <div class="filtro">
-
             <label class = "infoFilter" for = "select-sort">Filter order by</label>
+
             <select name = "By" data-testid="select-sort">
+              <option selected>Select Option</option>
               <option value = "name">Name</option>
               <option value = "id">Id</option>
-              
             </select>
-            <select name = "type" data-testid="select-sort">
-              <option>Select Option</option>
-              <option value = "ASC">A-Z</option>
-              <option value = "DESC">Z-A</option>
+
+            <select name = "order" data-testid="select-sort">
+              <option selected>Select Option</option>
+              <option value = "ASC">ASC</option>
+              <option value = "DESC">DESC</option>
             </select>
           </div>
-          
-          <div>
+          <div class="clear">
             <button data-testid="button-clear">Clear</button>
-            
           </div>
         </div>
-        
       </div>
-
-  </header>
-
-    <section class="container" id="root">
-      
-
+    </header>
+    <section class="container">
+      <ul id = "root"></ul>
     </section>
-
     <footer class="menu">
       <label>Creado por:</label>
       <b class="developers">Leslie Pacheco y Giselle Lopez </b>
     </footer>
     <script src="main.js" type="module"></script>
   </body>
-</html>
-      
+  </html>
