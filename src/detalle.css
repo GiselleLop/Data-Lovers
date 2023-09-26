@@ -3,6 +3,7 @@ body {
   background-color: #2A1486;
   margin: 0;
   font-family: 'Jolly Lodger', cursive;
+  
 }
 .logo {
   width: 23%;
@@ -13,7 +14,6 @@ h1{
 }
 h2 {
  font-size: 13px;
- font-family: rickymorty2;
  color: white;
  margin-top: -5%;
  padding: 0%;
@@ -43,35 +43,36 @@ label{
 }
 
 footer {
-font-family: rickymorty2;
 text-align: center;
+color: #fff;
 }
 
 button {
-  font-family: rickymorty;
+  font-family: 'Jolly Lodger', cursive;
   margin-bottom: 20px;
   width: auto;
   height: auto;
   background: #9FF494;
   border: 2px solid rgb(7, 225, 10);
-  color: #079F0D;
+  color: #2A1486;
   font-size: 20px;
   border-radius: 5px;
   letter-spacing: 2.5px;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
-@font-face {
+/*@font-face {
   font-family: rickymorty2;
   src: url(../src/fonts/get_schwifty.ttf);
 }
 @font-face {
   font-family: rickymorty;
   src: url(../src/fonts/shlop\ rg.otf);
-}
+}*/
 
 /*Estilos para detalle.html */ 
 .bodyDetail {
+  font-family: 'Jolly Lodger', cursive;
 padding-top: 9em;
 display: flex;
 flex-direction: column;
@@ -80,7 +81,7 @@ place-items: center ;
 .detail{
 flex-direction: column;
 place-items: center;
-font-family: rickymorty;
+font-family: 'Jolly Lodger', cursive;
 line-height:35px;
 letter-spacing: 2.5px;
 color: white;
@@ -98,7 +99,7 @@ padding-bottom: 20px;
 
 .nameCharacter {
 padding-top: 27px;
-font-family: rickymorty2;
+
 color: #B6E529;
 font-size: 20px;
 text-align: center;
@@ -116,7 +117,7 @@ width: 90%;
 }
 
 .episodio {
-  font-family: rickymorty;
+  font-family: 'Jolly Lodger', cursive;
   line-height:40px;
   text-align: center;
   display:grid;
@@ -245,7 +246,7 @@ width: 90%;
 
   .bodyDetail {
       padding-left: 5em;
-      padding-top: 10em;
+      padding-top: 12em;
       display: flex;
       flex-direction: row;
       height: 100%;;
@@ -285,10 +286,24 @@ width: 90%;
     margin-left: 20px;
     height: 210px;
     margin-bottom: 0px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+  }
+  .infoEpisode {
+    margin: 8px;
+    list-style: none;
+    font-size: 20px;
+  }
+
+  .title{
+
+    color: #fff;
   }
    
   button {
-    font-family: rickymorty;
+    
     margin: 20px;
     width: auto;
     height: auto;

@@ -38,7 +38,8 @@ width: 100%;
   padding-bottom: 1.3em;
 }
 .filtro{
-width: 33%;
+/*width8: 33%;*/
+width: 18%;
 display: inline-block;
 }
 label{
@@ -46,17 +47,36 @@ padding: 11px;
 color: #B6E529;
 font-size: 25px;
 }
-select{
+
+.filterBy, .inFilter{
+  color: #fff;
+  background: #00000045;
+  height: 40px;
+  border-radius: 10px;
+  padding: 8px;
+  font-size:17px;
+  box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
+  border: 2px solid #B6E529;
+}
+.filterBy{
+  width: 90%;
+}
+
+.inFilter{
+  width: 46%;
+}
+/*select{
 color: #fff;
 background: #00000045;
-width: 33%;
+width: 80%;
 height: 40px;
 border-radius: 10px;
 padding: 8px;
 font-size:17px;
 box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
 border: 2px solid #B6E529;
-}
+}*/
+
 .infoFilter{
 display: block;
 }
@@ -67,7 +87,7 @@ option:hover{
 background: #B6E529;
 }
 button[data-testid="button-clear"]{
-width: 35%;
+width: 50%;
 height: 50px;
 background: #9FF494;
 border: 3px solid rgb(7, 225, 10);
@@ -214,8 +234,31 @@ h1{
 }
 
 /* Estilos para pantallas con un ancho entre 915px y 1024px */
+
+@media (min-width: 915px) and (max-width: 1024px) {
+  .card{
+      width: 25%;
+  }
+
+  .container{
+    width: 95%;
+  }
+  ul{
+    padding: 0;
+  }
+
+  select[name="type"]{
+      width: 70%;
+  }
+  button[data-testid="button-clear"]{
+    width: 55%;
+    height: 60px;
 }
-@media (min-width: 915px)  {
+section{
+  padding-top: 17em;
+}
+}
+/*@media (min-width: 915px)  {
   .card{
     width: 20%;
   }
@@ -256,7 +299,8 @@ h1{
   }
   
 }
-/*@media only screen and (min-width: 1024px) {
+*
+@media only screen and (min-width: 1024px) {
 .card{
   width: 20%;
 }
