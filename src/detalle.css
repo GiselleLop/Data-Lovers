@@ -41,10 +41,12 @@ label{
   font-size: 25px;
 
 }
-
 footer {
 font-family: rickymorty2;
 text-align: center;
+width: 100%;
+height: 40px;
+background: #00000075;
 }
 
 button {
@@ -52,15 +54,18 @@ button {
   margin-bottom: 20px;
   width: auto;
   height: auto;
-  background: #9FF494;
   border: 2px solid rgb(7, 225, 10);
-  color: #079F0D;
+  background: #079F0D;
+  color: #9FF494;
   font-size: 20px;
   border-radius: 5px;
   letter-spacing: 2.5px;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+button:hover {
+  box-shadow: 0px 0px 14px 4px #61C725;
+  }
 @font-face {
   font-family: rickymorty2;
   src: url(../src/fonts/get_schwifty.ttf);
@@ -76,8 +81,10 @@ padding-top: 9em;
 display: flex;
 flex-direction: column;
 place-items: center ;
+
 }
 .detail{
+box-shadow: 0px 0px 14px 4px #61C725;
 flex-direction: column;
 place-items: center;
 font-family: rickymorty;
@@ -98,24 +105,33 @@ padding-bottom: 20px;
 
 .nameCharacter {
 padding-top: 27px;
-font-family: rickymorty2;
-color: #B6E529;
-font-size: 20px;
+font-family: rickymorty;
+letter-spacing: 5px;
+color: #61C725;
+font-size: 30px;
 text-align: center;
+
 
 }
 .imagen1{
+box-shadow: 0px 0px 14px 5px #61C725;
 width: 250px;
 height: 250px;
 margin-left: 0px;
-padding-top: 20px;
+margin-top: 20px;
 border-radius: 8%;
 }
 ul{
 width: 90%;
 }
+span{ 
+  color:rgb(10, 248, 14);;
+  font-size:19px;
+  text-shadow: 1px 1px 8px white;
+  }
 
 .episodio {
+  box-shadow: 0px 0px 14px 4px #61C725;
   font-family: rickymorty;
   line-height:40px;
   text-align: center;
@@ -234,8 +250,8 @@ width: 90%;
     background: #00000075;
 }
   .nameCharacter {
-      padding-top: 25px;
-      font-size: 0.7cm;
+      padding-top: 20px;
+      font-size: 0.9cm;
     }  
   
   h2 {
@@ -265,14 +281,12 @@ width: 90%;
     margin-bottom: 0px;
       
   }
-  .ulDetail {
-    padding-left: 0.4cm;
-  }
+  
   .imagen1{
     width:200px;
     height:200px;
     margin-top: 1px;
-    margin-left: 0.9em;
+    margin-left: 2em;
     border-radius: 8%;
   }
   
@@ -292,9 +306,7 @@ width: 90%;
     margin: 20px;
     width: auto;
     height: auto;
-    background: #9FF494;
     border: 2px solid rgb(7, 225, 10);
-    color: #079F0D;
     font-size: 20px;
     border-radius: 5px;
     letter-spacing: 2.5px;
@@ -303,6 +315,8 @@ width: 90%;
   }
  
   footer{
-  margin-bottom: 0px;
+
+  color: white;
   }
+ 
 }
