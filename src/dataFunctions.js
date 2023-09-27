@@ -21,13 +21,37 @@ export const sortData = (data, ordenbyValue ,orderTypeValue) => {
   }
   renderItems(data)
 }
+function filterAll(arr, status, species, gender) {
+    
+
+    
+    let arrFiltered = arr
+  
+    if (species !== "All") {
+    arrFiltered = arrFiltered.filter((personaje)=> personaje.species===species);
+    }
+    if (status !== "All") {
+      arrFiltered = arrFiltered.filter((personaje)=> personaje.status===status);
+    }
+    if (gender !== "All") {
+      arrFiltered = arrFiltered.filter((personaje)=> personaje.gender===gender);
+    }
+    crearCards(arrFiltered)
+  }
+  
+  
  
 const tarjetasContainer = document.getElementById("root");
 import { renderItems } from './view.js';
+
 export const filterData = (data, filterBy, value) => {
-  
   tarjetasContainer.innerHTML="";
   let arrFiltered = data
-  arrFiltered = arrFiltered.filter((persona) => persona[filterBy] === value); 
-  renderItems(arrFiltered);
+
+    arrFiltered = arrFiltered.filter((persona) => persona[filterBy] === value); 
+    renderItems(arrFiltered);
+    if (value === "All"){
+    renderItems(data)
+    }
 }
+

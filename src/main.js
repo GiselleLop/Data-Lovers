@@ -9,6 +9,7 @@ filter.filterInfo(arrayData)
 window.onload = ()=> {
   renderItems(arrayData);
 };
+ 
 
 const orderType = document.querySelector("select[name='order']"); //tipo - asc o desc
 const ordenBy = document.querySelector("select[name='By']"); // por nombre o por id
@@ -31,16 +32,17 @@ const filtergender = document.querySelector('#gender');
 
 filterstatus.addEventListener("change", ()=> {
   filterData(arrayData, filterstatus.id, filterstatus.value)
+  
 });
 
 filterspecies.addEventListener("change", ()=> {  
   filterData(arrayData, filterspecies.id, filterspecies.value)
+  if (filterspecies.selected = true){
+    filterstatus.value === "All"
+  }
 })
 
 filtergender.addEventListener("change" , ()=> {
 
   filterData(arrayData, filtergender.id, filtergender.value)
 })
-
-
-

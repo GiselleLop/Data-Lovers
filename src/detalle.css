@@ -144,9 +144,11 @@ span,.infoEpisode{
   text-shadow: 1px 1px 8px white;
   }
 
+
 .episodio {
 
   font-family: 'Jolly Lodger', cursive;
+
   box-shadow: 0px 0px 14px 4px #61C725;
 
   line-height:40px;
@@ -260,7 +262,7 @@ span,.infoEpisode{
   }
  
   
-  .episodio {
+  .episode {
      
       text-align: center;
       display:grid;
@@ -303,7 +305,7 @@ span,.infoEpisode{
       place-items: center;  
 
   }
-  .episodio {
+  .episode {
      
       text-align: center;
       display:grid;
@@ -394,10 +396,11 @@ ul{
     border-radius: 8%;
   }
   
-  
+
   .infoEpisode {
     margin: 8px;
     list-style: none;
+
     font-size: 20px;
   }
 
