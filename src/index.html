@@ -18,20 +18,20 @@
         <div class = "container">
           <div class = "filtro">
             <label for = "select-filter">Filter by status:</label>
-            <select  name = "type" data-testid="select-filter" id="status">
+            <select  class = "filterBy" name = "type" data-testid="select-filter" id="status">
               <option value = "All" id="all">All</option>
             </select>
           </div>
 
           <div class="filtro">
             <label for = "select-filter">Filter by species:</label>
-            <select  name = "type" data-testid="select-filter" id="species">
+            <select  class = "filterBy" name = "type" data-testid="select-filter" id="species">
               <option value = "All" id="all" selected>All</option>
             </select>
           </div>
           <div class="filtro">
             <label for = "select-filter">Filter by gender:</label>
-            <select  name = "type" data-testid="select-filter" id="gender">
+            <select  class = "filterBy" name = "type" data-testid="select-filter" id="gender">
               <option value = "All" id="all" selected>All</option>
             </select>
           </div>
@@ -39,19 +39,19 @@
           <div class="filtro">
             <label class = "infoFilter" for = "select-sort">Filter order by</label>
 
-            <select name = "By" data-testid="select-sort">
-              <option selected>Select Option</option>
+            <select class = "inFilter" name = "By" data-testid="select-sort">
+              <option selected>Select</option>
               <option value = "name">Name</option>
               <option value = "id">Id</option>
             </select>
 
-            <select name = "order" data-testid="select-sort">
-              <option selected>Select Option</option>
+            <select class = "inFilter" name = "order" data-testid="select-sort">
+              <option selected>Select</option>
               <option value = "ASC">ASC</option>
               <option value = "DESC">DESC</option>
             </select>
           </div>
-          <div class="clear">
+          <div class="filtro">
             <button data-testid="button-clear">Clear</button>
           </div>
         </div>

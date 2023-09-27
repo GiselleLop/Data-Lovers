@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="detalle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Jolly+Lodger&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -21,8 +24,9 @@
 
   <div class="bodyDetail">
     <div class="detail" itemscope itemtype="character">
-      <img class="imagen1" itemprop="image">
-      
+
+      <img class="imagen1" itemprop="image" width="100%">
+
       <ul class="ulDetail" style="list-style: none;">
        <li>Id:<span itemprop="id"></span></li>
        <li>Episodes: <span itemprop="episode"></span></li>
@@ -32,14 +36,13 @@
        <li>Origin:<span itemprop="origin"></span></li>
        <li>Location:<span itemprop="location"></span></li>
       </ul>
-  
     </div> 
     <div class="episode">
       Episodios en los que aparece
-      <span itemprop = "episode"> </span>
-      <ul>
-       <li></li>
-      </ul>
+
+      <ol id = "ListEpisode"  class = "ListEpisode">
+      </ol>
+
     </div>
 
    

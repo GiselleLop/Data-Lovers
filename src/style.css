@@ -38,7 +38,8 @@ width: 100%;
   padding-bottom: 1.3em;
 }
 .filtro{
-width: 33%;
+/*width8: 33%;*/
+width: 18%;
 display: inline-block;
 }
 label{
@@ -46,17 +47,26 @@ padding: 11px;
 color: #B6E529;
 font-size: 25px;
 }
-select{
-color: #fff;
-background: #00000045;
-width: 33%;
-height: 40px;
-border-radius: 10px;
-padding: 8px;
-font-size:17px;
-box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
-border: 2px solid #B6E529;
+
+.filterBy, .inFilter{
+  color: #fff;
+  background: #00000045;
+  height: 40px;
+  border-radius: 10px;
+  padding: 8px;
+  font-size:17px;
+  box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
+  border: 2px solid #B6E529;
 }
+.filterBy{
+  width: 90%;
+}
+
+.inFilter{
+  width: 46%;
+}
+
+
 .infoFilter{
 display: block;
 }
@@ -67,7 +77,7 @@ option:hover{
 background: #B6E529;
 }
 button[data-testid="button-clear"]{
-width: 35%;
+width: 50%;
 height: 50px;
 background: #9FF494;
 border: 3px solid rgb(7, 225, 10);
@@ -80,6 +90,7 @@ border-radius: 10px;
 footer {
 text-align: center;
 color: #fff;
+padding: 10px;
 }
 .developers{
 width: 50%;
@@ -93,6 +104,7 @@ display: flex;
 flex-wrap: wrap;
 list-style: none;
 justify-content: center;
+padding:0;
 }
 .card{
 width: 18%;
@@ -141,6 +153,7 @@ border: 2px solid #15994A;
 font-family: 'Jolly Lodger', cursive;
 font-size: 20px;
 }
+
 /* @media query para modo responsivo */
 @media (max-width: 768px) {
 .container{
@@ -186,116 +199,56 @@ h1{
 /* Estilos para pantallas con un ancho mínimo de 768px */
 }
 @media (min-width: 768px) and (max-width: 915px) {
-.container{
-  width: auto;
-}
-.card{
-    width: 35%;
-}
-.filtro{
-    width: 45%;
-    padding: 10px;
-}
-select[name="type"]{
-    width: 80%;
-}
-button[data-testid="button-clear"]{
-    width: 60%;
-    height: 60px;
-}
-.logo{
-    width: 40%;
-}
-section{
-  padding-top: 25em;
-}
-h1{
-  margin-top: 0px;
+  .container{
+    width: auto;
+  }
+  .card{
+      width: 35%;
+  }
+  .filtro{
+      width: 45%;
+      padding: 10px;
+  }
+  select[name="type"]{
+      width: 80%;
+  }
+  button[data-testid="button-clear"]{
+      width: 60%;
+      height: 60px;
+  }
+  .logo{
+      width: 40%;
+  }
+  section{
+    padding-top: 25em;
+  }
+  h1{
+    margin-top: 0px;
+  }
 }
 
 /* Estilos para pantallas con un ancho entre 915px y 1024px */
-}
-@media (min-width: 915px)  {
+
+@media (min-width: 915px) and (max-width: 1025px) {
   .card{
-    width: 20%;
+      width: 25%;
   }
+
   .container{
-    width: 100%;
+    width: 95%;
   }
   ul{
     padding: 0;
   }
-  select{
-    width: 20%;
-    }
+
   select[name="type"]{
       width: 70%;
   }
-  select[name="By"]{
-      width: 30%;
-  }
-  select[name="order"]{
-    width: 30%;
-  }
   button[data-testid="button-clear"]{
-    width: 20%;
-    height: 40px;
+    width: 55%;
+    height: 60px;
   }
   section{
-  padding-top: 17em;
+    padding-top: 17em;
   }
-  .filtro {
-  width: 20%;
-  }
-  .menu {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 0%;
-  padding-bottom: 0px;
-  }
-  
 }
-/*@media only screen and (min-width: 1024px) {
-.card{
-  width: 20%;
-}
-.container{
-  width: 100%;
-}
-ul{
-  padding: 0;
-}
-select{
-  width: 20%;
-  }
-select[name="type"]{
-    width: 70%;
-}
-select[name="By"]{
-    width: 30%;
-}
-select[name="order"]{
-  width: 30%;
-}
-button[data-testid="button-clear"]{
-  width: 20%;
-  height: 40px;
-}
-section{
-padding-top: 17em;
-}
-.filtro {
-width: 20%;
-}
-.menu {
-display: flex;
-flex-direction: column;
-width: 100%;
-padding-top: 0%;
-padding-bottom: 0px;
-}
-
-
-}
-*/

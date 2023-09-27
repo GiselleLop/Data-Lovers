@@ -1,12 +1,10 @@
 
 import {sortData, filterData} from './dataFunctions.js';
-import { filter } from './view.js';
-import { renderItems } from './view.js';
+import { renderItems,filter } from './view.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const arrayData = data.results;
 filter.filterInfo(arrayData)
-
 
 window.onload = ()=> {
   renderItems(arrayData);

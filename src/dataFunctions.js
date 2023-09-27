@@ -2,12 +2,12 @@ export const sortData = (data, ordenbyValue ,orderTypeValue) => {
   tarjetasContainer.innerHTML = '';
 
   if (ordenbyValue === 'id'){
-     data.sort((a, b) => {
+    data.sort((a, b) => {
       if (orderTypeValue === "ASC") {
-      return a.id - b.id; 
+        return a.id - b.id; 
       }
       else if (orderTypeValue === "DESC") {
-      return b.id - a.id; 
+        return b.id - a.id; 
       }
     });
   }
@@ -47,9 +47,11 @@ import { renderItems } from './view.js';
 export const filterData = (data, filterBy, value) => {
   tarjetasContainer.innerHTML="";
   let arrFiltered = data
+
     arrFiltered = arrFiltered.filter((persona) => persona[filterBy] === value); 
     renderItems(arrFiltered);
     if (value === "All"){
     renderItems(data)
     }
 }
+

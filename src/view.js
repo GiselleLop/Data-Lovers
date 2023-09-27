@@ -36,9 +36,9 @@ export const renderItems = (ArrayData) => {
     buttonInfo.textContent = "More info";
     buttonInfo.addEventListener("click", function() {
       //  console.log(item.id)
-        localStorage.setItem("item", JSON.stringify(item))
-        //JSON.parse
-        window.location.href= "detalle.html"})
+      localStorage.setItem("item", JSON.stringify(item))
+      //JSON.parse
+      window.location.href= "detalle.html"})
 
     infoItem.appendChild(nameItem);
     infoItem.appendChild(itemName);
@@ -104,6 +104,18 @@ const filterInfo = (ArrayData) => {
 
 export const filter = {filterInfo};
 
+
+// muestra el detalle de los episodios en el detalle
+export  const renderEpisode = (data)=>{
+  const listEpisode = document.getElementById('ListEpisode');
+  data.episode.forEach(epi => {
+
+    const li = document.createElement('li');
+    li.classList.add('infoEpisode');
+    li.textContent = epi;
+    listEpisode.appendChild(li);
+  });
+}
 
 
 
