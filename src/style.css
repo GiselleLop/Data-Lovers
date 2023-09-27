@@ -1,189 +1,202 @@
 body {
-    text-align: center;
-    background-color: #2A1486;
-    margin: 0;
-    font-family: 'Jolly Lodger', cursive;
-  }
-  .logo {
-    width: 23%;
-  }
-  h1{
-    margin-top: -30px;
-    margin-bottom: 0;
-  }
-  h2 {
-   color: white;
-   margin-top: -4%;
-   padding: 0%;
-  }
-  .container{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    display: inline-flex;
+  text-align: center;
+  background-color: #2A1486;
+  margin: 0;
+  font-family: 'Jolly Lodger', cursive;
+}
+.logo {
+  width: 23%;
+}
+h1{
+  margin-top: -30px;
+  margin-bottom: 0;
+}
+h2 {
+ color: white;
+ margin-top: -4%;
+ padding: 0%;
+}
+.container{
+  width: 90%;
+  margin: auto;
+  text-align: center;
 }
 section{
-  padding-top: 22em ;
+padding-top: 17em ;
 }
 header{
-  width: auto;
-  position: fixed;
-  z-index: 100;
-  background: #2A1486;
+width: auto;
+position: fixed;
+z-index: 100;
+background: #2A1486;
 }
- img{
-  width: 100%;
+.data-card img{
+width: 100%;
 }
 .menu{
-    background: #00000075;
-    padding: 1em;
-   
+  background: #00000075;
+  padding-bottom: 1.3em;
 }
 .filtro{
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
+/*width8: 33%;*/
+width: 18%;
+display: inline-block;
+}
+label{
+padding: 11px;
+color: #B6E529;
+font-size: 25px;
 }
 
-label{
-  padding-right: 0.5em;
-  color: #B6E529;
-  font-size: 25px;
-}
-select[name="type"]{
+.filterBy, .inFilter{
   color: #fff;
   background: #00000045;
-  width: 45%;
   height: 40px;
   border-radius: 10px;
+  padding: 8px;
   font-size:17px;
-  padding-left: 0.5em;
   box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
   border: 2px solid #B6E529;
+}
+.filterBy{
+  width: 90%;
+}
+
+.inFilter{
+  width: 46%;
+}
+
+
+.infoFilter{
+display: block;
+}
+option{
+background: #0A0559;
+}
+option:hover{
+background: #B6E529;
+}
+button[data-testid="button-clear"]{
+width: 50%;
+height: 50px;
+background: #9FF494;
+border: 3px solid rgb(7, 225, 10);
+color: #079F0D;
+font-family: 'Jolly Lodger', cursive;
+font-size: 32px;
+margin: auto;
+border-radius: 10px;
+}
+footer {
+text-align: center;
+color: #fff;
+padding: 10px;
+}
+.developers{
+width: 50%;
+font-size: 25px;
 }
 option{
   background: #0A0559;
 }
-button[data-testid="button-clear"]{
-  width: 60%;
-  height: 50px;
-  background: #9FF494;
-  border: 3px solid rgb(7, 225, 10);
-  color: #079F0D;
-  font-family: 'Jolly Lodger', cursive;
-  font-size: 32px;
-  margin: auto;
-  margin-top:10px;
-  border-radius: 10px;
-}
-footer {
-  text-align: center;
-  color: #fff;
- }
- .developers{
-  width: 50%;
-  font-size: 25px;
- }
- option{
-    background: #0A0559;
-}
 ul{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+justify-content: center;
+padding:0;
 }
 .card{
-  width: 18%;
-  padding: 15px;
-  border: 1px solid #52E529;
-  background: #00000073;
-  margin: 16px;
-  display: inline-block;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 22px;
+width: 18%;
+padding: 15px;
+border: 1px solid #52E529;
+background: #00000073;
+margin: 16px;
+border-radius: 10px;
+color: #fff;
+font-size: 22px;
 }
 .data_id {
-  position: absolute;
-  display: block;
-  background: #170B49;
+position: absolute;
+display: block;
+background: #170B49;
 }
 .card:hover {
-  transform: scale(1.);
-  -webkit-transform:scale(1.1);
-  box-shadow: 0px 0px 14px 4px #61C725;
+transform: scale(1.);
+-webkit-transform:scale(1.1);
+box-shadow: 0px 0px 14px 4px #61C725;
 }
 button[data-testid="button-clear"]:hover {
-  box-shadow: 0px 0px 14px 4px #61C725;
+box-shadow: 0px 0px 14px 4px #61C725;
 }
 dl{
-  margin: 10px 0 10px 0;
+margin: 10px 0 10px 0;
 }
 dt {
-  font-size: 18px;
-  color: #B6E529;
+font-size: 18px;
+color: #B6E529;
 }
 dd {
-  margin-bottom: 1rem;
-  margin-left: 0;
-  font-size: 25px;
+margin-bottom: 1rem;
+margin-left: 0;
+font-size: 25px;
 }
 .info{
-  padding: 3px;
-  text-decoration: none;
-  border-radius: 10px;
-  color: #2A1486;
-  background: #52E529;
-  margin: 8px 0 8px;
-  width: 70%;
-  border: 2px solid #15994A;
-  font-family: 'Jolly Lodger', cursive;
-  font-size: 20px;
+padding: 3px;
+text-decoration: none;
+border-radius: 10px;
+color: #2A1486;
+background: #52E529;
+margin: 8px 0 8px;
+width: 70%;
+border: 2px solid #15994A;
+font-family: 'Jolly Lodger', cursive;
+font-size: 20px;
 }
- /* @media query para modo responsivo */
+
+/* @media query para modo responsivo */
 @media (max-width: 768px) {
-  .container{
-    width: auto;
-  }
-  select[name="type"]{
-    width: 80%;
-    height: 50px;
+.container{
+  width: auto;
+}
+select[name="type"]{
+  width: 80%;
+  height: 50px;
 }
 button[data-testid="button-clear"]{
-  width: 80%;
+width: 80%;
 }
-  .card{
-      width: 70%;
+.card{
+    width: 70%;
+}
+ul{
+    padding: 0;
+}
+.filtro{
+    width: 95%;
+    padding: 10px;
+}
+h2 {
+    color: white;
+    font-size: 30px;
+    margin-top: -27px;
   }
-  ul{
-      padding: 0;
-  }
-  .filtro{
-      width: 95%;
-      padding: 10px;
-  }
-  h2 {
-      color: white;
-      font-size: 30px;
-      margin-top: -27px;
-    }
-  .logo{
-      width: 60%;
-  }
-  section{
-    padding-top: 33em;
-  }
-  header{
-    width: auto;
-    position: absolute;
-    z-index: 1;
-    background: #2A1486;
-  }
-  h1{
-    margin-top: 0px;
-  }
-  /* Estilos para pantallas con un ancho mínimo de 768px */
+.logo{
+    width: 60%;
+}
+section{
+  padding-top: 33em;
+}
+header{
+  width: auto;
+  position: absolute;
+  z-index: 1;
+  background: #2A1486;
+}
+h1{
+  margin-top: 0px;
+}
+/* Estilos para pantallas con un ancho mínimo de 768px */
 }
 @media (min-width: 768px) and (max-width: 915px) {
   .container{
@@ -212,34 +225,30 @@ button[data-testid="button-clear"]{
   h1{
     margin-top: 0px;
   }
-  /* Estilos para pantallas con un ancho entre 768px y 1024px */
 }
-@media (min-width: 915px) {
+
+/* Estilos para pantallas con un ancho entre 915px y 1024px */
+
+@media (min-width: 915px) and (max-width: 1025px) {
+  .card{
+      width: 25%;
+  }
+
   .container{
     width: 95%;
   }
   ul{
     padding: 0;
   }
+
   select[name="type"]{
       width: 70%;
   }
   button[data-testid="button-clear"]{
-  
-    width: 180%;
-    height: 50%;
-    font-size: 1.5em;
+    width: 55%;
+    height: 60px;
+  }
+  section{
+    padding-top: 17em;
+  }
 }
-section{
-  padding-top: 15em;
-}
-.filtro{
-padding-left: 15px;
-}
-.card {
-line-height: 0%;
-}
-}
-
-
-
