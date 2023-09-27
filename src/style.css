@@ -65,17 +65,7 @@ font-size: 25px;
 .inFilter{
   width: 46%;
 }
-/*select{
-color: #fff;
-background: #00000045;
-width: 80%;
-height: 40px;
-border-radius: 10px;
-padding: 8px;
-font-size:17px;
-box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
-border: 2px solid #B6E529;
-}*/
+
 
 .infoFilter{
 display: block;
@@ -100,6 +90,7 @@ border-radius: 10px;
 footer {
 text-align: center;
 color: #fff;
+padding: 10px;
 }
 .developers{
 width: 50%;
@@ -113,6 +104,7 @@ display: flex;
 flex-wrap: wrap;
 list-style: none;
 justify-content: center;
+padding:0;
 }
 .card{
 width: 18%;
@@ -161,6 +153,7 @@ border: 2px solid #15994A;
 font-family: 'Jolly Lodger', cursive;
 font-size: 20px;
 }
+
 /* @media query para modo responsivo */
 @media (max-width: 768px) {
 .container{
@@ -206,36 +199,37 @@ h1{
 /* Estilos para pantallas con un ancho mínimo de 768px */
 }
 @media (min-width: 768px) and (max-width: 915px) {
-.container{
-  width: auto;
-}
-.card{
-    width: 35%;
-}
-.filtro{
-    width: 45%;
-    padding: 10px;
-}
-select[name="type"]{
-    width: 80%;
-}
-button[data-testid="button-clear"]{
-    width: 60%;
-    height: 60px;
-}
-.logo{
-    width: 40%;
-}
-section{
-  padding-top: 25em;
-}
-h1{
-  margin-top: 0px;
+  .container{
+    width: auto;
+  }
+  .card{
+      width: 35%;
+  }
+  .filtro{
+      width: 45%;
+      padding: 10px;
+  }
+  select[name="type"]{
+      width: 80%;
+  }
+  button[data-testid="button-clear"]{
+      width: 60%;
+      height: 60px;
+  }
+  .logo{
+      width: 40%;
+  }
+  section{
+    padding-top: 25em;
+  }
+  h1{
+    margin-top: 0px;
+  }
 }
 
 /* Estilos para pantallas con un ancho entre 915px y 1024px */
 
-@media (min-width: 915px) and (max-width: 1024px) {
+@media (min-width: 915px) and (max-width: 1025px) {
   .card{
       width: 25%;
   }
@@ -253,93 +247,8 @@ h1{
   button[data-testid="button-clear"]{
     width: 55%;
     height: 60px;
-}
-section{
-  padding-top: 17em;
-}
-}
-/*@media (min-width: 915px)  {
-  .card{
-    width: 20%;
-  }
-  .container{
-    width: 100%;
-  }
-  ul{
-    padding: 0;
-  }
-  select{
-    width: 20%;
-    }
-  select[name="type"]{
-      width: 70%;
-  }
-  select[name="By"]{
-      width: 30%;
-  }
-  select[name="order"]{
-    width: 30%;
-  }
-  button[data-testid="button-clear"]{
-    width: 20%;
-    height: 40px;
   }
   section{
-  padding-top: 17em;
+    padding-top: 17em;
   }
-  .filtro {
-  width: 20%;
-  }
-  .menu {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 0%;
-  padding-bottom: 0px;
-  }
-  
 }
-*
-@media only screen and (min-width: 1024px) {
-.card{
-  width: 20%;
-}
-.container{
-  width: 100%;
-}
-ul{
-  padding: 0;
-}
-select{
-  width: 20%;
-  }
-select[name="type"]{
-    width: 70%;
-}
-select[name="By"]{
-    width: 30%;
-}
-select[name="order"]{
-  width: 30%;
-}
-button[data-testid="button-clear"]{
-  width: 20%;
-  height: 40px;
-}
-section{
-padding-top: 17em;
-}
-.filtro {
-width: 20%;
-}
-.menu {
-display: flex;
-flex-direction: column;
-width: 100%;
-padding-top: 0%;
-padding-bottom: 0px;
-}
-
-
-}
-*/

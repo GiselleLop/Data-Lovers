@@ -17,24 +17,28 @@
       </h1>
      <div class="menu">
         <div class = "container">
-          <h1 class="nameCharacter"> Rick Sanchez </h1>
+          <h1 class="nameCharacter" itemprop="name"> </h1>
         </div>
       </div>
     </header>
 
   <div class="bodyDetail">
-    <div class="detail">
-      <ul id = "ulDetail" class="ulDetail" style="list-style: none;">
-       <li>Lugar de origen:</li>
-       <li>Lugar en donde vive:</li>
+    <div class="detail" itemscope itemtype="character">
+      <img class="imagen1" itemprop="image" width="100%">
+      <ul class="ulDetail" style="list-style: none;">
+       <li>Id:<span itemprop="id"></span></li>
+       <li>Episodios: <span itemprop="episode"></span></li>
+       <li>Estado de vida:<span itemprop="status"></span></li>
+       <li>Especie:<span itemprop="species"></span></li>
+       <li>Genero:<span itemprop="gender"></span></li>
+       <li>Lugar de origen:<span itemprop="origin"></span></li>
+       <li>Lugar en donde vive:<span itemprop="location"></span></li>
       </ul>
-  
     </div> 
     <div class="episodio">
       Episodios en los que aparece
-      <ul id = "ListEpisode"  class = "ListEpisode">
-      
-      </ul>
+      <ol id = "ListEpisode"  class = "ListEpisode">
+      </ol>
     </div>
 
    
@@ -42,7 +46,7 @@
 <button onclick="window.location.href='index.html'"> Volver a la página principal
    </button>
 
-<footer class="menu">
+<footer >
   <label>Creado por:</label>
   <b class="developers">Leslie Pacheco y Giselle Lopez </b>
 </footer>
