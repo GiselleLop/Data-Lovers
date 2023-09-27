@@ -1,8 +1,12 @@
+
+
 const dataDetalle = JSON.parse(localStorage.getItem("item"))
 //console.log(dataDetalle)
 
+
 window.onload = ()=> {
     detailItem(dataDetalle)
+  
   };
 //creacion del detalle
 function detailItem (item) {
@@ -15,7 +19,10 @@ function detailItem (item) {
     const genderList = document.querySelector('span[itemprop="gender"]');
     const originList = document.querySelector('span[itemprop="origin"]');
     const locationList = document.querySelector('span[itemprop="location"]');
+   
     
+
+
     nameList.textContent = item.name
     imageList.src = item.image
     idList.textContent = " " + item.id;
@@ -25,6 +32,7 @@ function detailItem (item) {
     genderList.textContent = " " + item.gender;
     originList.textContent = " " + item.origin.name;
     locationList.textContent = " " + item.location.name;
+   
     }
     
 
