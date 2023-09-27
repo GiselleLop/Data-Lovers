@@ -130,7 +130,7 @@ span{
   text-shadow: 1px 1px 8px white;
   }
 
-.episodio {
+.episode {
   box-shadow: 0px 0px 14px 4px #61C725;
   font-family: rickymorty;
   line-height:40px;
@@ -179,7 +179,7 @@ span{
   }
  
   
-  .episodio {
+  .episode {
      
       text-align: center;
       display:grid;
@@ -223,7 +223,7 @@ span{
       width: 50%;
       place-items: center;  
   }
-  .episodio {
+  .episode {
      
       text-align: center;
       display:grid;
@@ -290,7 +290,7 @@ span{
     border-radius: 8%;
   }
   
-  .episodio {
+  .episode {
     line-height:120%;
     font-size: 20px;
     text-align: center;
