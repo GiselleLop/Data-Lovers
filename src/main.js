@@ -36,10 +36,9 @@ filterstatus.addEventListener("change", ()=> {
 });
 
 filterspecies.addEventListener("change", ()=> {  
+  
   filterData(arrayData, filterspecies.id, filterspecies.value)
-  if (filterspecies.selected = true){
-    filterstatus.value === "All"
-  }
+ 
 })
 
 filtergender.addEventListener("change" , ()=> {

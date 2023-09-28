@@ -21,6 +21,7 @@ export const sortData = (data, ordenbyValue ,orderTypeValue) => {
   }
   renderItems(data)
 }
+/*
 function filterAll(arr, status, species, gender) {
     
 
@@ -39,7 +40,7 @@ function filterAll(arr, status, species, gender) {
     crearCards(arrFiltered)
   }
   
-  
+  */
  
 const tarjetasContainer = document.getElementById("root");
 import { renderItems } from './view.js';

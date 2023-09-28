@@ -25,7 +25,7 @@ export const renderItems = (ArrayData) => {
   
     //leyenda nombre
     const nameItem = document.createElement('dt');
-    nameItem.textContent = "Nombre";
+    nameItem.textContent = "Name";
   
     //contenedor del nombre
     const itemName = document.createElement('dd');
