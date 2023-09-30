@@ -7,7 +7,7 @@
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
-    "test": "jest --verbose --coverage test/",
+    "test": "jest --verbose --coverage test/*.spec.js",
     "test:e2e": "playwright test",
     "test:oas": "jest --verbose tests-read-only/oa/",
     "pretest:oas-html": "npm run pretest",
@@ -31,7 +31,7 @@
     "eslint": "^8.3.0",
     "gh-pages": "^3.1.0",
     "htmlhint": "^1.0.0",
-    "jest": "^27.0.1",
+    "jest": "^27.5.1",
     "jsdom": "^22.1.0",
     "opener": "^1.5.1",
     "serve": "^14.2.1"
@@ -46,5 +46,8 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0"
   }
 }

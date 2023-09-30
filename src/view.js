@@ -1,7 +1,7 @@
 
 export const renderItems = (ArrayData) => {
   
-  const Datalist = document.getElementById('root');
+  let listItems ;
   ArrayData.forEach((item) => {
 
     //li de la carta
@@ -47,19 +47,24 @@ export const renderItems = (ArrayData) => {
     li.appendChild(contendItemImg);
     li.appendChild(infoItem);
     li.appendChild(buttonInfo);
-    Datalist.appendChild(li);
+    // Datalist.appendChild(li);
+    listItems.innerHTML += li
   });
+  return listItems;
 };
 
 
-// Agrega las opciones de los filtros de genero, status, species
 const filterInfo = (ArrayData) => {
  
   function listDataFilter (arraydt){
     
+    // eslint-disable-next-line no-undef
     const nombresUnicos = new Set();
+    // eslint-disable-next-line no-undef, no-unused-vars
     const uniqueSpecies = new Set();
+    // eslint-disable-next-line no-undef, no-unused-vars
     const uniqueGender = new Set();
+
     for (const item of arraydt) {
       nombresUnicos.add(item.status);
       uniqueSpecies.add(item.species);
@@ -83,6 +88,8 @@ const filterInfo = (ArrayData) => {
     select.appendChild(newOpcion);
     
   });
+
+  
   const selectSpecies = document.getElementById("species");
   filtesList[1].forEach(element => {
     const newOpcion = document.createElement("option");
@@ -99,8 +106,10 @@ const filterInfo = (ArrayData) => {
 
     selectGender.appendChild(newOpcion);
   });
+  
 
 };
+
 
 export const filter = {filterInfo};
 
@@ -116,5 +125,7 @@ export  const renderEpisode = (data)=>{
     listEpisode.appendChild(li);
   });
 }
+
+
 
 
