@@ -1,4 +1,3 @@
-
 export const renderItems = (ArrayData) => {
   
   const Datalist = document.getElementById('root');
@@ -7,7 +6,6 @@ export const renderItems = (ArrayData) => {
     //li de la carta
     const li = document.createElement('li');
     li.classList.add('card');
-    li.setAttribute("item", "helloButton");
   
     //div de la imagen
     const contendItemImg = document.createElement('div');
@@ -26,7 +24,7 @@ export const renderItems = (ArrayData) => {
   
     //leyenda nombre
     const nameItem = document.createElement('dt');
-    nameItem.textContent = "Name";
+    nameItem.textContent = "Nombre";
   
     //contenedor del nombre
     const itemName = document.createElement('dd');
@@ -37,9 +35,9 @@ export const renderItems = (ArrayData) => {
     buttonInfo.textContent = "More info";
     buttonInfo.addEventListener("click", function() {
       //  console.log(item.id)
-      localStorage.setItem("item", JSON.stringify(item))
-      //JSON.parse
-      window.location.href= "detalle.html"})
+        localStorage.setItem("item", JSON.stringify(item))
+        //JSON.parse
+        window.location.href= "detalle.html"})
 
     infoItem.appendChild(nameItem);
     infoItem.appendChild(itemName);
@@ -51,7 +49,6 @@ export const renderItems = (ArrayData) => {
     Datalist.appendChild(li);
   });
 };
-
 
 // Agrega las opciones de los filtros de genero, status, species
 const filterInfo = (ArrayData) => {

@@ -1,6 +1,7 @@
 
 import {sortData, filterAll} from './dataFunctions.js';
-import { renderItems,filter } from './view.js';
+import { filter } from './view.js';
+import { renderItems } from "../test/dataFunctions.spec.js";
 import data from './data/rickandmorty/rickandmorty.js';
 
 const arrayData = data.results;
