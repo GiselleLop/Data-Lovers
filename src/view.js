@@ -7,6 +7,7 @@ export const renderItems = (ArrayData) => {
     //li de la carta
     const li = document.createElement('li');
     li.classList.add('card');
+    li.setAttribute("item", "helloButton");
   
     //div de la imagen
     const contendItemImg = document.createElement('div');
@@ -57,9 +58,13 @@ const filterInfo = (ArrayData) => {
  
   function listDataFilter (arraydt){
     
+    // eslint-disable-next-line no-undef
     const nombresUnicos = new Set();
+    // eslint-disable-next-line no-undef, no-unused-vars
     const uniqueSpecies = new Set();
+    // eslint-disable-next-line no-undef, no-unused-vars
     const uniqueGender = new Set();
+
     for (const item of arraydt) {
       nombresUnicos.add(item.status);
       uniqueSpecies.add(item.species);

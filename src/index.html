@@ -17,35 +17,35 @@
      <div class="menu">
         <div class = "container">
           <div class = "filtro">
-            <label for = "select-filter">Filter by status:</label>
+            <label for = "status">Filter by status:</label>
             <select  class = "filterBy" name = "type" data-testid="select-filter" id="status">
               <option value = "All" id="all">All</option>
             </select>
           </div>
 
           <div class="filtro">
-            <label for = "select-filter">Filter by species:</label>
+            <label for = "species">Filter by species:</label>
             <select  class = "filterBy" name = "type" data-testid="select-filter" id="species">
-              <option value = "All" id="all" selected>All</option>
+              <option value = "All"  selected>All</option>
             </select>
           </div>
           <div class="filtro">
-            <label for = "select-filter">Filter by gender:</label>
+            <label for = "gender">Filter by gender:</label>
             <select  class = "filterBy" name = "type" data-testid="select-filter" id="gender">
-              <option value = "All" id="all" selected>All</option>
+              <option value = "All"  selected>All</option>
             </select>
           </div>
 
           <div class="filtro">
-            <label class = "infoFilter" for = "select-sort">Sort by</label>
-
-            <select class = "inFilter" name = "By" data-testid="select-sort">
+            <label class = "infoFilter" for = "nameId">Sort by</label>
+            <select class = "inFilter" name = "By" data-testid="select-sort" id="nameId">
               <option selected>Select</option>
               <option value = "name">Name</option>
               <option value = "id">Id</option>
             </select>
 
-            <select class = "inFilter" name = "order" data-testid="select-sort">
+            <label style = "padding:0;" for="order"> </label>
+            <select class = "inFilter" name = "order" data-testid="select-sort" id="order">
               <option selected>Select</option>
               <option value = "ASC">ASC</option>
               <option value = "DESC">DESC</option>
@@ -57,13 +57,22 @@
         </div>
       </div>
     </header>
+
+
+
     <section class="container">
       <ul id = "root"></ul>
-    </section>
+    </section>    
+    
+    <div style="width: 800px;"> <canvas id="acquisitions"></canvas></div>
+
     <footer class="menu">
       <label>Created by:</label>
       <b class="developers">Leslie Pacheco and Giselle Lopez </b>
     </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js" type="module"></script>
   </body>
   </html>
