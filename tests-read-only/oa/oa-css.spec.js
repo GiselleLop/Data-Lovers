@@ -4,7 +4,7 @@
 */
 import fs from 'fs';
 import css from 'css';
-//import { renderItems } from '../../src/view.js';
+import { renderItems } from '../../src/view.js';
 //import data from './data/rickandmorty/rickandmorty.js';
 import { data as fakeData } from '../../test/data.js';
 

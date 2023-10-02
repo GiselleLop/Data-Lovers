@@ -1,3 +1,5 @@
+import { renderItems } from "./view.js";
+
 export const sortData = (data, ordenbyValue ,orderTypeValue) => {
   tarjetasContainer.innerHTML = '';
 
@@ -38,7 +40,6 @@ function filterAll(arr, status, species, gender) {
   }  */
  
 const tarjetasContainer = document.getElementById("root");
-import { renderItems } from "../test/dataFunctions.spec.js";
 
 export const filterData = (data, filterBy, value) => {
   if (value === "All"){
@@ -67,4 +68,3 @@ export function filterAll(data, statusValue, speciesValue, genderValue) {
     }*/
   renderItems(arrFiltered)
 }
-

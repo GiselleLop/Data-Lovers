@@ -1,3 +1,4 @@
+
 export const renderItems = (ArrayData) => {
   
   const Datalist = document.getElementById('root');
@@ -35,9 +36,9 @@ export const renderItems = (ArrayData) => {
     buttonInfo.textContent = "More info";
     buttonInfo.addEventListener("click", function() {
       //  console.log(item.id)
-        localStorage.setItem("item", JSON.stringify(item))
-        //JSON.parse
-        window.location.href= "detalle.html"})
+      localStorage.setItem("item", JSON.stringify(item))
+      //JSON.parse
+      window.location.href= "detalle.html"})
 
     infoItem.appendChild(nameItem);
     infoItem.appendChild(itemName);
