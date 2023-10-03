@@ -55,7 +55,11 @@ export const renderItems = (ArrayData) => {
 const filterInfo = (ArrayData) => {
  
   function listDataFilter (arraydt){
-    
+    function reduce(filtro, valor) {
+      obj[item.sku] = obj[item.sku] || 0;
+      obj[item.sku] += 1;
+      return obj;
+    }
     // eslint-disable-next-line no-undef
     const nombresUnicos = new Set();
     // eslint-disable-next-line no-undef, no-unused-vars
@@ -106,6 +110,7 @@ const filterInfo = (ArrayData) => {
 };
 
 export const filter = {filterInfo};
+
 
 
 // muestra el detalle de los episodios en el detalle

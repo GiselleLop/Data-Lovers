@@ -21,7 +21,7 @@ export const sortData = (data, ordenbyValue ,orderTypeValue) => {
       return orderTypeValue === "ASC" ? compare : -compare;
     });
   }
-  renderItems(data)
+ // renderItems(data)
 }
 /*
 function filterAll(arr, status, species, gender) {
@@ -49,19 +49,23 @@ export const filterData = (data, filterBy, value) => {
   return arrFiltered
 }
 
-export function filterAll(data, statusValue, speciesValue, genderValue) {
+export function filterAll(data, statusValue, speciesValue, genderValue, ordenbyValue ,orderTypeValue) {
   tarjetasContainer.innerHTML=""
+  
   let arrFiltered = data
+  sortData(arrFiltered, ordenbyValue ,orderTypeValue)
   if (speciesValue !== "All") {
     arrFiltered = filterData(arrFiltered,"species",speciesValue)
+  
   }
   if (statusValue !== "All") {
     arrFiltered = filterData(arrFiltered,"status",statusValue)
+
   }
   if (genderValue !== "All") {
     arrFiltered = filterData(arrFiltered,"gender",genderValue)
   }
- 
+   
   /*if (tarjetasContainer.innerHTML="") {
     tarjetasContainer.innerHTML="No se encontro este personaje"
     }
