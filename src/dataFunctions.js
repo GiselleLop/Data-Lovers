@@ -21,7 +21,7 @@ export const sortData = (data, ordenbyValue ,orderTypeValue) => {
       return orderTypeValue === "ASC" ? compare : -compare;
     });
   }
- // renderItems(data)
+  // renderItems(data)
 }
 /*
 function filterAll(arr, status, species, gender) {
