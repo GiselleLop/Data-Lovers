@@ -1,5 +1,5 @@
-
 export const renderItems = (ArrayData) => {
+
 
   const ul = document.querySelector('#list_card');
 
@@ -22,12 +22,14 @@ export const renderItems = (ArrayData) => {
     li.setAttribute("itemtype", "rick And Morty");
     
   
+
     //div de la imagen
-    const contendItemImg = document.createElement('div');
-    contendItemImg.classList.add('data-card'); 
-  
-    const data_img = document.createElement('img');
+    const contendItemImg = document.createElement("div");
+    contendItemImg.classList.add("data-card");
+
+    const data_img = document.createElement("img");
     data_img.src = item.image;
+
   
     //dl contenedor del la info
     const infoItem = document.createElement('dl');
@@ -53,15 +55,15 @@ export const renderItems = (ArrayData) => {
     
     const buttonInfo = document.createElement('button');
     buttonInfo.classList.add('info');
+
     buttonInfo.textContent = "More info";
-    buttonInfo.addEventListener("click", function() {
+    buttonInfo.addEventListener("click", function () {
       //  console.log(item.id)
-
-
       localStorage.setItem("item", JSON.stringify(item))
       //JSON.parse
       window.location.href= "detalle.html"
     })
+
 
     infoItem.appendChild(data_id);
     infoItem.appendChild(nameItem);
@@ -74,6 +76,7 @@ export const renderItems = (ArrayData) => {
     li.appendChild(contendItemImg);
     li.appendChild(infoItem);
     li.appendChild(buttonInfo);
+
 
     ul.appendChild(li);
   });
@@ -88,10 +91,9 @@ export  const renderEpisode = (data)=>{
   data.episode.forEach(epi => {  
     const li = document.createElement('li');
     li.classList.add('infoEpisode');
+
     li.textContent = epi;
     listEpisode.appendChild(li);
   });
 };
-
-
 

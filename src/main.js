@@ -1,12 +1,16 @@
 
+
 import {sortData, filterData, filter} from './dataFunctions.js';
 import { renderItems } from './view.js';
+
 
 import data from './data/rickandmorty/rickandmorty.js';
 
 const arrayData = data.results;
+
 filter(arrayData);
 renderItems(arrayData);
+
 
 
 const orderType = document.querySelector("select[name='sort-order']"); //tipo - asc o desc
@@ -16,11 +20,21 @@ const resetButton = document.querySelector("button[data-testid='button-clear']")
 
 /*
 orderType.addEventListener("change",  () => {
+
   sortData(arrayData,orderType.value);
 });*/
 
 ordenBy.addEventListener("change",  () => {
-  sortData(arrayData,ordenBy.value ,orderType.value); 
+  if(filterstatus.options.item(0).selected && filterspecies.options.item(0).selected  & filtergender.options.item(0).selected){
+    sortData(arrayData,ordenBy.value ,orderType.value); 
+    renderItems(arrayData)
+  }
+  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, ordenBy.value ,orderType.value)
+});
+
+resetButton.addEventListener('click',() =>{
+  window.location.reload()
+  
 });
 
 resetButton.addEventListener('click',() =>{
@@ -43,21 +57,21 @@ resetButton.addEventListener('click',() =>{
 });
 
 
+
 //filtro
 const filterstatus = document.querySelector('#status');
 const filterspecies = document.querySelector('#species');
 const filtergender = document.querySelector('#gender');
 
-
 // Agregar un evento de cambio a todos los filtros que llame a applyFilters
 filterstatus.addEventListener("change", () => {
-  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value)
+  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, ordenBy.value ,orderType.value)
 });
 filterspecies.addEventListener("change", ()=> {
-  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value)
+  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, ordenBy.value ,orderType.value)
 });
 filtergender.addEventListener("change", () => {
-  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value)
+  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, ordenBy.value ,orderType.value)
 });
 
 

@@ -11,6 +11,7 @@ export const sortData = (data, ordenbyValue ,orderTypeValue) => {
 
     if (ordenbyValue === 'asc'){
       const compare = valorA.localeCompare(valorB); 
+
       return ordenbyValue === "asc" ? compare : -compare;
     }else if(ordenbyValue === 'desc'){
 
@@ -26,8 +27,9 @@ export const sortData = (data, ordenbyValue ,orderTypeValue) => {
       return a.id - b.id; 
     }
   });
-
+//
   renderItems(data);
+
 }
 /*
 function filterAll(arr, status, species, gender) {
@@ -56,12 +58,29 @@ export const filterData = (data, filterBy, value) => {
 }
 
 
-export function filterAll(data, statusValue, speciesValue, genderValue) {
-  tarjetasContainer.innerHTML=""
-  let arrFiltered = data
 
-  arrFiltered = arrFiltered.filter((persona) => persona[filterBy] === value); 
-  renderItems(arrFiltered);
+export function filterAll(data, statusValue, speciesValue, genderValue, ordenbyValue ,orderTypeValue) {
+  tarjetasContainer.innerHTML=""
+  
+  let arrFiltered = data
+  sortData(arrFiltered, ordenbyValue ,orderTypeValue)
+  if (speciesValue !== "All") {
+    arrFiltered = filterData(arrFiltered,"species",speciesValue)
+  
+  }
+  if (statusValue !== "All") {
+    arrFiltered = filterData(arrFiltered,"status",statusValue)
+
+  }
+  if (genderValue !== "All") {
+    arrFiltered = filterData(arrFiltered,"gender",genderValue)
+  }
+   
+  /*if (tarjetasContainer.innerHTML="") {
+    tarjetasContainer.innerHTML="No se encontro este personaje"
+    }
+    }*/
+  renderItems(arrFiltered)
 }
 
 
@@ -139,16 +158,19 @@ export const filter = (ArrayData) => {
   selectOrderBy.appendChild(data2);
 };
 
+
   if (speciesValue !== "All") {
     arrFiltered = filterData(arrFiltered,"species",speciesValue)
+  
   }
   if (statusValue !== "All") {
     arrFiltered = filterData(arrFiltered,"status",statusValue)
+
   }
   if (genderValue !== "All") {
     arrFiltered = filterData(arrFiltered,"gender",genderValue)
   }
- 
+   
   /*if (tarjetasContainer.innerHTML="") {
     tarjetasContainer.innerHTML="No se encontro este personaje"
     }
