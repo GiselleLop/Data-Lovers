@@ -8,6 +8,7 @@
     "eslint": "eslint --ext .js src/ test/",
     "pretest": "npm run eslint && npm run htmlhint",
     "test": "jest",
+
     "test:e2e": "playwright test",
     "test:oas": "jest --verbose tests-read-only/oa/",
     "pretest:oas-html": "npm run pretest",
@@ -48,7 +49,8 @@
     "testEnvironment": "jsdom"
   },
   "dependencies": {
-    "chart.js": "^4.4.0",
-    "ts-node": "^10.9.1"
+
+    "chart.js": "^4.4.0"
+
   }
 }

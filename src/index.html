@@ -12,31 +12,41 @@
     <header>
       <h1>
         <img class = "logo" src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="100%">
-          <h2 id="subtitulo">Data Lovers</h2>
       </h1>
+      <main><h2 id="subtitulo">Data Lovers</h2></main>
      <div class="menu">
+     <!-- <input type="checkbox"name=""id="navcheckbox"class="navcheckbox" />-->
+      <img id = "menuResponsive" src="menu.png" alt="menu" width="15%"/>
         <div class = "container">
           <div class = "filtro">
             <label for = "status">Filter by status:</label>
-            <select  class = "filterBy" name = "type" data-testid="select-filter" id="status">
-              <option value = "All" id="all">All</option>
+
+            <select  name = "type" data-testid="select-filter" id="status">
+
             </select>
           </div>
 
           <div class="filtro">
             <label for = "species">Filter by species:</label>
-            <select  class = "filterBy" name = "type" data-testid="select-filter" id="species">
-              <option value = "All"  selected>All</option>
+
+            <select  name = "type" data-testid="select-filter" id="species">
+
             </select>
           </div>
           <div class="filtro">
             <label for = "gender">Filter by gender:</label>
-            <select  class = "filterBy" name = "type" data-testid="select-filter" id="gender">
-              <option value = "All"  selected>All</option>
+
+            <select  name = "type" data-testid="select-filter" id="gender">
+
             </select>
           </div>
 
           <div class="filtro">
+
+            <label style = "padding:0;" for = "inFilterByOrder">Order By Name</label>
+            <select id = "inFilterByOrder" name = "sort-order" data-testid="select-sort">
+            </select>
+
             <label class = "infoFilter" for = "nameId">Sort by</label>
             <select class = "inFilter" name = "By" data-testid="select-sort" id="nameId">
               <option selected>Select</option>
@@ -44,26 +54,49 @@
               <option value = "id">Id</option>
             </select>
 
-            <label style = "padding:0;" for="order"> </label>
-            <select class = "inFilter" name = "order" data-testid="select-sort" id="order">
-              <option selected>Select</option>
-              <option value = "ASC">ASC</option>
-              <option value = "DESC">DESC</option>
-            </select>
+
+           
           </div>
           <div class="filtro">
             <button data-testid="button-clear">Clear</button>
           </div>
+          <div class="menuModl">
+              <a href="#" class="openModl">
+                <img src="analitica.png" alt="menu" width="100%"/>
+              </a>
+          </div>
         </div>
       </div>
     </header>
-
-    <section class="container">
-      <ul id = "root"></ul>
-    </section>    
     
-    <div style="width: 800px;"> <canvas id="acquisitions"></canvas></div>
 
+
+    <div class ="return">
+      <img src = "cheuron.png" alt="Cheuron" width="10%"/>
+    </div>
+    <section class="modal">
+      <div class="header_modal">
+        <h2>¡Bienvenido al sitio!</h2>
+      </div>
+      <div class="modal_container">
+        <div class="charts">
+          
+          <canvas id="myChart" width="200" height="200"></canvas>
+        </div>
+        
+      </div>
+      <div class="modal_footer">
+        <button class="modal_close">Cerrar Modal</button>
+
+      </div>
+    </section>
+
+    
+    <section class="container" id ="root" >
+      <ul id = "list_card"></ul>
+    </section>
+    
+  
     <footer class="menu">
       <label>Created by:</label>
       <b class="developers">Leslie Pacheco and Giselle Lopez </b>
@@ -74,3 +107,5 @@
     <script src="main.js" type="module"></script>
   </body>
   </html>
+  
+

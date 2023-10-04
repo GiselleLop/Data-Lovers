@@ -106,6 +106,7 @@ export const data = [
       "https://rickandmortyapi.com/api/episode/30",
       "https://rickandmortyapi.com/api/episode/31",
     ],
+    
     url: "https://rickandmortyapi.com/api/character/2",
     created: "2017-11-04T18:50:21.651Z",
   },
@@ -244,4 +245,5 @@ export const data = [
     url: "https://rickandmortyapi.com/api/character/5",
     created: "2017-11-04T19:26:56.301Z",
   },
+
 ];
