@@ -20,25 +20,42 @@
         <div class = "container">
           <div class = "filtro">
             <label for = "status">Filter by status:</label>
+
             <select  name = "type" data-testid="select-filter" id="status">
+
             </select>
           </div>
 
           <div class="filtro">
             <label for = "species">Filter by species:</label>
+
             <select  name = "type" data-testid="select-filter" id="species">
+
             </select>
           </div>
           <div class="filtro">
             <label for = "gender">Filter by gender:</label>
+
             <select  name = "type" data-testid="select-filter" id="gender">
+
             </select>
           </div>
 
           <div class="filtro">
+
             <label style = "padding:0;" for = "inFilterByOrder">Order By Name</label>
             <select id = "inFilterByOrder" name = "sort-order" data-testid="select-sort">
             </select>
+
+            <label class = "infoFilter" for = "nameId">Sort by</label>
+            <select class = "inFilter" name = "By" data-testid="select-sort" id="nameId">
+              <option selected>Select</option>
+              <option value = "name">Name</option>
+              <option value = "id">Id</option>
+            </select>
+
+
+           
           </div>
           <div class="filtro">
             <button data-testid="button-clear">Clear</button>
@@ -51,6 +68,8 @@
         </div>
       </div>
     </header>
+    
+
     <div class ="return">
       <img src = "cheuron.png" alt="Cheuron" width="10%"/>
     </div>
@@ -60,6 +79,7 @@
       </div>
       <div class="modal_container">
         <div class="charts">
+          
           <canvas id="myChart" width="200" height="200"></canvas>
         </div>
         
@@ -69,13 +89,19 @@
 
       </div>
     </section>
+    
     <section class="container" id ="root" >
       <ul id = "list_card"></ul>
     </section>
+    
+  
     <footer class="menu">
-      <label>Creado por:</label>
-      <b class="developers">Leslie Pacheco y Giselle Lopez </b>
+      <label>Created by:</label>
+      <b class="developers">Leslie Pacheco and Giselle Lopez </b>
     </footer>
+
+    
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->  
     <script src="main.js" type="module"></script>
   </body>
   </html>

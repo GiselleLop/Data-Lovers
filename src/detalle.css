@@ -42,6 +42,7 @@ label{
 
 }
 footer {
+letter-spacing: 3px;
 text-align: center;
 color: #fff;
 width: 100%;
@@ -127,7 +128,7 @@ span,.infoEpisode{
   text-shadow: 1px 1px 8px white;
   }
 
-.episodio {
+.episode {
   font-family: 'Jolly Lodger', cursive;
   box-shadow: 0px 0px 14px 4px #61C725;
   line-height:40px;
@@ -167,7 +168,8 @@ span,.infoEpisode{
     margin-bottom:1.5em;
   }
 
-  .episodio{
+  .episode{
+  
     width: 70%;
     overflow-x: scroll;
     overflow-y: scroll;
@@ -175,8 +177,10 @@ span,.infoEpisode{
     margin-bottom: 1.5em;
 
   }
-  ul{
-    padding: 0;
+  ol{
+ 
+    padding: 0px;
+    margin: 0px;
   }
 
   button{
@@ -217,7 +221,11 @@ span,.infoEpisode{
       width: 40%;
   }
 
-  .episodio {
+  .episode {
+    text-align: center;
+      display:grid;
+      width: 60%;
+  
     line-height:120%;
     font-size: 20px;
     text-align: center;
@@ -240,14 +248,7 @@ span,.infoEpisode{
     margin-bottom: 0px;*/ 
   }
  
-  
-  .episodio {
-     
-      text-align: center;
-      display:grid;
-      width: 60%;
-  
-  }
+
   .imagen1{
       width:350px;
       height:350px;
@@ -284,7 +285,7 @@ span,.infoEpisode{
       place-items: center;  
 
   }
-  .episodio {
+  .episode{
      
       text-align: center;
       display:grid;
@@ -352,7 +353,8 @@ ul{
       
   }
 
-  .episodio {
+  .episode {
+   
     line-height:120%;
     font-size: 20px;
     text-align: center;
@@ -373,12 +375,7 @@ ul{
   }
   
   
-  .infoEpisode {
-    margin: 8px;
-    list-style: none;
-    font-size: 20px;
-  }
-
+  
   .title{
 
     color: #fff;

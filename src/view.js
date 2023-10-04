@@ -74,6 +74,7 @@ export const renderItems = (ArrayData) => {
     li.appendChild(contendItemImg);
     li.appendChild(infoItem);
     li.appendChild(buttonInfo);
+
     ul.appendChild(li);
   });
   return ul;  
@@ -91,5 +92,6 @@ export  const renderEpisode = (data)=>{
     listEpisode.appendChild(li);
   });
 };
+
 
 
