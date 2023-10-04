@@ -19,38 +19,25 @@
       <img id = "menuResponsive" src="menu.png" alt="menu" width="15%"/>
         <div class = "container">
           <div class = "filtro">
-            <label for = "select-filter">Filter by status:</label>
+            <label for = "status">Filter by status:</label>
             <select  name = "type" data-testid="select-filter" id="status">
-              <option label="All"></option>
             </select>
           </div>
 
           <div class="filtro">
-            <label for = "select-filter">Filter by species:</label>
+            <label for = "species">Filter by species:</label>
             <select  name = "type" data-testid="select-filter" id="species">
-              <option label="All"></option>
             </select>
           </div>
           <div class="filtro">
-            <label for = "select-filter">Filter by gender:</label>
+            <label for = "gender">Filter by gender:</label>
             <select  name = "type" data-testid="select-filter" id="gender">
-              <option label="All"></option>
             </select>
           </div>
 
           <div class="filtro">
-            <label class = "infoFilter" for = "select-sort">Filter order by</label>
-
-            <select id = "inFilter" name = "By" data-testid="select-sort">
-              <option label="Select"></option>
-              <option value = "name">Name</option>
-              <option value = "id">Id</option>
-            </select>
-
-            <select  name = "sort-order" data-testid="select-sort">
-              <option label="Select"></option>
-              <option value = "ASC">ASC</option>
-              <option value = "DESC">DESC</option>
+            <label style = "padding:0;" for = "inFilterByOrder">Order By Name</label>
+            <select id = "inFilterByOrder" name = "sort-order" data-testid="select-sort">
             </select>
           </div>
           <div class="filtro">
@@ -82,8 +69,8 @@
 
       </div>
     </section>
-    <section class="container" >
-      <ul id = "root"></ul>
+    <section class="container" id ="root" >
+      <ul id = "list_card"></ul>
     </section>
     <footer class="menu">
       <label>Creado por:</label>
