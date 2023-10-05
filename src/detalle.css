@@ -3,6 +3,7 @@ body {
   background-color: #2A1486;
   margin: 0;
   font-family: 'Jolly Lodger', cursive;
+  
 }
 .logo {
   width: 23%;
@@ -13,7 +14,6 @@ h1{
 }
 h2 {
  font-size: 13px;
- font-family: rickymorty2;
  color: white;
  margin-top: -5%;
  padding: 0%;
@@ -42,21 +42,23 @@ label{
 
 }
 footer {
-font-family: rickymorty2;
+letter-spacing: 3px;
 text-align: center;
+color: #fff;
 width: 100%;
 height: 40px;
 background: #00000075;
+padding: 10px;
 }
 
 button {
-  font-family: rickymorty;
+  font-family: 'Jolly Lodger', cursive;
   margin-bottom: 20px;
   width: auto;
   height: auto;
   border: 2px solid rgb(7, 225, 10);
-  background: #079F0D;
-  color: #9FF494;
+  color: #2A1486;
+  background: #61C725;
   font-size: 20px;
   border-radius: 5px;
   letter-spacing: 2.5px;
@@ -65,18 +67,10 @@ button {
 }
 button:hover {
   box-shadow: 0px 0px 14px 4px #61C725;
-  }
-@font-face {
-  font-family: rickymorty2;
-  src: url(../src/fonts/get_schwifty.ttf);
 }
-@font-face {
-  font-family: rickymorty;
-  src: url(../src/fonts/shlop\ rg.otf);
-}
-
 /*Estilos para detalle.html */ 
 .bodyDetail {
+  font-family: 'Jolly Lodger', cursive;
 padding-top: 9em;
 display: flex;
 flex-direction: column;
@@ -87,26 +81,30 @@ place-items: center ;
 box-shadow: 0px 0px 14px 4px #61C725;
 flex-direction: column;
 place-items: center;
-font-family: rickymorty;
+font-family: 'Jolly Lodger', cursive;
 line-height:35px;
-letter-spacing: 2.5px;
+letter-spacing: 2px;
 color: white;
 text-align: left;
 font-size: 22px;
 display: flex;
 width: 45%;
 border: #B6E529 solid 4px;
-border-radius: 15px;
-margin-top: 1cm;
 background-color: #0A0559;
-padding-top: 20px;
-padding-bottom: 20px;
+border-radius: 15px;
+padding: 20px;
+/*margin-top: 1cm;
+
+/*padding-top: 20px;*
+padding-bottom: 20px;*/
 }
 
 .nameCharacter {
+font-family: 'Jolly Lodger', cursive;
 padding-top: 27px;
-font-family: rickymorty;
-letter-spacing: 5px;
+color: #B6E529;
+font-size: 20px;
+letter-spacing: 3px;
 color: #61C725;
 font-size: 30px;
 text-align: center;
@@ -114,41 +112,96 @@ text-align: center;
 
 }
 .imagen1{
-box-shadow: 0px 0px 14px 5px #61C725;
+/*box-shadow: 0px 0px 14px 5px #61C725;*/
 width: 250px;
 height: 250px;
-margin-left: 0px;
-margin-top: 20px;
+/*margin-left: 0px;
+margin-top: 20px;*/
 border-radius: 8%;
 }
 ul{
 width: 90%;
 }
-span{ 
+span,.infoEpisode{ 
   color:rgb(10, 248, 14);;
   font-size:19px;
   text-shadow: 1px 1px 8px white;
   }
 
-.episodio {
+.episode {
+  font-family: 'Jolly Lodger', cursive;
   box-shadow: 0px 0px 14px 4px #61C725;
-  font-family: rickymorty;
   line-height:40px;
   text-align: center;
   display:grid;
   width: 60%;
-  margin-bottom: 3%;
   border: #B6E529 solid 4px;
   border-radius: 15px;
   color: white;
-  margin-top: 1cm;
   font-size: 20px;
   background-color: #0A0559;
+  padding: 20px;
   letter-spacing: 4px;  
-  padding-top: 20px;
-  padding-bottom: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
+@media (max-width: 768px) {
+  .container{
+    width: auto;
+  }
+  h2 {
+    color: white;
+    font-size: 30px;
+    margin-top: -27px;
+  }
+  .logo{
+    width: 60%;
+}
+  .bodyDetail{
+    width: 100%;
+    padding-top:60% ;
+  }
+  .detail{
+    line-height:normal;
+    width: 70%;
+    margin-bottom:1.5em;
+  }
+
+  .episode{
+  
+    width: 70%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    height: 250px;
+    margin-bottom: 1.5em;
+
+  }
+  ol{
+ 
+    padding: 0px;
+    margin: 0px;
+  }
+
+  button{
+
+    height: 50px;
+    letter-spacing:2px;
+    font-size: 25px;
+  }
+
+  footer{
+    font-size: 20px;
+  }
+
+  .imagen1{
+
+    width:none;
+    height: none;
+  }
+
+
+}
 
 /* Estilos para pantallas medianas (tabletas) */
 @media (min-width: 768px) and (max-width: 915px) {
@@ -167,27 +220,35 @@ span{
   .logo{
       width: 40%;
   }
+
+  .episode {
+    text-align: center;
+      display:grid;
+      width: 60%;
+  
+    line-height:120%;
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    height: 198px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+
+  }
   .detail{
     display: flex;
     line-height:150%;
     font-size: 17px;
     text-align: left;
-    width: 49%;
-    padding-top: 1px;
+    width: 60%;
+    margin-bottom: 5%;
+    /*padding-top: 1px;
     padding-left: 3px;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;*/ 
   }
  
-  
-  .episodio {
-     
-      text-align: center;
-      display:grid;
-      width: 60%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-  
-  }
+
   .imagen1{
       width:350px;
       height:350px;
@@ -222,14 +283,15 @@ span{
       display: flex;
       width: 50%;
       place-items: center;  
+
   }
-  .episodio {
+  .episode{
      
       text-align: center;
       display:grid;
       width: 50%;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding: 20px;
+     
   
   }
   .imagen1{
@@ -249,6 +311,10 @@ span{
     height: 40px;
     background: #00000075;
 }
+ul{
+
+  margin: 0;
+}
   .nameCharacter {
       padding-top: 20px;
       font-size: 0.9cm;
@@ -260,14 +326,17 @@ span{
      }
 
   .bodyDetail {
-      padding-left: 5em;
-      padding-top: 10em;
+      /*padding-left: 5em;*/
+      padding-top: 14em;
       display: flex;
       flex-direction: row;
       height: 100%;;
       place-items: center;
       margin-bottom: 0px;
       padding-bottom: 0px;
+      width: 95%;
+      justify-content: center;
+      margin: auto;
      }
   .detail{
     display: flex;
@@ -275,48 +344,61 @@ span{
     line-height:150%;
     font-size: 17px;
     text-align: left;
-    width: 49%;
-    padding-top: 1px;
-    padding-left: 3px;
-    margin-bottom: 0px;
+    width: 45%;
+    padding: 20px;
+    margin-right: 2em;
+   /* padding-top: 1px;*/
+    /*padding-left: 3px;
+    margin-bottom: 0px;*/
       
+  }
+
+  .episode {
+   
+    line-height:120%;
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    height: 198px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
   }
   
   .imagen1{
     width:200px;
     height:200px;
-    margin-top: 1px;
-    margin-left: 2em;
+    /*margin-top: 1px;
+    margin-left: 2em;*/
     border-radius: 8%;
   }
   
-  .episodio {
-    line-height:120%;
-    font-size: 20px;
-    text-align: center;
-    width: 40%;
-    padding-top: 10px;
-    margin-left: 20px;
-    height: 210px;
-    margin-bottom: 0px;
+  
+  
+  .title{
+
+    color: #fff;
   }
    
   button {
-    font-family: rickymorty;
+    
     margin: 20px;
     width: auto;
     height: auto;
     border: 2px solid rgb(7, 225, 10);
-    font-size: 20px;
+    font-size: 25px;
     border-radius: 5px;
     letter-spacing: 2.5px;
-    padding-left: 0.5em;
+    padding: 10px 20px;
     padding-right: 0.5em;
   }
  
   footer{
 
   color: white;
+  padding: 10px;
+  font-size: 20px;
   }
  
 }

@@ -12,58 +12,97 @@
     <header>
       <h1>
         <img class = "logo" src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="100%">
-          <h2 id="subtitulo">Data Lovers</h2>
       </h1>
+      <main><h2 id="subtitulo">Data Lovers</h2></main>
      <div class="menu">
+     <!-- <input type="checkbox"name=""id="navcheckbox"class="navcheckbox" />-->
+      <img id = "menuResponsive" src="menu.png" alt="menu" width="15%"/>
         <div class = "container">
           <div class = "filtro">
-            <label for = "select-filter">Filter by status:</label>
+            <label for = "status">Filter by status:</label>
+
             <select  name = "type" data-testid="select-filter" id="status">
-              <option value = "All" id="all">All</option>
+
             </select>
           </div>
 
           <div class="filtro">
-            <label for = "select-filter">Filter by species:</label>
+            <label for = "species">Filter by species:</label>
+
             <select  name = "type" data-testid="select-filter" id="species">
-              <option value = "All" id="all" selected>All</option>
+
             </select>
           </div>
           <div class="filtro">
-            <label for = "select-filter">Filter by gender:</label>
+            <label for = "gender">Filter by gender:</label>
+
             <select  name = "type" data-testid="select-filter" id="gender">
-              <option value = "All" id="all" selected>All</option>
+
             </select>
           </div>
 
           <div class="filtro">
-            <label class = "infoFilter" for = "select-sort">Filter order by</label>
 
-            <select name = "By" data-testid="select-sort">
-              <option selected>Select Option</option>
-              <option value = "name">Name</option>
-              <option value = "id">Id</option>
+            <label style = "padding:0;" for = "inFilterByOrder">Order By</label>
+            <select id = "inFilterByOrder" name = "sort-order" data-testid="select-sort">
             </select>
 
-            <select name = "order" data-testid="select-sort">
-              <option selected>Select Option</option>
-              <option value = "ASC">ASC</option>
-              <option value = "DESC">DESC</option>
+            <label style="padding:0;"  for = "nameId"></label>
+            <select class = "inFilter" name = "By" data-testid="select-sort" id="nameId">
             </select>
+
+
+           
           </div>
-          <div class="clear">
+          <div class="filtro">
             <button data-testid="button-clear">Clear</button>
+          </div>
+          <div class="menuModl">
+              <a href="#" class="openModl">
+                <img src="analitica.png" alt="menu" width="100%"/>
+              </a>
           </div>
         </div>
       </div>
     </header>
-    <section class="container">
-      <ul id = "root"></ul>
+    
+
+
+    <div class ="return">
+      <img src = "cheuron.png" alt="Cheuron" width="10%"/>
+    </div>
+    <section class="modal">
+      <div class="header_modal">
+        <h2>¡Bienvenido al sitio!</h2>
+      </div>
+      <div class="modal_container">
+        <div class="charts">
+          
+          <canvas id="myChart" width="200" height="200"></canvas>
+        </div>
+        
+      </div>
+      <div class="modal_footer">
+        <button class="modal_close">Cerrar Modal</button>
+
+      </div>
     </section>
+
+    
+    <section class="container" id ="root" >
+      <ul id = "list_card"></ul>
+    </section>
+    
+  
     <footer class="menu">
-      <label>Creado por:</label>
-      <b class="developers">Leslie Pacheco y Giselle Lopez </b>
+      <label>Created by:</label>
+      <b class="developers">Leslie Pacheco and Giselle Lopez </b>
     </footer>
+
+    
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->  
     <script src="main.js" type="module"></script>
   </body>
   </html>
+  
+
