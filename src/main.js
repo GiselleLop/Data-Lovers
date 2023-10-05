@@ -1,6 +1,6 @@
 
 
-import {sortData, filterData, filter} from './dataFunctions.js';
+import {sortData, filterAll, filter} from './dataFunctions.js';
 import { renderItems } from './view.js';
 
 
@@ -18,24 +18,18 @@ const ordenBy = document.querySelector("select[name='By']"); // por nombre o por
 
 const resetButton = document.querySelector("button[data-testid='button-clear']");
 
-/*
-orderType.addEventListener("change",  () => {
 
-  sortData(arrayData,orderType.value);
-});*/
+orderType.addEventListener("change",  () => {
+  sortData(arrayData, orderType.value, ordenBy.value );
+  renderItems(arrayData)
+});
 
 ordenBy.addEventListener("change",  () => {
-  if(filterstatus.options.item(0).selected && filterspecies.options.item(0).selected  & filtergender.options.item(0).selected){
-    sortData(arrayData,ordenBy.value ,orderType.value); 
-    renderItems(arrayData)
-  }
-  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, ordenBy.value ,orderType.value)
+  sortData(arrayData, orderType.value,  ordenBy.value);
+  renderItems(arrayData)
 });
 
-resetButton.addEventListener('click',() =>{
-  window.location.reload()
-  
-});
+
 
 resetButton.addEventListener('click',() =>{
   document.querySelector('#list_card').innerHTML = '';
@@ -43,6 +37,7 @@ resetButton.addEventListener('click',() =>{
   document.querySelector('#species').innerHTML = '';
   document.querySelector('#gender').innerHTML = '';
   orderType.innerHTML = '';
+  ordenBy.innerHTML = '';
   
   filter(arrayData);
 
@@ -65,13 +60,14 @@ const filtergender = document.querySelector('#gender');
 
 // Agregar un evento de cambio a todos los filtros que llame a applyFilters
 filterstatus.addEventListener("change", () => {
-  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, ordenBy.value ,orderType.value)
+  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, orderType.value, ordenBy.value)
+//  console.log(  filterstatus.value, filterspecies.value, filtergender.value, orderType.value, ordenBy.value)
 });
 filterspecies.addEventListener("change", ()=> {
-  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, ordenBy.value ,orderType.value)
+  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, orderType.value, ordenBy.value)
 });
 filtergender.addEventListener("change", () => {
-  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, ordenBy.value ,orderType.value)
+  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, orderType.value,ordenBy.value)
 });
 
 

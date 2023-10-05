@@ -123,14 +123,14 @@ select[data-testid="select-filter"], select[data-testid="select-sort"]{
   box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
   border: 2px solid #B6E529;
 }
-select[data-testid="select-filter"],select[data-testid="select-sort"]{
+select[data-testid="select-filter"]{
   width: 90%;
 }
 
-/*select[data-testid="select-sort"]{
+select[data-testid="select-sort"]{
   width: 46%;
 }
-*/
+
 
 
 .infoFilter{
