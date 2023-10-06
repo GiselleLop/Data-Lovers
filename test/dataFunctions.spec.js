@@ -45,6 +45,8 @@ describe('filterData', () => {
   });
 });
 
+
+
 jest.mock('../src/view.js', () => {
   return {
     renderItems: jest.fn()
@@ -66,3 +68,5 @@ describe('renderItems', () => {
     expect(result).toBe('Rendered Data');
   });
 });
+
+//button 
