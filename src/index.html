@@ -43,7 +43,7 @@
 
           <div class="filtro">
 
-            <label style = "padding:0;" for = "inFilterByOrder">Order By</label>
+            <label class = "infoFilter" for = "inFilterByOrder">Order By</label>
             <select id = "inFilterByOrder" name = "sort-order" data-testid="select-sort">
             </select>
 
@@ -57,6 +57,7 @@
           <div class="filtro">
             <button data-testid="button-clear">Clear</button>
           </div>
+          
           <div class="menuModl">
               <a href="#" class="openModl">
                 <img src="analitica.png" alt="menu" width="100%"/>
@@ -73,18 +74,19 @@
     </div>
     <section class="modal">
       <div class="header_modal">
-        <h2>¡Bienvenido al sitio!</h2>
+        <h2>¡Welcome to the site!</h2>
       </div>
       <div class="modal_container">
+      
         <div class="charts">
-          
-          <canvas id="myChart" width="200" height="200"></canvas>
+          In this graph we can see the number of characters divided by gender.
+          <canvas id="grafica" width="400" height="400"></canvas>
+        
         </div>
         
       </div>
       <div class="modal_footer">
         <button class="modal_close">Cerrar Modal</button>
-
       </div>
     </section>
 
@@ -99,7 +101,7 @@
       <b class="developers">Leslie Pacheco and Giselle Lopez </b>
     </footer>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->  
     <script src="main.js" type="module"></script>
   </body>

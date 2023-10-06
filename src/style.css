@@ -42,13 +42,13 @@ width: 100%;
 width: 18%;
 display: inline-block;
 }
-
 .menuModl{
+  
   width: 3%;
   display: inline-block;
 }
 .modal{
-  background: #170b49e0;
+  background: #0a051fe0;
   position: fixed;  
   /*display: flex;*/
   z-index: 2;
@@ -95,6 +95,8 @@ display: inline-block;
 .modal_container{
   width: 90%;
   margin: auto;
+  color:white;
+  
 }
 .charts{
   width: 35%;
@@ -107,6 +109,7 @@ display: inline-block;
   --transform: translateY(0);
   --transition: transform .8s .8s;
 }
+
 label{
 padding: 11px;
 color: #B6E529;
@@ -300,6 +303,27 @@ header{
 h1{
   margin-top: 0px;
 }
+.modal{
+  background: #0a051fe0;
+  position: fixed;  
+  /*display: flex;*/
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .9s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+  padding-top: 5em;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding-bottom: 2em;
+  margin: 8em auto;
+  width: 90%;
+  height: 450px;
+  overflow-x: none;
+  overflow-y: scroll;
+}
 /* Estilos para pantallas con un ancho mínimo de 768px */
 }
 @media (min-width: 768px) and (max-width: 915px) {
@@ -358,4 +382,74 @@ h1{
   section{
     padding-top: 17em;
   }
+  
+
+  .menuModl{
+  
+    width: 3%;
+    display: inline-block;
+  }
+  .modal{
+    background: #0a051fe0;
+    position: fixed;  
+    /*display: flex;*/
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    padding-top: 5em;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding-bottom: 2em;
+    margin: 8em auto;
+    width: 90%;
+    height: 450px;
+    overflow-x: none;
+    overflow-y: scroll;
+  }
+  
+  .modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+  }
+  .modal_close{
+    width: 10%;
+    height: 40px;
+    background: #9FF494;
+    border: 3px solid rgb(7, 225, 10);
+    color: #079F0D;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 20px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .modal_close:hover {
+    box-shadow: 0px 0px 14px 4px #61C725;
+    }
+  
+  
+  .modal_container{
+    width: 90%;
+    margin: auto;
+    color:white;
+    
+  }
+  .charts{
+    width: 35%;
+  }
+  
+  .modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+  }
+  
 }

@@ -126,6 +126,7 @@ span,.infoEpisode{
   color:rgb(10, 248, 14);;
   font-size:19px;
   text-shadow: 1px 1px 8px white;
+  
   }
 
 .episode {
@@ -145,6 +146,7 @@ span,.infoEpisode{
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
 
 @media (max-width: 768px) {
   .container{
