@@ -1,8 +1,5 @@
 export const renderItems = (ArrayData) => {
-
-
   const ul = document.querySelector('#list_card');
-
   ArrayData.forEach((item) => {
     const TotalEpisodios = item.episode.reduce(function(contador,episodios){
 

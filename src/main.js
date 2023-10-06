@@ -1,9 +1,7 @@
 
 
-import {sortData, filterAll, filter} from './dataFunctions.js';
+import {filterData, filterAll, filter} from './dataFunctions.js';
 import { renderItems } from './view.js';
-
-
 import data from './data/rickandmorty/rickandmorty.js';
 
 const arrayData = data.results;
@@ -17,16 +15,20 @@ const orderType = document.querySelector("select[name='sort-order']"); //tipo - 
 const ordenBy = document.querySelector("select[name='By']"); // por nombre o por id
 
 const resetButton = document.querySelector("button[data-testid='button-clear']");
-
+const tarjetasContainer = document.querySelector("#list_card");
 
 orderType.addEventListener("change",  () => {
-  sortData(arrayData, orderType.value, ordenBy.value );
-  renderItems(arrayData)
+  tarjetasContainer.innerHTML = "";
+  //sortData(arrayData, orderType.value, ordenBy.value );
+  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, orderType.value, ordenBy.value)
+  //renderItems(arrayData)
 });
 
 ordenBy.addEventListener("change",  () => {
-  sortData(arrayData, orderType.value,  ordenBy.value);
-  renderItems(arrayData)
+  tarjetasContainer.innerHTML = "";
+  filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, orderType.value, ordenBy.value)
+  //sortData(arrayData, orderType.value,  ordenBy.value);
+  //renderItems(arrayData)
 });
 
 
@@ -61,7 +63,6 @@ const filtergender = document.querySelector('#gender');
 // Agregar un evento de cambio a todos los filtros que llame a applyFilters
 filterstatus.addEventListener("change", () => {
   filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, orderType.value, ordenBy.value)
-//  console.log(  filterstatus.value, filterspecies.value, filtergender.value, orderType.value, ordenBy.value)
 });
 filterspecies.addEventListener("change", ()=> {
   filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, orderType.value, ordenBy.value)
@@ -70,12 +71,6 @@ filtergender.addEventListener("change", () => {
   filterAll(arrayData, filterstatus.value, filterspecies.value, filtergender.value, orderType.value,ordenBy.value)
 });
 
-
-/*
-computeStats(arrayData,'Alive');
-computeStats(arrayData,'Dead');
-computeStats(arrayData,'unknown');
-*/
 
 //elementos del modal
 
@@ -92,4 +87,28 @@ closeModal.addEventListener('click', (e)=>{
   e.preventDefault();
   modal.classList.remove('modal--show');
 });
+
+
+
+//GRAFICO
+const grafica = document.querySelector("#grafica");
+const arrayFemale = filterData(arrayData,"gender","Female").length
+const arrayMale = filterData(arrayData,"gender","Male").length
+const arrayUnknown = filterData(arrayData,"gender","unknown").length
+
+// eslint-disable-next-line no-undef
+new Chart(grafica,{
+  type: 'doughnut',
+  data: {
+    labels:["Female","Male","Unknown"], 
+    datasets: [{
+      data:[arrayFemale,arrayMale,arrayUnknown],
+      backgroundColor:[
+        'rgb(252, 252, 0)',
+        'rgb(69,25,255)',
+        'rgb(7, 225, 10)',
+      ]
+    }]
+  }
+})
 

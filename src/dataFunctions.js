@@ -1,7 +1,7 @@
 import { renderItems } from "./view.js";
 
 export const sortData = (data, orderTypeValue, ordenbyValue) => {
-  tarjetasContainer.innerHTML = "";
+  
   if (ordenbyValue === "id") {
     data.sort((a, b) => {
       if (orderTypeValue === "asc") {
@@ -24,6 +24,7 @@ export const sortData = (data, orderTypeValue, ordenbyValue) => {
       return a.id - b.id;
     }
   });
+  return data
   // renderItems(data);
 };
 
@@ -39,7 +40,6 @@ export const filterData = (data, filterBy, value) => {
 
 export function filterAll(data, statusValue, speciesValue, genderValue, orderTypeValue, ordenbyValue) {
   tarjetasContainer.innerHTML = "";
-
   let arrFiltered = data;
   sortData(arrFiltered, orderTypeValue, ordenbyValue);
   if (speciesValue !== "All") {
@@ -146,21 +146,3 @@ export const filter = (ArrayData) => {
   selectOrderTypeBy.appendChild(databy2);
 };
 
-/*
-  if (speciesValue !== "All") {
-    arrFiltered = filterData(arrFiltered,"species",speciesValue)
-  
-  }
-  if (statusValue !== "All") {
-    arrFiltered = filterData(arrFiltered,"status",statusValue)
-
-  }
-  if (genderValue !== "All") {
-    arrFiltered = filterData(arrFiltered,"gender",genderValue)
-   
-  if (tarjetasContainer.innerHTML="") {
-    tarjetasContainer.innerHTML="No se encontro este personaje"
-    }
-    }
-  renderItems(arrFiltered) 
-}*/
