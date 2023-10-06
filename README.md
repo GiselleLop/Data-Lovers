@@ -15,6 +15,7 @@ Prototipo de baja fidelidad:
 
 
 Diseño de la Interfaz de Usuario (prototipo de alta fidelidad):
+![INDEX2](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/105ba4e6-7993-49ae-89f9-b47f9012f5a0)
 
 Se realizó el diseño de la pantalla principal, que contiene una cabecera con el título de la serie y un menú en donde se muestran los filtros, el botón de limpiar y el botón para visualizar los datos estadísticos. 
 En el cuerpo de la aplicación, se visualizan las tarjetas de cada personaje; cabe recalcar que cada tarjeta tiene un botón para visualizar el detalle.
