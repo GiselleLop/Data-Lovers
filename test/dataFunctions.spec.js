@@ -1,4 +1,3 @@
-
 import { data as fakeData } from './data.js';
 import { sortData } from '../src/dataFunctions.js';
 

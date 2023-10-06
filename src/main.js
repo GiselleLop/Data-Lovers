@@ -1,16 +1,11 @@
-
-
 import {sortData, filterAll, filter} from './dataFunctions.js';
-import { renderItems } from './view.js';
-
-
+import {renderItems } from './view.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 const arrayData = data.results;
 
 filter(arrayData);
 renderItems(arrayData);
-
 
 
 const orderType = document.querySelector("select[name='sort-order']"); //tipo - asc o desc
