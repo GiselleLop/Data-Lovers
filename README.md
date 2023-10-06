@@ -20,8 +20,8 @@ En el cuerpo de la aplicación, se visualizan las tarjetas de cada personaje; ca
 
 Al darle ¨click ¨al botón de los datos estadísticos, aparece una vista emergente, en donde se visualizan los datos estadísticos por género, también contiene un botón para cerrar esta vista emergente.
 
- ---imagen MODAL
- 
+![MODAL](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/3f8dd29a-54b5-4db9-a72b-31489a9f41a6)
+
 Se realizó un segundo diseño para el detalle de cada personaje, conservando la misma estructura de la vista principal, con excepción de que en el lugar de los filtros, se visualiza el nombre.
 El cuerpo contiene dos trajetas; la primera contiene la imagen y detalle del personaje, y la segunda contiene el listado de capítulos en los que aparece.
 
