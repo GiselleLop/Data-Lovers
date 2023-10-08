@@ -11,7 +11,14 @@
 * Mediante una ventana emergente se pueden visualizar los datos estadísticos por género.
 * Visualización detallada de cada personaje al darle ¨Click¨ en ¨Más información¨.
 ## Prototipo de baja fidelidad:
----imagen
+
+![vista 1](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/41cdda25-ce67-4e64-910d-480dae235d3d)
+![vista 2](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/c5df9bab-16cb-4d69-8d5b-fb91be8700b3)
+
+![vista 4](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/450175ab-ecf6-4330-859d-df6fb66e4bb0)
+![prototipo 3](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/b9085d56-ce14-4f6a-9ad1-63f3d6853e95)
+
+
 ## Diseño de la Interfaz de Usuario (prototipo de alta fidelidad):
 Se realizó el diseño de la pantalla principal, que contiene una cabecera con el título de la serie y un menú en donde se muestran los filtros, el botón de limpiar y el botón para visualizar los datos estadísticos. 
 En el cuerpo de la aplicación, se visualizan las tarjetas de cada personaje; cabe recalcar que cada tarjeta tiene un botón para visualizar el detalle.
