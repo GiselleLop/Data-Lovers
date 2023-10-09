@@ -34,6 +34,6 @@ Vista adaptable a dispositivos móviles:
 Se realizó un diseño de alta fidelidad en modo responsivo adaptable a diferentes tamaños de pantallas (PC´s, Tablets y móviles).
 ---imagen 
 ---imagen 
-
+![Alt text](image-1.png)
 
  El listado de problemas que detectaste a través de tests de usabilidad en el README.md
