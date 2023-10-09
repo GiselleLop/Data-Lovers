@@ -16,8 +16,9 @@
       <main><h2 id="subtitulo">Data Lovers</h2></main>
      <div class="menu">
      <!-- <input type="checkbox"name=""id="navcheckbox"class="navcheckbox" />-->
-      <img id = "menuResponsive" src="menu.png" alt="menu" width="15%"/>
-        <div class = "container">
+      <img id = "buttomMenuResponsive" src="menu.png" alt="menu" width="12%"/>
+      <img id = "buttomCloseMenuResponsive"  src="cerrar.png" alt="menu" width="12%"/>
+        <div class = "container menuResponsive menuResponsiveDisabled">
           <div class = "filtro">
             <label for = "status">Filter by status:</label>
 
@@ -43,7 +44,7 @@
 
           <div class="filtro">
 
-            <label class = "infoFilter" for = "inFilterByOrder">Order By</label>
+            <label class = "infoFilter" for = "inFilterByOrder">Filter order by</label>
             <select id = "inFilterByOrder" name = "sort-order" data-testid="select-sort">
             </select>
 
@@ -69,18 +70,28 @@
     
 
 
-    <div class ="return">
+    <div class ="return" id = "return">
       <img src = "cheuron.png" alt="Cheuron" width="10%"/>
     </div>
     <section class="modal">
       <div class="header_modal">
-        <h2>¡Welcome to the site!</h2>
+        <h2>Statistical data</h2>
       </div>
       <div class="modal_container">
       
         <div class="charts">
-          In this graph we can see the number of characters divided by gender.
-          <canvas id="grafica" width="400" height="400"></canvas>
+          <p class = "titelChar">In this graph we can see the number of characters divided by gender.</p>
+          <canvas id="graficaGender" width="200" height="200"></canvas>
+        
+        </div>
+        <div class="charts">
+          <p class = "titelChar">In this graph we can see the number of characters divided by life status.</p>
+          <canvas id="grafica2" width="300" height="300"></canvas>
+        
+        </div>
+        <div class="charts">
+        <p class = "titelChar">In this graph we can see the number of characters divided by species</p>
+          <canvas id="grafica3" width="300" height="300"></canvas>
         
         </div>
         
