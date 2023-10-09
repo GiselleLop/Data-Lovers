@@ -1,8 +1,13 @@
 import { data as fakeData } from './data.js';
 import { sortData, filterData } from '../src/dataFunctions.js';
 import { renderItems } from '../src/view.js';
+
+
 const returndesc = 'desc';
 const typeby = 'name';
+
+
+
 
 describe('sortData', () => {
   it('should return data sorted in descending order', () => {
@@ -69,4 +74,20 @@ describe('renderItems', () => {
   });
 });
 
-//button 
+//Datos estadísticos
+/*describe('computeStats', () => {
+  it('I should return the total records by gender', () => {
+    const { container } = render(<computeStats/>);
+    const canvas =  container.querySelector("#graficaGender");
+
+    const g1 = canvas.getContext('grafica');
+
+    const chart = new Chart(g1);
+    const data = chart.data.datasets[0].data;
+  
+    // Verificar que los datos sean correctos
+    expect(data).toEqual([73, 372, 42]);
+
+  });
+
+});*/

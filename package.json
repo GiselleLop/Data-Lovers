@@ -28,7 +28,7 @@
     "acorn": "^8.8.2",
     "babel-jest": "^27.0.1",
     "css": "^3.0.0",
-    "eslint": "^8.3.0",
+    "eslint": "^8.51.0",
     "gh-pages": "^3.1.0",
     "htmlhint": "^1.0.0",
     "jest": "^27.0.1",
@@ -46,5 +46,8 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0"
   }
 }

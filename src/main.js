@@ -1,7 +1,6 @@
-
-
-import {filterData, filterAll, filter} from './dataFunctions.js';
+import {filterAll, filter,computeStats} from './dataFunctions.js';
 import { renderItems } from './view.js';
+
 import data from './data/rickandmorty/rickandmorty.js';
 
 const arrayData = data.results;
@@ -9,7 +8,7 @@ const arrayData = data.results;
 filter(arrayData);
 renderItems(arrayData);
 
-
+computeStats(arrayData);
 
 const orderType = document.querySelector("select[name='sort-order']"); //tipo - asc o desc
 const ordenBy = document.querySelector("select[name='By']"); // por nombre o por id
@@ -88,27 +87,41 @@ closeModal.addEventListener('click', (e)=>{
   modal.classList.remove('modal--show');
 });
 
+//MENU RESPONSIVE
+
+const openMenu = document.querySelector('#buttomMenuResponsive');
+const menu = document.querySelector('.menuResponsive');
+const closeMenu = document.querySelector('#buttomCloseMenuResponsive');
+const sectionBody = document.querySelector('#root');
+ 
+
+openMenu.addEventListener('click', (e)=>{
+  e.preventDefault();
+  closeMenu.classList.add('buttomCloseMenuResponsiveActive');
+  sectionBody.classList.add('sectionOpenMenu');
+  openMenu.setAttribute("style", "display:none");
+  closeMenu.setAttribute("style", "display:block");
+  menu.classList.remove('menuResponsiveDisabled');
+
+});
+
+closeMenu.addEventListener('click', (e)=>{
+  e.preventDefault();
+  menu.classList.add('menuResponsiveDisabled');
+  sectionBody.classList.remove('sectionOpenMenu');
+  openMenu.removeAttribute("style", "display:none");
+  closeMenu.removeAttribute("style", "display:block");
+
+});
 
 
-//GRAFICO
-const grafica = document.querySelector("#grafica");
-const arrayFemale = filterData(arrayData,"gender","Female").length
-const arrayMale = filterData(arrayData,"gender","Male").length
-const arrayUnknown = filterData(arrayData,"gender","unknown").length
-
-// eslint-disable-next-line no-undef
-new Chart(grafica,{
-  type: 'doughnut',
-  data: {
-    labels:["Female","Male","Unknown"], 
-    datasets: [{
-      data:[arrayFemale,arrayMale,arrayUnknown],
-      backgroundColor:[
-        'rgb(252, 252, 0)',
-        'rgb(69,25,255)',
-        'rgb(7, 225, 10)',
-      ]
-    }]
-  }
+//boton ir arriba
+const btnReturnMenu = document.getElementById('return');
+btnReturnMenu.addEventListener('click',()=>{
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Desplazamiento suave
+  });
 })
+
 
