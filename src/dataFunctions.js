@@ -1,7 +1,7 @@
 import { renderItems } from "./view.js";
 
 export const sortData = (data, orderTypeValue, ordenbyValue) => {
-  tarjetasContainer.innerHTML = "";
+  
   if (ordenbyValue === "id") {
     data.sort((a, b) => {
       if (orderTypeValue === "asc") {
@@ -24,7 +24,7 @@ export const sortData = (data, orderTypeValue, ordenbyValue) => {
       return a.id - b.id;
     }
   });
-  // renderItems(data);
+  return data;
 };
 
 const tarjetasContainer = document.querySelector("#list_card");
@@ -39,7 +39,6 @@ export const filterData = (data, filterBy, value) => {
 
 export function filterAll(data, statusValue, speciesValue, genderValue, orderTypeValue, ordenbyValue) {
   tarjetasContainer.innerHTML = "";
-
   let arrFiltered = data;
   sortData(arrFiltered, orderTypeValue, ordenbyValue);
   if (speciesValue !== "All") {
@@ -146,21 +145,98 @@ export const filter = (ArrayData) => {
   selectOrderTypeBy.appendChild(databy2);
 };
 
-/*
-  if (speciesValue !== "All") {
-    arrFiltered = filterData(arrFiltered,"species",speciesValue)
-  
-  }
-  if (statusValue !== "All") {
-    arrFiltered = filterData(arrFiltered,"status",statusValue)
+export const computeStats = (arrayData)=>{
 
-  }
-  if (genderValue !== "All") {
-    arrFiltered = filterData(arrFiltered,"gender",genderValue)
-   
-  if (tarjetasContainer.innerHTML="") {
-    tarjetasContainer.innerHTML="No se encontro este personaje"
+
+  //GRAFICO
+  const grafica = document.querySelector("#graficaGender");
+  const arrayFemale = filterData(arrayData,"gender","Female").length
+  const arrayMale = filterData(arrayData,"gender","Male").length
+  const arrayUnknown = filterData(arrayData,"gender","unknown").length
+
+  // eslint-disable-next-line no-undef
+  new Chart(grafica,{
+    type: 'doughnut',
+    data: {
+      labels:["Female","Male","Unknown"], 
+      datasets: [{
+        data:[arrayFemale,arrayMale,arrayUnknown],
+        backgroundColor:[
+          'rgb(251, 36, 232)',
+          'rgb(69,25,255)',
+          'rgb(255, 169, 59)',
+        ],
+        borderColor:'rgb(15, 6, 56)',
+      }],
     }
+  })
+
+
+  // GRAFICO 2
+
+  const grafica2 = document.querySelector("#grafica2");
+  const alive = filterData(arrayData,"status","Alive").length
+  const dead = filterData(arrayData,"status","Dead").length
+  const knowliv = filterData(arrayData,"status","unknown").length
+
+  // eslint-disable-next-line no-undef
+  new Chart(grafica2,{
+    type: 'doughnut',
+    data: {
+      labels:["Alive","Dead","Unknown"], 
+      datasets: [{
+        data:[alive,dead,knowliv],
+        backgroundColor:[
+          'rgb(252, 252, 0)',
+          'rgb(158,82,233)',
+          'rgb(0, 180, 203)',
+        ],
+        borderColor:'rgb(15, 6, 56)',
+      }]
     }
-  renderItems(arrFiltered) 
-}*/
+  })
+
+  // GRAFICO 3
+
+  const grafica3 = document.querySelector("#grafica3");
+  const human = filterData(arrayData,"species","Human").length;
+  const alien = filterData(arrayData,"species","Alien").length;
+  const humanoid = filterData(arrayData,"species","Humanoid").length;
+  const knownspecie = filterData(arrayData,"species","unknown").length;
+  const poopybutthole = filterData(arrayData,"species","Poopybutthole").length;
+  const mytholog = filterData(arrayData,"species","Mytholog").length;
+  const Animal = filterData(arrayData,"species","Animal").length;
+  const vampire = filterData(arrayData,"species","Vampire").length;
+  const robot = filterData(arrayData,"species","Robot").length;
+  const cronenberg = filterData(arrayData,"species","Cronenberg").length;
+  const disease = filterData(arrayData,"species","Disease").length;
+  const parasite = filterData(arrayData,"species","Parasite").length;
+
+
+  // eslint-disable-next-line no-undef
+  new Chart(grafica3,{
+    type: 'doughnut',
+    data: {
+      labels:["Human","Alien","Humanoid","Unknown","Poopybutthole","Mytholog","Animal","Vampire","Robot","cronenberg","Disease","parasite"], 
+      datasets: [{
+        data:[human,alien,humanoid,knownspecie,poopybutthole,mytholog,Animal,vampire,robot,cronenberg,disease,parasite],
+        backgroundColor:[
+          'rgb(245, 0, 163)',
+          'rgb(69,25,255)',
+          'rgb(255,119,5)',
+          'rgb(2,20, 100)',
+          'rgb(244, 90, 115)',
+          'rgb(245,163,1)',
+          'rgb(1, 221, 134)',
+          'rgb(153, 245, 1)',
+          'rgb(163, 0, 245)',
+          'rgb(235, 243, 9)',
+          'rgb(243, 1, 0)',
+          'rgb(60,14,210)',
+        ],
+        borderColor:'rgb(15, 6, 56)',
+        reponsive: true
+      }]
+    }
+  })
+}

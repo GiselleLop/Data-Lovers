@@ -27,7 +27,7 @@ padding-top: 17em ;
 header{
 width: auto;
 position: fixed;
-z-index: 1;
+z-index: 2;
 background: #2A1486;
 }
 .data-card img{
@@ -38,21 +38,19 @@ width: 100%;
   padding-bottom: 1.3em;
 }
 .filtro{
-/*width8: 33%;*/
 width: 18%;
 display: inline-block;
 }
-
 .menuModl{
-  width: 3%;
+  
+  width: 4%;
   display: inline-block;
 }
 .modal{
-  background: #170b49e0;
+  background: #0a051ffa;
   position: fixed;  
-  /*display: flex;*/
-  z-index: 2;
-  opacity: 0;
+  z-index: 3;
+  opacity: 0; /* lo que ocaciona que esta oculto la ventna modal*/
   pointer-events: none;
   transition: opacity .6s .9s;
   --transform: translateY(-100vh);
@@ -63,7 +61,7 @@ display: inline-block;
   top: 0;
   padding-bottom: 2em;
   margin: 8em auto;
-  width: 90%;
+  width: 93%;
   height: 450px;
   overflow-x: none;
   overflow-y: scroll;
@@ -95,9 +93,21 @@ display: inline-block;
 .modal_container{
   width: 90%;
   margin: auto;
+  color:white;
+  display: flex;
+  justify-content: center;
+  
+}
+.modal_footer{
+  padding-top: 2em;
 }
 .charts{
-  width: 35%;
+  width: 33%;
+  margin: 0 5px 0 5px;
+}
+.titelChar {
+  letter-spacing: .3px;
+  font-size: 17px;
 }
 
 .modal--show{
@@ -107,13 +117,14 @@ display: inline-block;
   --transform: translateY(0);
   --transition: transform .8s .8s;
 }
+
 label{
 padding: 11px;
 color: #B6E529;
 font-size: 25px;
 }
 
-select[data-testid="select-filter"], select[data-testid="select-sort"]{
+select[name="type"], select[data-testid="select-sort"]{
   color: #fff;
   background: #00000045;
   height: 40px;
@@ -122,16 +133,15 @@ select[data-testid="select-filter"], select[data-testid="select-sort"]{
   font-size:17px;
   box-shadow: 0px 0px 8px 1px rgb(10, 255, 14);
   border: 2px solid #B6E529;
+  width: 90%;
 }
-select[data-testid="select-filter"]{
+select[name="select-filter"]{
   width: 90%;
 }
 
 select[data-testid="select-sort"]{
   width: 46%;
 }
-
-
 
 .infoFilter{
 display: block;
@@ -226,27 +236,43 @@ font-size: 20px;
 .return {
   display: none;
 }
-#menuResponsive{
+#buttomMenuResponsive{
   display: none;
+}
+#buttomCloseMenuResponsive{
+  display:none;
 }
 
 /* @media query para modo responsivo */
 @media (max-width: 768px) {
 
-  #menuResponsive{
+  #buttomMenuResponsive{
     display: block;
-    padding: 15px 0px 0 15px;
+    padding: 15px 15px;
     cursor: pointer;
   }
 
+  #buttomCloseMenuResponsive{
+    padding: 15px 15px;
+    cursor: pointer;
+  }
 
   #navcheckbox:checked ~ .menu {
    background: #dc5eb7;
   }
 
-  .container .filtro{
+  .menuResponsiveDisabled{
     display: none;
   }
+
+  .menuResponsive--show{
+    opacity: 1;
+    display: block;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+  }
+  
 
   .return {
     position: fixed;
@@ -264,7 +290,7 @@ font-size: 20px;
   width: auto;
 }
 select[name="type"]{
-  width: 80%;
+  width: 75%;
   height: 50px;
 }
 button[data-testid="button-clear"]{
@@ -278,7 +304,7 @@ ul{
 }
 .filtro{
     width: 95%;
-    padding: 10px;
+    padding: 15px 0;
 }
 h2 {
     color: white;
@@ -289,20 +315,90 @@ h2 {
     width: 60%;
 }
 section{
-  padding-top: 20em;
+  padding-top: 30em;
 }
+.sectionOpenMenu{
+  padding-top:65em!important;
+}
+
+
 header{
   width: auto;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background: #2A1486;
 }
 h1{
   margin-top: 0px;
 }
+.modal{
+  margin: 3em auto;
+  height: 700px;
+}
+.modal_close{
+  width: 55%;
+  height: 50px;
+  font-size: 35px;
+}
+.charts{
+  width: 80%;
+  margin: auto;
+}
+.modal_container{
+  display: block;
+}
+.titelChar{
+  font-size: 25px;
+}
+
+.modal--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+  --transform: translateY(0);
+  --transition: transform .8s .8s;
+}
+.menuModl{
+  width: 15%;
+  padding: 14px;
+}
+
 /* Estilos para pantallas con un ancho mínimo de 768px */
 }
 @media (min-width: 768px) and (max-width: 915px) {
+
+  #buttomMenuResponsive{
+    display: block;
+    padding: 15px 15px;
+    cursor: pointer;
+    width: 10%;
+  }
+
+  #buttomCloseMenuResponsive{
+    padding: 15px 15px;
+    cursor: pointer;
+    width: 10%;
+  }
+
+  .menuResponsiveDisabled{
+    display: none;
+  }
+
+  .menuResponsive--show{
+    opacity: 1;
+    display: block;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+  }
+  .sectionOpenMenu{
+    padding-top:45em!important;
+  }
+  .menuModl{
+    width: 5%;
+  }
+
+
   .return{
     display: none;
   }
@@ -329,9 +425,34 @@ h1{
   section{
     padding-top: 25em;
   }
+
   h1{
     margin-top: 0px;
   }
+
+.modal {
+    padding-top: 5em; 
+    height: 800px;
+    margin: 3em auto;
+}
+.modal_container{
+
+  display: block;
+  margin: auto;
+}
+.modal_close{
+  width: 25%;
+  height: 60px;
+  font-size: 35px;
+}
+.charts{
+  width: 90%;
+  margin-bottom: 3em;
+}
+.titelChar{
+  font-size: 30px;
+  letter-spacing: .5px
+}
 }
 
 /* Estilos para pantallas con un ancho entre 915px y 1024px */
@@ -347,15 +468,86 @@ h1{
   ul{
     padding: 0;
   }
+  .filtro{
+    width: 24%;
+  }
+  .menuModl {
+    width: 6%;
+    margin: 10px;
+    padding: 10px;
+  }
 
   select[name="type"]{
-      width: 70%;
+      width: 90%;
   }
   button[data-testid="button-clear"]{
     width: 55%;
     height: 60px;
   }
   section{
-    padding-top: 17em;
+    padding-top: 21em;
   }
+
+  .modal{
+    background: #0a051fe0;
+    position: fixed;  
+    /*display: flex;*/
+    z-index: 4;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    padding-top: 5em;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding-bottom: 2em;
+    margin: 8em auto;
+    width: 90%;
+    height: 450px;
+    overflow-x: none;
+    overflow-y: scroll;
+  }
+  
+  .modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+  }
+  .modal_close{
+    width: 10%;
+    height: 40px;
+    background: #9FF494;
+    border: 3px solid rgb(7, 225, 10);
+    color: #079F0D;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 20px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .modal_close:hover {
+    box-shadow: 0px 0px 14px 4px #61C725;
+  }
+  
+  
+  .modal_container{
+    width: 90%;
+    margin: auto;
+    color:white;
+  }
+  .charts{
+    width: 35%;
+  }
+  
+  .modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+  }
+  
 }

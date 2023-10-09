@@ -126,6 +126,7 @@ span,.infoEpisode{
   color:rgb(10, 248, 14);;
   font-size:19px;
   text-shadow: 1px 1px 8px white;
+  
   }
 
 .episode {
@@ -145,6 +146,7 @@ span,.infoEpisode{
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
 
 @media (max-width: 768px) {
   .container{
@@ -223,17 +225,16 @@ span,.infoEpisode{
 
   .episode {
     text-align: center;
-      display:grid;
-      width: 60%;
-  
+    display:grid;
+    width: 60%;
     line-height:120%;
     font-size: 20px;
     text-align: center;
-    width: 40%;
     padding: 20px;
     height: 198px;
     overflow-x: scroll;
     overflow-y: scroll;
+    margin-bottom:5%;
 
   }
   .detail{
