@@ -37,15 +37,8 @@ El cuerpo contiene dos trajetas; la primera contiene la imagen y detalle del per
 Vista adaptable a dispositivos móviles:
 
 Se realizó un diseño de alta fidelidad en modo responsivo adaptable a diferentes tamaños de pantallas (PC´s, Tablets y móviles).
-<<<<<<< HEAD
----imagen 
----imagen 
-![Alt text](image-1.png)
-=======
 
 ![INDEX2](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/d3a2baa1-b382-4bac-b72b-5c00224449b7)
 ![DETAIL2](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/c1c9455a-8b25-494a-a80c-a355018beacb)
-
->>>>>>> cd610d27dc6ace77b214276ba168307938ce1a80
 
 ## El listado de problemas que detectaste a través de tests de usabilidad en el README.md
