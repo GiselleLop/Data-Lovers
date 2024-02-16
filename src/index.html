@@ -8,74 +8,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Jolly+Lodger&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <header>
-      <h1>
-        <img class = "logo" src="https://1000marcas.net/wp-content/uploads/2022/04/Rick-and-Morty.png" width="100%">
-      </h1>
-      <main><h2 id="subtitulo">Data Lovers</h2></main>
-     <div class="menu">
-     <!-- <input type="checkbox"name=""id="navcheckbox"class="navcheckbox" />-->
-      <img id = "buttomMenuResponsive" src="menu.png" alt="menu" width="12%"/>
-      <img id = "buttomCloseMenuResponsive"  src="cerrar.png" alt="menu" width="12%"/>
-        <div class = "container menuResponsive menuResponsiveDisabled">
-          <div class = "filtro">
-            <label for = "status">Filter by status:</label>
-
-            <select  name = "type" data-testid="select-filter" id="status">
-
-            </select>
-          </div>
-
-          <div class="filtro">
-            <label for = "species">Filter by species:</label>
-
-            <select  name = "type" data-testid="select-filter" id="species">
-
-            </select>
-          </div>
-          <div class="filtro">
-            <label for = "gender">Filter by gender:</label>
-
-            <select  name = "type" data-testid="select-filter" id="gender">
-
-            </select>
-          </div>
-
-          <div class="filtro">
-
-            <label class = "infoFilter" for = "inFilterByOrder">Filter order by</label>
-            <select id = "inFilterByOrder" name = "sort-order" data-testid="select-sort">
-            </select>
-
-            <label style="padding:0;"  for = "nameId"></label>
-            <select class = "inFilter" name = "By" data-testid="select-sort" id="nameId">
-            </select>
-
-
-           
-          </div>
-          <div class="filtro">
-            <button data-testid="button-clear">Clear</button>
-          </div>
-          
-          <div class="menuModl">
-              <a href="#" class="openModl">
-                <img src="analitica.png" alt="menu" width="100%"/>
-              </a>
-          </div>
-        </div>
-      </div>
-    </header>
     
+    <header>      
+      <img class = "logo" src="/assets/images/Rick-and-Morty.png">
+      <h2 class="subtitle">Data Lovers</h2>
+    <!-- <div class="menu">
+     
+      <img id = "buttomCloseMenuResponsive"  src="cerrar.png" alt="menu" width="12%"/>
+        
+      </div> -->
+    
+    </header>
+
+    <nav class="menuOfFilters">
 
 
-    <div class ="return" id = "return">
+      <div class = "filtro">
+        <label for = "status">Filter by status:</label>
+        <select name = "type" data-testid="select-filter" id="status">
+        </select>
+      </div>
+
+      <div class="filtro">
+        <label for = "species">Filter by species:</label>
+
+        <select  name = "type" data-testid="select-filter" id="species">
+
+        </select>
+      </div>
+      <div class="filtro">
+        <label for = "gender">Filter by gender:</label>
+
+        <select  name = "type" data-testid="select-filter" id="gender">
+
+        </select>
+      </div>
+
+      <div class="filtro">
+        <label class = "infoFilter" for = "inFilterByOrder">Filter order by</label>
+        <select class = "filterbyOrderSelect" id = "inFilterByOrder" name = "sort-order" data-testid="select-sort">
+        </select>
+        <select class = "filterbyOrderSelect" name = "By" data-testid="select-sort" id="nameId">
+        </select>
+      </div>
+     
+     <button data-testid="button-clear">Clear</button>
+      
+      <!-- <div class = "container menuResponsive menuResponsiveDisabled"> -->
+      
+        <div class="menuModl">
+            <!-- <a > -->
+              <img href="#" class="openModl" src="analitica.png" alt="menu" width="100%"/>
+            <!-- </a> -->
+        </div>
+      <!-- </div> -->
+    </nav>
+
+    <!-- <div class ="return" id = "return">
       <img src = "cheuron.png" alt="Cheuron" width="10%"/>
     </div>
     <section class="modal">
       <div class="header_modal">
-        <h2>Statistical data</h2>
+        <h2>Statistical data</h2>>
       </div>
       <div class="modal_container">
       
@@ -99,22 +95,19 @@
       <div class="modal_footer">
         <button class="modal_close">Cerrar Modal</button>
       </div>
-    </section>
+    </section> -->
 
-    
-    <section class="container" id ="root" >
-      <ul id = "list_card"></ul>
-    </section>
+    <main>
+    </main>
     
   
     <footer class="menu">
       <label>Created by:</label>
-      <b class="developers">Leslie Pacheco and Giselle Lopez </b>
+      <h1 class="developers">Leslie Pacheco and Giselle Lopez </h1>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->  
-    <script src="main.js" type="module"></script>
+     <script src="main.js" type="module"></script>
   </body>
   </html>
   

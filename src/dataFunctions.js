@@ -82,7 +82,9 @@ export const filter = (ArrayData) => {
   const dataInfoSpecie = document.createElement("option");
   dataInfoSpecie.value = "All";
   dataInfoSpecie.text = "All";
+
   selectSpecias.appendChild(dataInfoSpecie);
+  
   unicos.forEach((unic) => {
     const newOpcion = document.createElement("option");
     newOpcion.value = unic;
