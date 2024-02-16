@@ -41,5 +41,8 @@ Se realizó un diseño de alta fidelidad en modo responsivo adaptable a diferent
 ![INDEX2](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/d3a2baa1-b382-4bac-b72b-5c00224449b7)
 ![DETAIL2](https://github.com/GiselleLop/DEV011-data-lovers/assets/127615391/c1c9455a-8b25-494a-a80c-a355018beacb)
 
+<<<<<<< HEAD
 
 ## El listado de problemas que detectaste a través de tests de usabilidad en el README.md
+=======
+>>>>>>> 60341381cafaa9eaa9eb6020cc2d301e0595fe46
