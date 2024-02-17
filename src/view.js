@@ -1,29 +1,11 @@
-window.addEventListener('scroll', function() {
- 
-  const logo = document.querySelector('.logo');
-  const subtitle = document.querySelector('.subtitle');
-  const menuOfFilters = document.querySelector('.menuOfFilters');
-  const main = this.document.querySelector('main');
-  if (window.scrollY > 0) {
-    logo.style.padding = '0';
-    logo.style.width = '0%'
-    main.style.marginTop = '130px'
-    subtitle.style.fontSize = '0px'
-    menuOfFilters.style.top = '-90px'; 
-  } else {
-    main.style.marginTop = '250px'
-    subtitle.style.fontSize = '20px'
-    logo.style.padding = '10px 0';
-    logo.style.width = '25%'
-    menuOfFilters.style.top = '50px'; 
-  }
-});
-
 
 export const renderItems = (ArrayData) => {
-  const main = document.querySelector('main');
+  
+  const containerOfCards = document.createElement('div');
+  containerOfCards.classList.add('containerOfCards');
+  
   ArrayData.forEach((item) => {
-    const TotalEpisodios = item.episode.reduce(function(contador,episodios){
+    const episodesTotal = item.episode.reduce(function(contador,episodios){
       if(episodios){
         return contador + 1;
       }else{
@@ -33,8 +15,6 @@ export const renderItems = (ArrayData) => {
   
     const card = document.createElement('article');
     card.classList.add('card');
-    card.setAttribute("itemscope","");
-    card.setAttribute("itemtype", "rick And Morty");
     
     const contendItemImg = document.createElement("div");
     contendItemImg.classList.add("data-card");
@@ -59,7 +39,7 @@ export const renderItems = (ArrayData) => {
 
     const episodeItem = document.createElement('h2');
     episodeItem.setAttribute("class", "nameAndEpisodeCharacterText");
-    episodeItem.textContent = "episodes in which it appears: "+TotalEpisodios;  
+    episodeItem.textContent = "episodes in which it appears: "+ episodesTotal;  
     
     const buttonInfo = document.createElement('button');
     buttonInfo.classList.add('info');
@@ -79,9 +59,10 @@ export const renderItems = (ArrayData) => {
     card.appendChild(contendItemImg);
     card.appendChild(infoContainer);
     card.appendChild(buttonInfo);
-    main.appendChild(card);
+    containerOfCards.appendChild(card);
+  
   });
-  return main;  
+  return containerOfCards; 
 };
 
 
