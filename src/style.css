@@ -4,6 +4,11 @@ body {
   margin: 0;
   font-family: 'Jolly Lodger', cursive;
 }
+main {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
 .logo {
   width: 25%;
 padding: 10px 0;
@@ -81,7 +86,7 @@ select[data-testid="select-sort"] {
 option{
 background: #0A0559;
 }
-button[data-testid="button-clear"]{
+.button-clear{
   padding: 5px 20px;
   background: #9FF494;
   border: 3px solid rgb(7, 225, 10);
@@ -90,83 +95,63 @@ button[data-testid="button-clear"]{
   font-size: 25px;
   border-radius: 10px;
   }
-button[data-testid="button-clear"]:hover {
+.button-clear:hover, .stadistics:hover, .modal_close:hover {
   box-shadow: 0px 0px 14px 4px #61C725;
 }
-
+.stadistics {
+  width: 5%;
+  padding: 5px;
+  background: transparent;
+  border: 3px solid rgb(7, 225, 10);
+  color: #079F0D;
+  font-family: 'Jolly Lodger', cursive;
+  border-radius: 10px;
+}
 
 .data-card img{
 width: 100%;
 border-radius: 10px;
 }
-.menuModl{
-  width: 4%;
-  display: inline-block;
+.header_modal{
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .modal{
-  background: #0a051ffa;
-  position: fixed;  
-  z-index: 3;
-  opacity: 0; 
-  pointer-events: none;
-  transition: opacity .6s .9s;
-  --transform: translateY(-100vh);
-  --transition: transform .8s;
-  padding-top: 5em;
-  right: 0;
-  left: 0;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(23, 11, 73, 0.95);
+  position: absolute;  
+  z-index: 1000;
+  padding:  0 15px;
+  border: 3px solid white;
+  color: white;
+  margin-top: 60px;
   top: 0;
-  padding-bottom: 2em;
-  margin: 8em auto;
   width: 93%;
   height: 450px;
   overflow-x: none;
   overflow-y: scroll;
-}
-
-.modal--show{
-  opacity: 1;
-  pointer-events: unset;
-  transition: opacity .6s;
-  --transform: translateY(0);
-  --transition: transform .8s .8s;
+  border-radius: 10px;
 }
 .modal_close{
+  position: absolute;  
+  z-index: 1000;
+  right: 0;
   width: 10%;
-  height: 40px;
+  margin-right: 100px;
   background: #9FF494;
   border: 3px solid rgb(7, 225, 10);
   color: #079F0D;
   font-family: 'Jolly Lodger', cursive;
   font-size: 20px;
-  margin: auto;
   border-radius: 10px;
 }
-.modal_close:hover {
-  box-shadow: 0px 0px 14px 4px #61C725;
-  }
-
-
-.modal_container{
-  width: 90%;
-  margin: auto;
-  color:white;
-  display: flex;
-  justify-content: center;
-  
-}
-.modal_footer{
-  padding-top: 2em;
-}
-.charts{
-  width: 33%;
-  margin: 0 5px 0 5px;
-}
-.titelChar {
-  letter-spacing: .3px;
-  font-size: 17px;
-}
-
+/* 
 .modal--show{
   opacity: 1;
   pointer-events: unset;
@@ -175,6 +160,36 @@ border-radius: 10px;
   --transition: transform .8s .8s;
 }
 
+.modal_close:hover {
+  box-shadow: 0px 0px 14px 4px #61C725;
+  }
+
+*/
+.charts_container{
+  width: 100%;
+  margin: 0;
+  color:white;
+  display: flex;
+  justify-content: center;
+  gap: 15px
+  
+}
+.charts{
+  width: 25%;
+  border: 3px solid rgb(7, 225, 10);
+  border-radius: 10px;
+  padding: 10px;
+}
+.titleChar {
+  margin: 0;
+  letter-spacing: .3px;
+  font-size: 22px;
+}
+.titleModal {
+  letter-spacing:2px;
+  font-size: 30px;
+  margin: 0;
+}
 
 footer {
 letter-spacing: 3px;
@@ -187,10 +202,8 @@ width: 50%;
 font-size: 25px;
 }
 
-main {
-  margin-top: 250px;
-
-
+.containerOfCards {
+  margin-top: 230px;
   padding: 20px 0;
   display: grid;
   grid-template-columns: repeat(5, 200px);
