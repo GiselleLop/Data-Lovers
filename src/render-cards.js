@@ -1,6 +1,4 @@
-
 export const renderItems = (ArrayData) => {
-  
   const containerOfCards = document.createElement('div');
   containerOfCards.classList.add('containerOfCards');
   
@@ -42,38 +40,20 @@ export const renderItems = (ArrayData) => {
     episodeItem.textContent = "episodes in which it appears: "+ episodesTotal;  
     
     const buttonInfo = document.createElement('button');
-    buttonInfo.classList.add('info');
+    buttonInfo.classList.add('moreInfoButton');
 
     buttonInfo.textContent = "More info";
-    buttonInfo.addEventListener("click", function () {
+    card.addEventListener("click", () => {
       localStorage.setItem("item", JSON.stringify(item))
-      window.location.href= "detalle.html"
+      window.location.href= "detail.html"
     })
 
-
-    infoContainer.appendChild(nameItem);
-    infoContainer.appendChild(itemName);
-    infoContainer.appendChild(episodeItem);
-    contendItemImg.appendChild(data_img);
-    contendItemImg.appendChild(data_id);
-    card.appendChild(contendItemImg);
-    card.appendChild(infoContainer);
-    card.appendChild(buttonInfo);
+    infoContainer.append(nameItem, itemName, episodeItem);
+    contendItemImg.append(data_img, data_id);
+    card.append(contendItemImg, infoContainer, buttonInfo);
     containerOfCards.appendChild(card);
   
   });
   return containerOfCards; 
-};
-
-
-export const renderEpisode = (data)=>{
-  const listEpisode = document.getElementById('ListEpisode');
-  data.episode.forEach(epi => {  
-    const li = document.createElement('li');
-    li.classList.add('infoEpisode');
-
-    li.textContent = epi;
-    listEpisode.appendChild(li);
-  });
 };
 
