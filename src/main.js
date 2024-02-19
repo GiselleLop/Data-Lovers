@@ -67,9 +67,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
-
-
 selectStatus.addEventListener("change", () => {
   dataFiltered = filterAll(arrayData, selectStatus.value, selectSpecies.value, selectGender.value, orderType.value, ordenBy.value)
   dataRendered = renderItems(dataFiltered)
@@ -125,6 +122,12 @@ stadisticButton.addEventListener('click', ()=>{
   const modalStadisctics = createModal()
   main.append(modalStadisctics)
   computeStats(arrayData);
+  // const buttonCloseModal = document.querySelector('.modal_close')
+  // buttonCloseModal.addEventListener('click', ()=>{
+  
+    
+
+  // })
 });
 
 // closeModal.addEventListener('click', (e)=>{

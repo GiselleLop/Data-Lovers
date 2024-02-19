@@ -29,7 +29,6 @@ header{
  width: 100%;
 background: #2a1486; 
 
-
 z-index: 1000;
 transition: all 0.3s ease;
 position: fixed;
@@ -47,7 +46,6 @@ top: 0;
   width: 100%;
   padding: 15px 0;
   gap: 13px; 
-
   margin-top: 80px;
   position: fixed;
   top: 50px; /* Ajusta según la altura del header */
@@ -125,7 +123,7 @@ border-radius: 10px;
   flex-direction: column;
   gap: 10px;
   background-color: rgba(23, 11, 73, 0.95);
-  position: absolute;  
+  position: fixed;  
   z-index: 1000;
   padding:  0 15px;
   border: 3px solid white;
@@ -151,20 +149,7 @@ border-radius: 10px;
   font-size: 20px;
   border-radius: 10px;
 }
-/* 
-.modal--show{
-  opacity: 1;
-  pointer-events: unset;
-  transition: opacity .6s;
-  --transform: translateY(0);
-  --transition: transform .8s .8s;
-}
 
-.modal_close:hover {
-  box-shadow: 0px 0px 14px 4px #61C725;
-  }
-
-*/
 .charts_container{
   width: 100%;
   margin: 0;

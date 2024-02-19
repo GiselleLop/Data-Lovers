@@ -24,5 +24,10 @@ export function createModal() {
     `;
 
   modalSection.innerHTML = modalContent;
+  const modalCloseButton = modalSection.querySelector('.modal_close');
+  modalCloseButton.addEventListener('click', function() {
+    modalSection.remove();
+  });
+ 
   return modalSection;
 }
