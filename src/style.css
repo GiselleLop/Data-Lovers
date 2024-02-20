@@ -315,7 +315,15 @@ border-radius: 8%;
 
 
 /* @media query para moviles*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 40%;
+  }
+  .subtitle {
+   font-size: 15px;
+   letter-spacing: 1px;
+   margin-top: -4%;
+   } 
   .containerOfCards {
     margin-top: 250px;
     grid-template-columns: repeat(1, 300px);
@@ -337,81 +345,76 @@ border-radius: 8%;
   font-size: 15px;
   }
 
-  .button-clear, .backToMenu{
+  .button-clear {
     padding: 5px 10px;
-    font-family: 'Jolly Lodger', cursive;
     font-size: 18px;
   }
 
+
+  .containerOfDetail {
+    flex-direction: column;
+    gap: 20px
+     }  
+     .backToMenu{
+       place-self: start;
+       margin-left: 40px;
+     }
+     
+ .detailMain {
+   
+   gap: 25px;
+ 
+   }
+ .informationCharacter, .episodesOfCharacter {
+   font-size: 25px;
+ width: 80%;
+height: 290px;
+padding-bottom: 10px;
+overflow-y: scroll;
+ }
+ .imageOfDetail {
+   width:67%;
+   }
+   .textDetail {
+    padding: 0 10px 
+    }
 }
-
-
-/* 
-@media (min-width: 768px) and (max-width: 915px) {
-  .container{
-    width: auto;
+/* @media query para tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .containerOfCards {
+    margin-top: 230px;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 0px;
   }
   .card{
-      width: 35%;
+    width: 75%;
   }
-  .filter{
-      width: 45%;
-      padding: 10px;
-  }
+  .menuOfFilters{
+    margin-top: 49px;
   
-  .logo{
-      width: 40%;
-  }
-  section{
-    padding-top: 25em;
   }
 
-.modal {
-    padding-top: 5em; 
-    height: 800px;
-    margin: 3em auto;
-}
+  .containerOfDetail {
+   flex-direction: column;
+   gap: 50px
+    }  
+    .backToMenu{
+      place-self: start;
+      margin-left: 150px;
+    }
+    
+.detailMain {
+  
+  gap: 35px;
 
-.charts{
-  width: 90%;
-  margin-bottom: 3em;
-}
-.titelChar{
+  }
+.informationCharacter, .episodesOfCharacter {
   font-size: 30px;
-  letter-spacing: .5px
+width: 70%;
+height: 400px;
+
 }
+.imageOfDetail {
+  width:50%;
+  }
 }
-
-/* Estilos para pantallas con un ancho entre 915px y 1024px */
-/* 
-@media (min-width: 915px) and (max-width: 1025px) {
-  .card{
-      width: 25%;
-  }
-  .container{
-    width: 95%;
-  }
-  .filter{
-    width: 24%;
-  }
-
-  select[name="type"]{
-      width: 90%;
-  }
-
-  section{
-    padding-top: 21em;
-  }
-  .modal_close:hover {
-    box-shadow: 0px 0px 14px 4px #61C725;
-  }
-  
-  .modal_container{
-    width: 90%;
-    margin: auto;
-    color:white;
-  }
-  .charts{
-    width: 35%;
-  }
-} */ 
