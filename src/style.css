@@ -23,20 +23,15 @@ padding-bottom: 20px;
 
 .logo {
   /* width: 25%; */
-  width: 45%;
+
 padding: 10px 0;
   transition: width 0.3s ease;
-  
 }
 .subtitle {
  color: white;
- /* margin-top: -3%; */
  padding: 0%;
-
-
  font-size: 22px;
    letter-spacing: 1px;
-   margin-top: -4%;
    margin-bottom: 0;
 } 
 .container{
@@ -79,17 +74,16 @@ height: 10%;
   transition: all 0.3s ease;
 
 
-  flex-wrap: wrap;
+  
   padding: 15px 0;
   /* margin-top: 30px; */
-  top: 102px;
-
+  
 
 }
 .filter{
 /* width: 16%;
 font-size: 20px; */
-width: 25%;
+
 font-size: 15px;
 }
 .developersCreated{
@@ -129,8 +123,6 @@ background: #0A0559;
   color: #079F0D;
   font-family: 'Jolly Lodger', cursive;
   border-radius: 10px;
-
-
   padding: 5px 10px;
   font-size: 18px;  
 }
@@ -261,9 +253,7 @@ bottom: 0;
 
 
   width: 100%;
-  margin-top: 250px;
-  grid-template-columns: repeat(2, 160px);
-  /* grid-template-columns: repeat(1, 300px); */
+  /* margin-top: 250px;  grid-template-columns: repeat(1, 300px); */
 }
 .idCharacter {
 position: absolute;
@@ -406,12 +396,83 @@ width:67%;
 }
 
 
+@media (max-width: 767px) {
+  .menuOfFilters {
+    flex-wrap: wrap;
+    top: 102px;
+  
+  }
+  .containerOfCards {
+  margin-top: 250px;
+    grid-template-columns: repeat(2, 160px);
+
+  }
+
+  .filter {
+    width: 25%;
+  }
+  .stadistics {
+    width: 10%;
+  }
+  .logo {
+    width: 45%;
+  }
+  .subtitle {
+    margin-top: -4%;
+  }
+}
 
 
-/* @media query para tablet*/
-/* 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .containerOfCards {
+    margin-top: 230px;
+    grid-template-columns: repeat(4, 20%);
+
+  }
+  .menuOfFilters {
+    gap: 10px;
+    top: 142px;
+  }
+  .filter {
+    width: 15%;
+  }
+  .stadistics {
+    width: 5%;
+  }
+  .logo {
+    width: 45%;
+  }
+  .subtitle {
+    
+    margin-top: -4%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+.containerOfCards {
+  margin-top: 180px;
+  grid-template-columns: repeat(5, 200px); 
+}
+
+.menuOfFilters {
+  top: 85px;
+}
+.stadistics {
+  width: 5%;
+}
+.logo {
+  width: 20%;
+}
+.subtitle {
+  margin-top: -2%;
+}
+
+}
+
+/* @media query para tablet*/
+ 
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* .containerOfCards {
     margin-top: 230px;
     grid-template-columns: repeat(3, 300px);
     grid-gap: 0px;
@@ -424,10 +485,7 @@ width:67%;
   
   }
 
-  .containerOfDetail {
-   flex-direction: column;
-   gap: 50px
-    }  
+
     .backToMenu{
       place-self: start;
       margin-left: 150px;
@@ -446,8 +504,15 @@ height: 400px;
 }
 .imageOfDetail {
   width:50%;
-  }
-} */
+  } */
+  /* .imageOfDetail {
+    width:40%;
+    } 
+  .containerOfDetail {
+    height: 90%;
+
+     }  
+}  */ 
 
 /* @media query para moviles*/
 /* 
