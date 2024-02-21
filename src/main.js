@@ -53,46 +53,46 @@ window.addEventListener('scroll', function() {
   const logo = document.querySelector('.logo');
   const subtitle = document.querySelector('.subtitle');
   const menuOfFilters = document.querySelector('.menuOfFilters');
-  if (window.innerWidth < 768) {
-    if (window.scrollY > 0) {
-      containerOfCards.style.marginTop = '180px'
-      menuOfFilters.style.top = '-5%';
-    } 
-    else {
-      containerOfCards.style.marginTop = '250px'
-      menuOfFilters.style.top = '50px';
-    }
-  }
-  if (window.innerWidth >= 768 && window.innerWidth < 1025) {
-    if (window.scrollY > 0) {
-      containerOfCards.style.marginTop = '130px'
-      menuOfFilters.style.top = '-5%';
-      logo.style.padding = '0';
-      logo.style.width = '0%'
-    } 
-    else {
-      containerOfCards.style.marginTop = '230px'
-      menuOfFilters.style.top = '50px';
-      logo.style.padding = '10px 0';
-      logo.style.width = '25%'
-    }
-  }
-  else {
+  // if (window.innerWidth < 768) {
+  //   if (window.scrollY > 0) {
+  //     containerOfCards.style.marginTop = '180px'
+  //     menuOfFilters.style.top = '-5%';
+  //   } 
+  //   else {
+  //     containerOfCards.style.marginTop = '250px'
+  //     menuOfFilters.style.top = '50px';
+  //   }
+  // }
+  // if (window.innerWidth >= 768 && window.innerWidth < 1025) {
+  //   if (window.scrollY > 0) {
+  //     containerOfCards.style.marginTop = '130px'
+  //     menuOfFilters.style.top = '-5%';
+  //     logo.style.padding = '0';
+  //     logo.style.width = '0%'
+  //   } 
+  //   else {
+  //     containerOfCards.style.marginTop = '230px'
+  //     menuOfFilters.style.top = '50px';
+  //     logo.style.padding = '10px 0';
+  //     logo.style.width = '25%'
+  //   }
+  // }
+  // else {
   
-    if (window.scrollY > 0) {
-      logo.style.padding = '0';
-      logo.style.width = '0%'
-      containerOfCards.style.marginTop = '130px'
-      subtitle.style.fontSize = '0px'
-      menuOfFilters.style.top = '-15%';
-    } else {
-      containerOfCards.style.marginTop = '230px'
-      subtitle.style.fontSize = '20px'
-      logo.style.padding = '10px 0';
-      logo.style.width = '25%'
-      menuOfFilters.style.top = '50px';
-    }
+  if (window.scrollY > 0) {
+    logo.style.padding = '0';
+    logo.style.width = '0%'
+    containerOfCards.style.marginTop = '130px'
+    subtitle.style.fontSize = '0px'
+    menuOfFilters.style.top = '0';
+  } else {
+    containerOfCards.style.marginTop = '250px'
+    subtitle.style.fontSize = '22px'
+    logo.style.padding = '10px 0';
+    logo.style.width = '45%'
+    menuOfFilters.style.top = '102px';
   }
+  //}
 
 });
 
