@@ -95,36 +95,25 @@ window.addEventListener("scroll", function () {
       header.style.height = '10%'
     }
   }
-  // if (window.innerWidth >= 768 && window.innerWidth < 1025) {
-  //   if (window.scrollY > 0) {
-  //     containerOfCards.style.marginTop = '130px'
-  //     menuOfFilters.style.top = '-5%';
-  //     logo.style.padding = '0';
-  //     logo.style.width = '0%'
-  //   }
-  //   else {
-  //     containerOfCards.style.marginTop = '230px'
-  //     menuOfFilters.style.top = '50px';
-  //     logo.style.padding = '10px 0';
-  //     logo.style.width = '25%'
-  //   }
-  // }
-  // else {
 
-  // if (window.scrollY > 0) {
-  //   logo.style.padding = '0';
-  //   logo.style.width = '0%'
-  //   containerOfCards.style.marginTop = '130px'
-  //   subtitle.style.fontSize = '0px'
-  //   menuOfFilters.style.top = '0';
-  // } else {
-  //   containerOfCards.style.marginTop = '250px'
-  //   subtitle.style.fontSize = '22px'
-  //   logo.style.padding = '10px 0';
-  //   logo.style.width = '45%'
-  //   menuOfFilters.style.top = '102px';
-  // }
-  //}
+  if (window.innerWidth >= 1025) {
+    if (window.scrollY > 0) {
+      menuOfFilters.style.top = "0";
+      containerOfCards.style.marginTop = "130px";
+      logo.style.padding = "0";
+      logo.style.width = "0%";
+      header.style.height = '0%'
+      subtitle.style.fontSize = "0px";
+     
+    } else {
+      menuOfFilters.style.top = "100px";
+      subtitle.style.fontSize = "22px";
+      containerOfCards.style.marginTop = "200px";
+      logo.style.padding = "10px 0";
+      logo.style.width = "20%";
+      header.style.height = "15%";
+    }
+  }
 });
 
 Allselects.forEach((select) => {

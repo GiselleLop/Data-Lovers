@@ -53,7 +53,7 @@ height: 10%;
     flex-direction: column;
     place-content: center;
     align-items: center;
-    padding: 5px 0;
+   
 }
 
 .menuOfFilters{
@@ -67,7 +67,7 @@ height: 10%;
   /* padding: 15px 0;
   margin-top: 80px; 
     top: 50px; */
-  display: flex;
+  display:flex;
   gap: 13px; 
   position: fixed;
   z-index: 1000;
@@ -224,7 +224,7 @@ display: flex; */
 letter-spacing: 3px;
 flex-direction: column;
 color: #fff;
-height: 10%;
+height: 8%;
 background: #190c4e;
 place-content: center;
 align-items: center;
@@ -236,7 +236,7 @@ bottom: 0;
 }
 .developers{
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
 }
@@ -349,8 +349,8 @@ border: #B6E529 solid 4px;
 border-radius: 15px;
 background-color: #0A0559;
 
-height: 45%;
-font-size: 50px;
+height: 43%;
+font-size: 21px;
 width: 80%;
 /* height: 290px; */
 padding-bottom: 10px;
@@ -379,20 +379,21 @@ color: #61C725;
 /* font-size: 40px; */
 border-radius: 15px 15px 0 0;
 
-font-size: 60px;
+font-size: 30px;
 }
 .imageOfDetail {
 /* width:57%; */
 height: auto;
 border-radius: 8%;
-width:67%;
+width:62%;
 }
 
 .backToMenu{
   place-self: start;
   /* margin-left: 165px; */
-  margin-left: 90px;
-  font-size: 45px;
+  margin-left: 38px;
+  font-size: 20px;
+
 }
 
 
@@ -449,13 +450,17 @@ width:67%;
 }
 
 @media only screen and (min-width: 1025px) {
+  header {
+  height: 15%;
+  padding-bottom: 15px;
+  }
 .containerOfCards {
-  margin-top: 180px;
+  margin-top: 200px;
   grid-template-columns: repeat(5, 200px); 
 }
 
 .menuOfFilters {
-  top: 85px;
+  top: 100px;
 }
 .stadistics {
   width: 5%;
