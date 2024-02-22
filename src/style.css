@@ -48,7 +48,7 @@ z-index: 1000;
 transition: all 0.3s ease;
 position: fixed;
 top: 0;
-height: 10%;
+/* height: 10%; */
     display: flex;
     flex-direction: column;
     place-content: center;
@@ -224,7 +224,7 @@ display: flex; */
 letter-spacing: 3px;
 flex-direction: column;
 color: #fff;
-height: 8%;
+
 background: #190c4e;
 place-content: center;
 align-items: center;
@@ -333,7 +333,7 @@ align-items: center; */
 
   height: 100%;
   flex-direction: column;
-  gap: 20px;
+  
 }
 .informationCharacter, .episodesOfCharacter {
   /* font-size: 25px;
@@ -350,8 +350,8 @@ border-radius: 15px;
 background-color: #0A0559;
 
 height: 43%;
-font-size: 21px;
-width: 80%;
+/* font-size: 21px; */
+/* width: 80%; */
 /* height: 290px; */
 padding-bottom: 10px;
 overflow-y: scroll;
@@ -385,19 +385,19 @@ font-size: 30px;
 /* width:57%; */
 height: auto;
 border-radius: 8%;
-width:62%;
+/* width:62%; */
 }
 
 .backToMenu{
   place-self: start;
   /* margin-left: 165px; */
-  margin-left: 38px;
-  font-size: 20px;
-
 }
 
 
 @media (max-width: 767px) {
+  header {
+    height: 10%;
+  }
   .menuOfFilters {
     flex-wrap: wrap;
     top: 102px;
@@ -421,10 +421,31 @@ width:62%;
   .subtitle {
     margin-top: -4%;
   }
+  .containerOfDetail {
+    gap: 20px;
+  }
+  footer {
+    height: 8%;
+  }
+  .backToMenu {
+    margin-left: 38px;
+  font-size: 20px;
+  }
+  .informationCharacter, .episodesOfCharacter {
+    font-size: 21px;
+    width: 80%;
+  }
+  .imageOfDetail {    
+    width: 62%;
+
+  }
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 13%;
+  }
   .containerOfCards {
     margin-top: 230px;
     grid-template-columns: repeat(4, 20%);
@@ -444,8 +465,30 @@ width:62%;
     width: 45%;
   }
   .subtitle {
-    
     margin-top: -4%;
+  }
+
+  .containerOfDetail {
+    gap: 20px;
+  }
+  footer {
+    height: 8%;
+  }
+  .backToMenu {
+    margin-left: 75px;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  .informationCharacter, .episodesOfCharacter {
+    font-size: 30px;
+    width: 70%;
+  }
+  .nameOfCharacter {
+    font-size: 40px;
+  }
+  .imageOfDetail {    
+    width: 52%;
+
   }
 }
 

@@ -92,7 +92,7 @@ window.addEventListener("scroll", function () {
       logo.style.padding = "10px 0";
       logo.style.width = "45%";
       menuOfFilters.style.top = "142px";
-      header.style.height = '10%'
+      header.style.height = '13%'
     }
   }
 
