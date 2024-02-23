@@ -11,28 +11,22 @@ html {
 main{
   display: flex;
   height: 80%;
-  /* place-content: center; */
   place-content: initial;
   align-items: center;
-
   width: 100%;
-flex-direction: column; 
-padding-bottom: 20px;
+  flex-direction: column; 
+  padding-bottom: 20px;
 }
-
-
 .logo {
-  /* width: 25%; */
-
-padding: 10px 0;
+  padding: 10px 0;
   transition: width 0.3s ease;
 }
 .subtitle {
- color: white;
- padding: 0%;
- font-size: 22px;
-   letter-spacing: 1px;
-   margin-bottom: 0;
+  color: white;
+  padding: 0%;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
 } 
 .container{
   width: 90%;
@@ -41,55 +35,36 @@ padding: 10px 0;
 }
 
 header{
- width: 100%;
-background: #2a1486; 
-
-z-index: 1000;
-transition: all 0.3s ease;
-position: fixed;
-top: 0;
-/* height: 10%; */
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    align-items: center;
-   
+  width: 100%;
+  background: #2a1486; 
+  z-index: 1000;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
 }
 
 .menuOfFilters{
   background: #190c4e; 
-   color: white;
-
+  color: white;
   place-content: center;
   align-items: center;
   flex-direction: row;
   width: 100%;
-  /* padding: 15px 0;
-  margin-top: 80px; 
-    top: 50px; */
   display:flex;
   gap: 13px; 
   position: fixed;
   z-index: 1000;
   transition: all 0.3s ease;
-
-
-  
   padding: 15px 0;
-  /* margin-top: 30px; */
-  
-
 }
-.filter{
-/* width: 16%;
-font-size: 20px; */
 
-font-size: 15px;
-}
 .developersCreated{
   color: #B6E529;
   text-align: center;
-  font-size: 20px;
   margin: 0;padding: 0;
 }
 .infoFilter{
@@ -116,8 +91,6 @@ option{
 background: #0A0559;
 }
 .button-clear, .backToMenu{
-  /* padding: 5px 20px;
-  font-size: 25px; */
   background: #9FF494;
   border: 3px solid rgb(7, 225, 10);
   color: #079F0D;
@@ -130,26 +103,25 @@ background: #0A0559;
   box-shadow: 0px 0px 14px 4px #61C725;
 }
 .stadistics {
-  /* width: 5%; */
   padding: 5px;
   background: transparent;
   border: 3px solid rgb(7, 225, 10);
   color: #079F0D;
   font-family: 'Jolly Lodger', cursive;
   border-radius: 10px;
-
   width: 10%;
 }
 
 .data-card img{
-width: 100%;
-border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 .header_modal{
   display: flex;
   place-content: center;
   align-items: center;
   flex-direction: row;
+  width: 100%;
 }
 .modal{
   display: flex;
@@ -165,8 +137,8 @@ border-radius: 10px;
   color: white;
   margin-top: 60px;
   top: 0;
-  width: 93%;
-  height: 450px;
+  /* width: 93%;
+  height: 450px; */
   overflow-x: none;
   overflow-y: scroll;
   border-radius: 10px;
@@ -176,12 +148,10 @@ border-radius: 10px;
   z-index: 1000;
   right: 0;
   width: 10%;
-  margin-right: 100px;
   background: #9FF494;
   border: 3px solid rgb(7, 225, 10);
   color: #079F0D;
   font-family: 'Jolly Lodger', cursive;
-  font-size: 20px;
   border-radius: 10px;
 }
 
@@ -195,7 +165,9 @@ border-radius: 10px;
   
 }
 .charts{
-  width: 25%;
+  place-content: center;
+  align-items: center;
+  display: flex;
   border: 3px solid rgb(7, 225, 10);
   border-radius: 10px;
   padding: 10px;
@@ -207,65 +179,46 @@ border-radius: 10px;
 }
 .titleModal {
   letter-spacing:2px;
-  font-size: 30px;
   margin: 0;
 }
-
 footer {
-/* letter-spacing: 3px;
-flex-direction: column;
-color: #fff;
-background-color: rgba(23, 11, 73, 0.8); 
- padding: 10px 0; 
-height: 10%;
-display: flex; */
-
-
-letter-spacing: 3px;
-flex-direction: column;
-color: #fff;
-
-background: #190c4e;
-place-content: center;
-align-items: center;
-flex-direction: column;
-width: 100%;
-display: flex;
-position: fixed;
-bottom: 0;
+  letter-spacing: 3px;
+  flex-direction: column;
+  color: #fff;
+  background: #190c4e;
+  place-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
 }
 .developers{
   width: 100%;
-  font-size: 20px;
   margin: 0;
   padding: 0;
 }
-
 .containerOfCards {
-  /* margin-top: 230px; 
-  grid-template-columns: repeat(5, 200px); */
   padding: 20px 0;
   display: grid;
   grid-auto-rows: minmax(100px, auto);
   place-content: center;
   align-items: center;
   grid-gap: 15px;
-
-
   width: 100%;
-  /* margin-top: 250px;  grid-template-columns: repeat(1, 300px); */
 }
 .idCharacter {
-position: absolute;
-background-color: rgba(23, 11, 73, 0.8); 
-padding: 10px;
-margin-top:-2.4em;
-border-radius: 0 0 0 10px;
+  position: absolute;
+  background-color: rgba(23, 11, 73, 0.8); 
+  padding: 10px;
+  margin-top:-2.4em;
+  border-radius: 0 0 0 10px;
 }
 .infoContainer {
-display: flex;
-flex-direction: column;
-gap: 2px
+  display: flex;
+  flex-direction: column;
+  gap: 2px
 }
 .card{
   padding: 15px;
@@ -275,71 +228,46 @@ gap: 2px
   color: #fff;
   font-size: 22px;
   transition: all 0.2s ease;
-/* 
-  new */
   width: 80%;
 }
-
 .card:hover {
-transform: scale(1.);
--webkit-transform:scale(1.1);
-box-shadow: 0px 0px 14px 4px #61C725;
+  transform: scale(1.);
+  -webkit-transform:scale(1.1);
+  box-shadow: 0px 0px 14px 4px #61C725;
 
 }
-
 .nameAndEpisodeCharacterText {
-font-size: 18px;
-color: #B6E529;
-margin: 0;
-letter-spacing: 1px;
+  font-size: 18px;
+  color: #B6E529;
+  margin: 0;
+  letter-spacing: 1px;
 }
 .nameCharacter {
-font-size: 25px;
-letter-spacing: 1px;
-margin: 0;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 0;
 }
 .moreInfoButton{
   margin-top: 7px;
-border-radius: 10px;
-color: #2A1486;
-background: #52E529;
-width: 70%;
-border: 2px solid #15994A;
-font-family: 'Jolly Lodger', cursive;
-font-size: 20px;
+  border-radius: 10px;
+  color: #2A1486;
+  background: #52E529;
+  width: 70%;
+  border: 2px solid #15994A;
+  font-family: 'Jolly Lodger', cursive;
+  font-size: 20px;
 }
-/* .detailMain {
-width: 100%;
-/* display: flex;
-align-items: center; */
-/* flex-direction: column;  */
-/* gap: 10px; */
-/* padding-bottom: 20px; */
-
-/* gap: 25px; */
-/* } */ 
 .containerOfDetail, .informationCharacter, .episodesOfCharacter {
   display: flex;
-  align-items: center;
- 
-  }  
-
+  align-items: center; 
+}  
 .containerOfDetail {
   width: 100%;
-  /* flex-direction: row; 
-  gap: 30px; */
   place-content: center;
-
-
   height: 100%;
-  flex-direction: column;
   
 }
 .informationCharacter, .episodesOfCharacter {
-  /* font-size: 25px;
-  width: 35%;
-height: 330px; */
-
 color: white;
 gap: 15px;
 text-align: left;
@@ -348,26 +276,17 @@ box-shadow: 0px 0px 14px 4px #61C725;
 border: #B6E529 solid 4px;
 border-radius: 15px;
 background-color: #0A0559;
-
-height: 43%;
-/* font-size: 21px; */
-/* width: 80%; */
-/* height: 290px; */
 padding-bottom: 10px;
 overflow-y: scroll;
 }
 .textDetail {
-margin: 0;
-    /* padding: 0; */
-
-
+  margin: 0;
   padding: 0 10px;
   height: 90%;
   width: 80%;
   place-content: center;
   display: flex;
   flex-direction: column;
-
 }
 .nameOfCharacter {
 background-color: #06032b;
@@ -376,53 +295,46 @@ padding: 5px 0;
 text-align: center;
 margin: 0;
 color: #61C725;
-/* font-size: 40px; */
 border-radius: 15px 15px 0 0;
-
 font-size: 30px;
 }
 .imageOfDetail {
-/* width:57%; */
 height: auto;
 border-radius: 8%;
-/* width:62%; */
 }
-
 .backToMenu{
   place-self: start;
-  /* margin-left: 165px; */
 }
 
-
 @media (max-width: 767px) {
+  .logo {
+    width: 45%;
+  }
   header {
     height: 10%;
   }
   .menuOfFilters {
     flex-wrap: wrap;
     top: 102px;
-  
   }
+  .filter{
+    font-size: 15px;
+    width: 25%;
+    }
   .containerOfCards {
   margin-top: 250px;
     grid-template-columns: repeat(2, 160px);
-
-  }
-
-  .filter {
-    width: 25%;
   }
   .stadistics {
     width: 10%;
   }
-  .logo {
-    width: 45%;
-  }
+  
   .subtitle {
     margin-top: -4%;
   }
   .containerOfDetail {
     gap: 20px;
+    flex-direction: column;
   }
   footer {
     height: 8%;
@@ -434,13 +346,43 @@ border-radius: 8%;
   .informationCharacter, .episodesOfCharacter {
     font-size: 21px;
     width: 80%;
+    height: 43%;
   }
   .imageOfDetail {    
     width: 62%;
-
+  }
+  .developers {
+    font-size: 20px;
+  }
+  .developersCreated {
+    font-size: 20px;
+  }
+  .modal {
+  height: 80%;
+width: 80%;
+margin-top: 100px;
+  }
+  .charts_container {
+    flex-direction: column;
+    height: 90%;
+  }
+  .charts {
+    width: 90%;
+    height: 26%;
+    flex-direction: row;
+  } 
+  .titleChar {
+    font-size: 20px;
+  }
+  .titleModal {
+    font-size: 30px;
+    }
+  .modal_close {
+  width: 20%;
+  margin-right: 10px;
+  font-size: 15px;
   }
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   header {
@@ -457,19 +399,20 @@ border-radius: 8%;
   }
   .filter {
     width: 15%;
+    font-size: 15px;
   }
   .stadistics {
     width: 5%;
   }
   .logo {
-    width: 45%;
+    width: 30%;
   }
   .subtitle {
-    margin-top: -4%;
+    margin-top: -2%;
   }
-
   .containerOfDetail {
     gap: 20px;
+    flex-direction: column;
   }
   footer {
     height: 8%;
@@ -482,20 +425,50 @@ border-radius: 8%;
   .informationCharacter, .episodesOfCharacter {
     font-size: 30px;
     width: 70%;
+    height: 43%;
   }
   .nameOfCharacter {
     font-size: 40px;
   }
   .imageOfDetail {    
     width: 52%;
-
   }
+  .developers {
+    font-size: 20px;
+  }
+  .developersCreated {
+    font-size: 20px;
+  }
+  .modal {
+    height: 90%;
+    width: 80%;
+  }
+  .charts_container {
+    height: 80%;
+    flex-direction: column;
+  }
+  .charts {
+    height: 28%;
+    flex-direction: row;
+  }
+  .modal_close {
+    width: 20%;
+    margin-right: 30px;
+    font-size: 20px;
+    }
+    .titleChar {
+      width: 25%;
+    }
+    .titleModal {
+    font-size: 50px;
+    }
+
 }
 
 @media only screen and (min-width: 1025px) {
   header {
   height: 15%;
-  padding-bottom: 15px;
+  padding: 7px 0;
   }
 .containerOfCards {
   margin-top: 200px;
@@ -503,7 +476,7 @@ border-radius: 8%;
 }
 
 .menuOfFilters {
-  top: 100px;
+  top: 110px;
 }
 .stadistics {
   width: 5%;
@@ -514,121 +487,54 @@ border-radius: 8%;
 .subtitle {
   margin-top: -2%;
 }
-
+.filter {
+font-size: 18px;
 }
-
-/* @media query para tablet*/
- 
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* .containerOfCards {
-    margin-top: 230px;
-    grid-template-columns: repeat(3, 300px);
-    grid-gap: 0px;
-  }
-  .card{
-    width: 75%;
-  }
-  .menuOfFilters{
-    margin-top: 49px;
-  
-  }
-
-
-    .backToMenu{
-      place-self: start;
-      margin-left: 150px;
-    }
-    
-.detailMain {
-  
-  gap: 35px;
-
-  }
+.backToMenu {
+  margin-left: 120px;
+font-size: 20px;
+}
 .informationCharacter, .episodesOfCharacter {
-  font-size: 30px;
-width: 70%;
-height: 400px;
-
+  font-size: 21px;
+  width: 38%;
+  height: 100%;
 }
-.imageOfDetail {
-  width:50%;
-  } */
-  /* .imageOfDetail {
-    width:40%;
-    } 
-  .containerOfDetail {
-    height: 90%;
-
-     }  
-}  */ 
-
-/* @media query para moviles*/
-/* 
-@media only screen and (max-width: 767px) {
-  .logo {
-    width: 45%;
-  }
-  main {
-  place-content:initial;
-  }
-  .subtitle {
-   font-size: 35px;
-   letter-spacing: 1px;
-   margin-top: -4%;
-   } 
-  .containerOfCards {
-    margin-top: 250px;
-    grid-template-columns: repeat(1, 300px);
-  }
-
-  .card{
-    width: 80%;
-  }
-
-  
-.menuOfFilters{
-  flex-wrap: wrap;
-  padding: 15px 0;
-  margin-top: 30px;
-  top: 50px; 
+.containerOfDetail {
+  gap: 30px;
+  flex-direction: row;
+  height: 70%;
 }
-.filter{
-  width: 25%;
+.imageOfDetail {    
+  width: 50%;
+}
+.detailMain{
+gap: 20px;
+}
+.developers {
+  font-size: 20px;
+}
+.developersCreated {
   font-size: 15px;
-  }
-
-  .button-clear {
-    padding: 5px 10px;
-    font-size: 18px;
-  }
-
-
-  .containerOfDetail {
-    flex-direction: column;
-    gap: 20px;
-    height: 70%;
-     }  
-     .backToMenu{
-       place-self: start;
-       margin-left: 40px;
-     }
-     
- .detailMain {
-   
-   gap: 25px;
- 
-   }
- .informationCharacter, .episodesOfCharacter {
-   font-size: 25px;
- width: 80%;
-height: 290px;
-padding-bottom: 10px;
-overflow-y: scroll;
- }
- .imageOfDetail {
-   width:67%;
-   }
-   .textDetail {
-    padding: 0 10px 
-    }
+}
+footer {
+  height: 10%;
+}
+.charts {
+  width: 25%;
+  flex-direction: column;
+}
+.modal {
+  width: 93%;
+  height: 450px;
+}
+.modal_close {
+font-size: 20px;
+margin-right: 100px;
+}
+.titleModal {
+font-size: 30px;
+}
+/* .logo {
+  width: 45%;
 } */
+}

@@ -10,15 +10,15 @@ export function createModal() {
       <div class="charts_container">
         <div class="charts">
           <p class="titleChar">In this graph we can see the number of characters divided by gender.</p>
-          <canvas id="graficGender" width="200" height="200"></canvas>
+          <canvas id="graficGender" style="display: flex"></canvas>
         </div>
         <div class="charts">
           <p class="titleChar">In this graph we can see the number of characters divided by life status.</p>
-          <canvas id="graficStatus" width="300" height="300"></canvas>
+          <canvas id="graficStatus" style="display: flex"></canvas>
         </div>
         <div class="charts">
           <p class="titleChar">In this graph we can see the number of characters divided by species</p>
-          <canvas id="graficSpecies" width="300" height="300"></canvas>
+          <canvas id="graficSpecies" style="display: flex"></canvas>
         </div>
       </div>
     `;

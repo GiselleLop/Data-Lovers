@@ -90,7 +90,7 @@ window.addEventListener("scroll", function () {
       containerOfCards.style.marginTop = "230px";
       subtitle.style.fontSize = "22px";
       logo.style.padding = "10px 0";
-      logo.style.width = "45%";
+      logo.style.width = "30%";
       menuOfFilters.style.top = "142px";
       header.style.height = '13%'
     }
@@ -106,12 +106,13 @@ window.addEventListener("scroll", function () {
       subtitle.style.fontSize = "0px";
      
     } else {
-      menuOfFilters.style.top = "100px";
+      menuOfFilters.style.top = "110px";
       subtitle.style.fontSize = "22px";
+      subtitle.style.marginTop = "-1%" 
       containerOfCards.style.marginTop = "200px";
-      logo.style.padding = "10px 0";
       logo.style.width = "20%";
       header.style.height = "15%";
+      header.style.padding = '7px 0'
     }
   }
 });
