@@ -14,7 +14,7 @@ const detailContent = `
   
   <div class="episodesOfCharacter">
    
-    <h1 class='nameOfCharacter'>  Episode List </h1>
+    <h1 class='nameOfCharacter'> Character data </h1>
     <ul class="textDetail" style="list-style: none;">
   <li  class="idDeatil">Id: ${characterLocal.id}</li>
   <li class="episode">Episodes: ${characterLocal.episode.length}</li>
