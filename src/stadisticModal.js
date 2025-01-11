@@ -5,7 +5,7 @@ export function createModal() {
   const modalContent = `
       <div class="header_modal">
         <h2 class=titleModal>Statistical data</h2>
-        <button class="modal_close">Close Modal</button>
+        <button class="modal_close">Close</button>
       </div>
       <div class="charts_container">
         <div class="charts">

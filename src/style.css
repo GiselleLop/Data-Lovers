@@ -1,42 +1,55 @@
 /* estilos mobile first */
 html {
   height: 100%;
-} body {
+}
+
+body {
   height: 100%;
   text-align: center;
   background-color: #2A1486;
   margin: 0;
   font-family: 'Jolly Lodger', cursive;
 }
-main{
+
+main {
   display: flex;
   height: 80%;
   place-content: initial;
   align-items: center;
   width: 100%;
-  flex-direction: column; 
+  flex-direction: column;
   padding-bottom: 20px;
 }
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
 .logo {
   padding: 10px 0;
   transition: width 0.3s ease;
 }
+
 .subtitle {
   color: white;
   padding: 0%;
   font-size: 22px;
   letter-spacing: 1px;
   margin-bottom: 0;
-} 
-.container{
+}
+
+.container {
   width: 90%;
   margin: auto;
   text-align: center;
 }
 
-header{
+header {
   width: 100%;
-  background: #2a1486; 
+  background: #2a1486;
   z-index: 1000;
   transition: all 0.3s ease;
   position: fixed;
@@ -47,61 +60,72 @@ header{
   align-items: center;
 }
 
-.menuOfFilters{
-  background: #190c4e; 
+.menuOfFilters {
+  background: #190c4e;
   color: white;
   place-content: center;
   align-items: center;
   flex-direction: row;
   width: 100%;
-  display:flex;
-  gap: 13px; 
+  display: flex;
+  gap: 13px;
   position: fixed;
   z-index: 1000;
   transition: all 0.3s ease;
   padding: 15px 0;
 }
 
-.developersCreated{
+.developersCreated {
   color: #B6E529;
   text-align: center;
-  margin: 0;padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.infoFilter{
+
+.infoFilter {
   display: flex;
   margin: 0;
   padding: 0;
 }
-  
-select{
+
+select {
   color: #fff;
   background: #00000045;
   border-radius: 10px;
   padding: 5px;
-  font-size:15px;
+  font-size: 15px;
   box-shadow: 0px 0px 4px 1px rgb(10, 255, 14);
   border: 2px solid #B6E529;
   width: 100%;
   text-align: center;
 }
+
 select[data-testid="select-sort"] {
   width: 49%;
 }
-option{
-background: #0A0559;
+
+option {
+  background: #0A0559;
 }
-.button-clear, .backToMenu{
+
+.button-clear,
+.backToMenu {
   background: #9FF494;
   border: 3px solid rgb(7, 225, 10);
   color: #079F0D;
   font-family: 'Jolly Lodger', cursive;
   border-radius: 10px;
   padding: 5px 10px;
-  font-size: 18px;  
+  font-size: 18px;
 }
-.button-clear:hover, .stadistics:hover, .modal_close:hover, .backToMenu:hover {
+
+.button-clear:hover,
+.stadistics:hover,
+.modal_close:hover,
+.backToMenu:hover {
   box-shadow: 0px 0px 14px 4px #61C725;
 }
+
 .stadistics {
   padding: 5px;
   background: transparent;
@@ -112,27 +136,29 @@ background: #0A0559;
   width: 10%;
 }
 
-.data-card img{
+.data-card img {
   width: 100%;
   border-radius: 10px;
 }
-.header_modal{
+
+.header_modal {
   display: flex;
   place-content: center;
   align-items: center;
   flex-direction: row;
   width: 100%;
 }
-.modal{
+
+.modal {
   display: flex;
   place-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
   background-color: rgba(23, 11, 73, 0.95);
-  position: fixed;  
+  position: fixed;
   z-index: 1000;
-  padding:  0 15px;
+  padding: 0 15px;
   border: 3px solid white;
   color: white;
   margin-top: 60px;
@@ -143,8 +169,9 @@ background: #0A0559;
   overflow-y: scroll;
   border-radius: 10px;
 }
-.modal_close{
-  position: absolute;  
+
+.modal_close {
+  position: absolute;
   z-index: 1000;
   right: 0;
   width: 10%;
@@ -155,16 +182,16 @@ background: #0A0559;
   border-radius: 10px;
 }
 
-.charts_container{
+.charts_container {
   width: 100%;
   margin: 0;
-  color:white;
+  color: white;
   display: flex;
   justify-content: center;
   gap: 15px
-  
 }
-.charts{
+
+.charts {
   place-content: center;
   align-items: center;
   display: flex;
@@ -172,15 +199,18 @@ background: #0A0559;
   border-radius: 10px;
   padding: 10px;
 }
+
 .titleChar {
   margin: 0;
   letter-spacing: .3px;
   font-size: 22px;
 }
+
 .titleModal {
-  letter-spacing:2px;
+  letter-spacing: 2px;
   margin: 0;
 }
+
 footer {
   letter-spacing: 3px;
   flex-direction: column;
@@ -194,11 +224,13 @@ footer {
   position: fixed;
   bottom: 0;
 }
-.developers{
+
+.developers {
   width: 100%;
   margin: 0;
   padding: 0;
 }
+
 .containerOfCards {
   padding: 20px 0;
   display: grid;
@@ -208,19 +240,22 @@ footer {
   grid-gap: 15px;
   width: 100%;
 }
+
 .idCharacter {
   position: absolute;
-  background-color: rgba(23, 11, 73, 0.8); 
+  background-color: rgba(23, 11, 73, 0.8);
   padding: 10px;
-  margin-top:-2.4em;
+  margin-top: -2.4em;
   border-radius: 0 0 0 10px;
 }
+
 .infoContainer {
   display: flex;
   flex-direction: column;
   gap: 2px
 }
-.card{
+
+.card {
   padding: 15px;
   border: 1px solid #52E529;
   background: #00000073;
@@ -230,24 +265,28 @@ footer {
   transition: all 0.2s ease;
   width: 80%;
 }
+
 .card:hover {
   transform: scale(1.);
-  -webkit-transform:scale(1.1);
+  -webkit-transform: scale(1.1);
   box-shadow: 0px 0px 14px 4px #61C725;
 
 }
+
 .nameAndEpisodeCharacterText {
   font-size: 18px;
   color: #B6E529;
   margin: 0;
   letter-spacing: 1px;
 }
+
 .nameCharacter {
   font-size: 25px;
   letter-spacing: 1px;
   margin: 0;
 }
-.moreInfoButton{
+
+.moreInfoButton {
   margin-top: 7px;
   border-radius: 10px;
   color: #2A1486;
@@ -257,28 +296,40 @@ footer {
   font-family: 'Jolly Lodger', cursive;
   font-size: 20px;
 }
-.containerOfDetail, .informationCharacter, .episodesOfCharacter {
+
+.containerOfDetail,
+.informationCharacter,
+.episodesOfCharacter {
   display: flex;
-  align-items: center; 
-}  
+  align-items: center;
+}
+
 .containerOfDetail {
   width: 100%;
   place-content: center;
   height: 100%;
-  
+
 }
-.informationCharacter, .episodesOfCharacter {
-color: white;
-gap: 15px;
-text-align: left;
-flex-direction: column; 
-box-shadow: 0px 0px 14px 4px #61C725;
-border: #B6E529 solid 4px;
-border-radius: 15px;
-background-color: #0A0559;
-padding-bottom: 10px;
-overflow-y: scroll;
+
+
+.episodesOfCharacter {
+  color: white;
+  gap: 15px;
+  text-align: left;
+  flex-direction: column;
+  box-shadow: 0px 0px 14px 4px #61C725;
+  border: #B6E529 solid 4px;
+  border-radius: 15px;
+  background-color: #0A0559;
+  padding-bottom: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
+
+.informationCharacter {
+  flex-direction: column;
+}
+
 .textDetail {
   margin: 0;
   padding: 0 10px;
@@ -286,23 +337,29 @@ overflow-y: scroll;
   width: 80%;
   place-content: center;
   display: flex;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
   flex-direction: column;
 }
-.nameOfCharacter {
-background-color: #06032b;
-width: 100%;
-padding: 5px 0;
-text-align: center;
-margin: 0;
-color: #61C725;
-border-radius: 15px 15px 0 0;
-font-size: 30px;
+
+.nameOfCharacter,
+.episodes_title {
+  text-align: center;
+  margin: 0;
+  color: #61C725;
+  font-size: 30px;
 }
+
+.episodes_title {
+  padding-top: 20px;
+}
+
 .imageOfDetail {
-height: auto;
-border-radius: 8%;
+  height: auto;
+  border-radius: 8%;
 }
-.backToMenu{
+
+.backToMenu {
   place-self: start;
 }
 
@@ -310,77 +367,101 @@ border-radius: 8%;
   .logo {
     width: 45%;
   }
+
+  .detailContainer {
+    margin-top: 19%;
+    gap: 0px;
+  }
+
   header {
     height: 10%;
   }
+
   .menuOfFilters {
     flex-wrap: wrap;
     top: 102px;
   }
-  .filter{
+
+  .filter {
     font-size: 15px;
     width: 25%;
-    }
+  }
+
   .containerOfCards {
-  margin-top: 250px;
+    margin-top: 250px;
     grid-template-columns: repeat(2, 160px);
   }
+
   .stadistics {
     width: 10%;
   }
-  
+
   .subtitle {
     margin-top: -4%;
   }
+
   .containerOfDetail {
     gap: 20px;
     flex-direction: column;
   }
+
   footer {
     height: 8%;
   }
+
   .backToMenu {
     margin-left: 38px;
-  font-size: 20px;
+    font-size: 20px;
   }
-  .informationCharacter, .episodesOfCharacter {
+
+  .informationCharacter,
+  .episodesOfCharacter {
     font-size: 21px;
     width: 80%;
     height: 43%;
   }
-  .imageOfDetail {    
+
+  .imageOfDetail {
     width: 62%;
   }
+
   .developers {
     font-size: 20px;
   }
+
   .developersCreated {
     font-size: 20px;
   }
+
   .modal {
-  height: 80%;
-width: 80%;
-margin-top: 100px;
+    height: 80%;
+    width: 80%;
+    margin-top: 100px;
   }
+
   .charts_container {
     flex-direction: column;
     height: 90%;
   }
+
   .charts {
     width: 90%;
     height: 26%;
     flex-direction: row;
-  } 
+  }
+
   .titleChar {
     font-size: 20px;
   }
+
   .titleModal {
     font-size: 30px;
-    }
+  }
+
   .modal_close {
-  width: 20%;
-  margin-right: 10px;
-  font-size: 15px;
+    width: 20%;
+    margin-right: 10px;
+    font-size: 15px;
   }
 }
 
@@ -388,153 +469,210 @@ margin-top: 100px;
   header {
     height: 13%;
   }
+
+  main {
+    height: 100%;
+  }
+
   .containerOfCards {
     margin-top: 230px;
     grid-template-columns: repeat(4, 20%);
 
   }
+
+  .detailContainer {
+    margin-top: 19%;
+    gap: 0px;
+    height: 80%;
+  }
+
   .menuOfFilters {
     gap: 10px;
     top: 142px;
   }
+
   .filter {
     width: 15%;
     font-size: 15px;
   }
+
   .stadistics {
     width: 5%;
   }
+
   .logo {
     width: 30%;
   }
+
   .subtitle {
     margin-top: -2%;
   }
+
   .containerOfDetail {
-    gap: 20px;
+    gap: 40px;
     flex-direction: column;
   }
+
   footer {
     height: 8%;
   }
+
   .backToMenu {
     margin-left: 75px;
     font-size: 25px;
     margin-top: 25px;
   }
-  .informationCharacter, .episodesOfCharacter {
+
+  .informationCharacter,
+  .episodesOfCharacter {
     font-size: 30px;
     width: 70%;
     height: 43%;
+    /* gap: 0px; */
   }
-  .nameOfCharacter {
+
+  .nameOfCharacter,
+  .episodes_title {
     font-size: 40px;
   }
-  .imageOfDetail {    
+
+  .imageOfDetail {
     width: 52%;
   }
+
   .developers {
     font-size: 20px;
   }
+
   .developersCreated {
     font-size: 20px;
   }
+
   .modal {
     height: 90%;
     width: 80%;
   }
+
   .charts_container {
     height: 80%;
     flex-direction: column;
   }
+
   .charts {
     height: 28%;
     flex-direction: row;
   }
+
   .modal_close {
     width: 20%;
     margin-right: 30px;
     font-size: 20px;
-    }
-    .titleChar {
-      width: 25%;
-    }
-    .titleModal {
+  }
+
+  .titleChar {
+    width: 25%;
+  }
+
+  .titleModal {
     font-size: 50px;
-    }
+  }
 
 }
 
 @media only screen and (min-width: 1025px) {
   header {
-  height: 15%;
-  padding: 7px 0;
+    height: 15% importat !important;
+    padding: 7px 0;
   }
-.containerOfCards {
-  margin-top: 200px;
-  grid-template-columns: repeat(5, 200px); 
-}
 
-.menuOfFilters {
-  top: 110px;
-}
-.stadistics {
-  width: 5%;
-}
-.logo {
-  width: 20%;
-}
-.subtitle {
-  margin-top: -2%;
-}
-.filter {
-font-size: 18px;
-}
-.backToMenu {
-  margin-left: 120px;
-font-size: 20px;
-}
-.informationCharacter, .episodesOfCharacter {
-  font-size: 21px;
-  width: 38%;
-  height: 100%;
-}
-.containerOfDetail {
-  gap: 30px;
-  flex-direction: row;
-  height: 70%;
-}
-.imageOfDetail {    
-  width: 50%;
-}
-.detailMain{
-gap: 20px;
-}
-.developers {
-  font-size: 20px;
-}
-.developersCreated {
-  font-size: 15px;
-}
-footer {
-  height: 10%;
-}
-.charts {
-  width: 25%;
-  flex-direction: column;
-}
-.modal {
-  width: 93%;
-  height: 450px;
-}
-.modal_close {
-font-size: 20px;
-margin-right: 100px;
-}
-.titleModal {
-font-size: 30px;
-}
-/* .logo {
+  .containerOfCards {
+    margin-top: 200px;
+    grid-template-columns: repeat(5, 200px);
+  }
+
+  .detailContainer {
+    margin-top: 120px;
+
+  }
+
+  .menuOfFilters {
+    top: 110px;
+  }
+
+  .stadistics {
+    width: 5%;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .subtitle {
+    margin-top: -2%;
+  }
+
+  .filter {
+    font-size: 18px;
+  }
+
+  .backToMenu {
+    margin-left: 120px;
+    font-size: 20px;
+  }
+
+  .informationCharacter,
+  .episodesOfCharacter {
+    font-size: 21px;
+    width: 38%;
+    height: 100%;
+  }
+
+  .informationCharacter {
+    gap: 10px;
+  }
+
+  .containerOfDetail {
+    /* gap: 30px; */
+    flex-direction: row;
+    /* height: 70%; */
+  }
+
+  .imageOfDetail {
+    width: 50%;
+  }
+
+  .developers {
+    font-size: 20px;
+  }
+
+  .developersCreated {
+    font-size: 15px;
+  }
+
+  footer {
+    height: 10%;
+  }
+
+  .charts {
+    width: 25%;
+    flex-direction: column;
+  }
+
+  .modal {
+    width: 93%;
+    height: 450px;
+  }
+
+  .modal_close {
+    font-size: 20px;
+    margin-right: 100px;
+  }
+
+  .titleModal {
+    font-size: 30px;
+  }
+
+  /* .logo {
   width: 45%;
 } */
 }
