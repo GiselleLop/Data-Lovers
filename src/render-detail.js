@@ -7,7 +7,7 @@ export const renderDetail = (character) => {
 
   const detailContent = ` 
   <div class='detailContainer'>
-  <button class='backToMenu'>Back to principal page</button>
+  <button class='backToMenu'>Back</button>
 
   <div class="containerOfDetail"> 
 

@@ -311,7 +311,6 @@ footer {
 
 }
 
-
 .episodesOfCharacter {
   color: white;
   gap: 15px;
@@ -373,9 +372,9 @@ footer {
     gap: 0px;
   }
 
-  header {
+  /* header {
     height: 10%;
-  }
+  } */
 
   .menuOfFilters {
     flex-wrap: wrap;
@@ -481,7 +480,7 @@ footer {
   }
 
   .detailContainer {
-    margin-top: 19%;
+    margin-top: 16%;
     gap: 0px;
     height: 80%;
   }
